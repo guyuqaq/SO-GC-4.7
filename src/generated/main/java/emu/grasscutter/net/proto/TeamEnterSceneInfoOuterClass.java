@@ -19,46 +19,42 @@ public final class TeamEnterSceneInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 team_entity_id = 5;</code>
-     * @return The teamEntityId.
-     */
-    int getTeamEntityId();
-
-    /**
-     * <code>.AbilityControlBlock ability_control_block = 7;</code>
-     * @return Whether the abilityControlBlock field is set.
-     */
-    boolean hasAbilityControlBlock();
-    /**
-     * <code>.AbilityControlBlock ability_control_block = 7;</code>
-     * @return The abilityControlBlock.
-     */
-    emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock getAbilityControlBlock();
-    /**
-     * <code>.AbilityControlBlock ability_control_block = 7;</code>
-     */
-    emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder getAbilityControlBlockOrBuilder();
-
-    /**
-     * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+     * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
      * @return Whether the teamAbilityInfo field is set.
      */
     boolean hasTeamAbilityInfo();
     /**
-     * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+     * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
      * @return The teamAbilityInfo.
      */
     emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getTeamAbilityInfo();
     /**
-     * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+     * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
      */
     emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getTeamAbilityInfoOrBuilder();
+
+    /**
+     * <code>.AbilityControlBlock ability_control_block = 5;</code>
+     * @return Whether the abilityControlBlock field is set.
+     */
+    boolean hasAbilityControlBlock();
+    /**
+     * <code>.AbilityControlBlock ability_control_block = 5;</code>
+     * @return The abilityControlBlock.
+     */
+    emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock getAbilityControlBlock();
+    /**
+     * <code>.AbilityControlBlock ability_control_block = 5;</code>
+     */
+    emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder getAbilityControlBlockOrBuilder();
+
+    /**
+     * <code>uint32 team_entity_id = 15;</code>
+     * @return The teamEntityId.
+     */
+    int getTeamEntityId();
   }
   /**
-   * <pre>
-   * Obf: PMLNKMHJPKI
-   * </pre>
-   *
    * Protobuf type {@code TeamEnterSceneInfo}
    */
   public static final class TeamEnterSceneInfo extends
@@ -103,12 +99,20 @@ public final class TeamEnterSceneInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 18: {
+              emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder subBuilder = null;
+              if (teamAbilityInfo_ != null) {
+                subBuilder = teamAbilityInfo_.toBuilder();
+              }
+              teamAbilityInfo_ = input.readMessage(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(teamAbilityInfo_);
+                teamAbilityInfo_ = subBuilder.buildPartial();
+              }
 
-              teamEntityId_ = input.readUInt32();
               break;
             }
-            case 58: {
+            case 42: {
               emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder subBuilder = null;
               if (abilityControlBlock_ != null) {
                 subBuilder = abilityControlBlock_.toBuilder();
@@ -121,17 +125,9 @@ public final class TeamEnterSceneInfoOuterClass {
 
               break;
             }
-            case 66: {
-              emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder subBuilder = null;
-              if (teamAbilityInfo_ != null) {
-                subBuilder = teamAbilityInfo_.toBuilder();
-              }
-              teamAbilityInfo_ = input.readMessage(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(teamAbilityInfo_);
-                teamAbilityInfo_ = subBuilder.buildPartial();
-              }
+            case 120: {
 
+              teamEntityId_ = input.readUInt32();
               break;
             }
             default: {
@@ -166,47 +162,10 @@ public final class TeamEnterSceneInfoOuterClass {
               emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.class, emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.Builder.class);
     }
 
-    public static final int TEAM_ENTITY_ID_FIELD_NUMBER = 5;
-    private int teamEntityId_;
-    /**
-     * <code>uint32 team_entity_id = 5;</code>
-     * @return The teamEntityId.
-     */
-    @java.lang.Override
-    public int getTeamEntityId() {
-      return teamEntityId_;
-    }
-
-    public static final int ABILITY_CONTROL_BLOCK_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock abilityControlBlock_;
-    /**
-     * <code>.AbilityControlBlock ability_control_block = 7;</code>
-     * @return Whether the abilityControlBlock field is set.
-     */
-    @java.lang.Override
-    public boolean hasAbilityControlBlock() {
-      return abilityControlBlock_ != null;
-    }
-    /**
-     * <code>.AbilityControlBlock ability_control_block = 7;</code>
-     * @return The abilityControlBlock.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock getAbilityControlBlock() {
-      return abilityControlBlock_ == null ? emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.getDefaultInstance() : abilityControlBlock_;
-    }
-    /**
-     * <code>.AbilityControlBlock ability_control_block = 7;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder getAbilityControlBlockOrBuilder() {
-      return getAbilityControlBlock();
-    }
-
-    public static final int TEAM_ABILITY_INFO_FIELD_NUMBER = 8;
+    public static final int TEAM_ABILITY_INFO_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo teamAbilityInfo_;
     /**
-     * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+     * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
      * @return Whether the teamAbilityInfo field is set.
      */
     @java.lang.Override
@@ -214,7 +173,7 @@ public final class TeamEnterSceneInfoOuterClass {
       return teamAbilityInfo_ != null;
     }
     /**
-     * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+     * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
      * @return The teamAbilityInfo.
      */
     @java.lang.Override
@@ -222,11 +181,48 @@ public final class TeamEnterSceneInfoOuterClass {
       return teamAbilityInfo_ == null ? emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.getDefaultInstance() : teamAbilityInfo_;
     }
     /**
-     * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+     * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getTeamAbilityInfoOrBuilder() {
       return getTeamAbilityInfo();
+    }
+
+    public static final int ABILITY_CONTROL_BLOCK_FIELD_NUMBER = 5;
+    private emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock abilityControlBlock_;
+    /**
+     * <code>.AbilityControlBlock ability_control_block = 5;</code>
+     * @return Whether the abilityControlBlock field is set.
+     */
+    @java.lang.Override
+    public boolean hasAbilityControlBlock() {
+      return abilityControlBlock_ != null;
+    }
+    /**
+     * <code>.AbilityControlBlock ability_control_block = 5;</code>
+     * @return The abilityControlBlock.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock getAbilityControlBlock() {
+      return abilityControlBlock_ == null ? emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.getDefaultInstance() : abilityControlBlock_;
+    }
+    /**
+     * <code>.AbilityControlBlock ability_control_block = 5;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder getAbilityControlBlockOrBuilder() {
+      return getAbilityControlBlock();
+    }
+
+    public static final int TEAM_ENTITY_ID_FIELD_NUMBER = 15;
+    private int teamEntityId_;
+    /**
+     * <code>uint32 team_entity_id = 15;</code>
+     * @return The teamEntityId.
+     */
+    @java.lang.Override
+    public int getTeamEntityId() {
+      return teamEntityId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -243,14 +239,14 @@ public final class TeamEnterSceneInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (teamEntityId_ != 0) {
-        output.writeUInt32(5, teamEntityId_);
+      if (teamAbilityInfo_ != null) {
+        output.writeMessage(2, getTeamAbilityInfo());
       }
       if (abilityControlBlock_ != null) {
-        output.writeMessage(7, getAbilityControlBlock());
+        output.writeMessage(5, getAbilityControlBlock());
       }
-      if (teamAbilityInfo_ != null) {
-        output.writeMessage(8, getTeamAbilityInfo());
+      if (teamEntityId_ != 0) {
+        output.writeUInt32(15, teamEntityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -261,17 +257,17 @@ public final class TeamEnterSceneInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (teamEntityId_ != 0) {
+      if (teamAbilityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, teamEntityId_);
+          .computeMessageSize(2, getTeamAbilityInfo());
       }
       if (abilityControlBlock_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getAbilityControlBlock());
+          .computeMessageSize(5, getAbilityControlBlock());
       }
-      if (teamAbilityInfo_ != null) {
+      if (teamEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getTeamAbilityInfo());
+          .computeUInt32Size(15, teamEntityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -288,18 +284,18 @@ public final class TeamEnterSceneInfoOuterClass {
       }
       emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo other = (emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo) obj;
 
-      if (getTeamEntityId()
-          != other.getTeamEntityId()) return false;
-      if (hasAbilityControlBlock() != other.hasAbilityControlBlock()) return false;
-      if (hasAbilityControlBlock()) {
-        if (!getAbilityControlBlock()
-            .equals(other.getAbilityControlBlock())) return false;
-      }
       if (hasTeamAbilityInfo() != other.hasTeamAbilityInfo()) return false;
       if (hasTeamAbilityInfo()) {
         if (!getTeamAbilityInfo()
             .equals(other.getTeamAbilityInfo())) return false;
       }
+      if (hasAbilityControlBlock() != other.hasAbilityControlBlock()) return false;
+      if (hasAbilityControlBlock()) {
+        if (!getAbilityControlBlock()
+            .equals(other.getAbilityControlBlock())) return false;
+      }
+      if (getTeamEntityId()
+          != other.getTeamEntityId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -311,16 +307,16 @@ public final class TeamEnterSceneInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TEAM_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTeamEntityId();
-      if (hasAbilityControlBlock()) {
-        hash = (37 * hash) + ABILITY_CONTROL_BLOCK_FIELD_NUMBER;
-        hash = (53 * hash) + getAbilityControlBlock().hashCode();
-      }
       if (hasTeamAbilityInfo()) {
         hash = (37 * hash) + TEAM_ABILITY_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getTeamAbilityInfo().hashCode();
       }
+      if (hasAbilityControlBlock()) {
+        hash = (37 * hash) + ABILITY_CONTROL_BLOCK_FIELD_NUMBER;
+        hash = (53 * hash) + getAbilityControlBlock().hashCode();
+      }
+      hash = (37 * hash) + TEAM_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTeamEntityId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -417,10 +413,6 @@ public final class TeamEnterSceneInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: PMLNKMHJPKI
-     * </pre>
-     *
      * Protobuf type {@code TeamEnterSceneInfo}
      */
     public static final class Builder extends
@@ -458,20 +450,20 @@ public final class TeamEnterSceneInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        teamEntityId_ = 0;
-
-        if (abilityControlBlockBuilder_ == null) {
-          abilityControlBlock_ = null;
-        } else {
-          abilityControlBlock_ = null;
-          abilityControlBlockBuilder_ = null;
-        }
         if (teamAbilityInfoBuilder_ == null) {
           teamAbilityInfo_ = null;
         } else {
           teamAbilityInfo_ = null;
           teamAbilityInfoBuilder_ = null;
         }
+        if (abilityControlBlockBuilder_ == null) {
+          abilityControlBlock_ = null;
+        } else {
+          abilityControlBlock_ = null;
+          abilityControlBlockBuilder_ = null;
+        }
+        teamEntityId_ = 0;
+
         return this;
       }
 
@@ -498,17 +490,17 @@ public final class TeamEnterSceneInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo buildPartial() {
         emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo result = new emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo(this);
-        result.teamEntityId_ = teamEntityId_;
-        if (abilityControlBlockBuilder_ == null) {
-          result.abilityControlBlock_ = abilityControlBlock_;
-        } else {
-          result.abilityControlBlock_ = abilityControlBlockBuilder_.build();
-        }
         if (teamAbilityInfoBuilder_ == null) {
           result.teamAbilityInfo_ = teamAbilityInfo_;
         } else {
           result.teamAbilityInfo_ = teamAbilityInfoBuilder_.build();
         }
+        if (abilityControlBlockBuilder_ == null) {
+          result.abilityControlBlock_ = abilityControlBlock_;
+        } else {
+          result.abilityControlBlock_ = abilityControlBlockBuilder_.build();
+        }
+        result.teamEntityId_ = teamEntityId_;
         onBuilt();
         return result;
       }
@@ -557,14 +549,14 @@ public final class TeamEnterSceneInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo other) {
         if (other == emu.grasscutter.net.proto.TeamEnterSceneInfoOuterClass.TeamEnterSceneInfo.getDefaultInstance()) return this;
-        if (other.getTeamEntityId() != 0) {
-          setTeamEntityId(other.getTeamEntityId());
+        if (other.hasTeamAbilityInfo()) {
+          mergeTeamAbilityInfo(other.getTeamAbilityInfo());
         }
         if (other.hasAbilityControlBlock()) {
           mergeAbilityControlBlock(other.getAbilityControlBlock());
         }
-        if (other.hasTeamAbilityInfo()) {
-          mergeTeamAbilityInfo(other.getTeamAbilityInfo());
+        if (other.getTeamEntityId() != 0) {
+          setTeamEntityId(other.getTeamEntityId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -595,168 +587,18 @@ public final class TeamEnterSceneInfoOuterClass {
         return this;
       }
 
-      private int teamEntityId_ ;
-      /**
-       * <code>uint32 team_entity_id = 5;</code>
-       * @return The teamEntityId.
-       */
-      @java.lang.Override
-      public int getTeamEntityId() {
-        return teamEntityId_;
-      }
-      /**
-       * <code>uint32 team_entity_id = 5;</code>
-       * @param value The teamEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTeamEntityId(int value) {
-        
-        teamEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 team_entity_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTeamEntityId() {
-        
-        teamEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock abilityControlBlock_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder> abilityControlBlockBuilder_;
-      /**
-       * <code>.AbilityControlBlock ability_control_block = 7;</code>
-       * @return Whether the abilityControlBlock field is set.
-       */
-      public boolean hasAbilityControlBlock() {
-        return abilityControlBlockBuilder_ != null || abilityControlBlock_ != null;
-      }
-      /**
-       * <code>.AbilityControlBlock ability_control_block = 7;</code>
-       * @return The abilityControlBlock.
-       */
-      public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock getAbilityControlBlock() {
-        if (abilityControlBlockBuilder_ == null) {
-          return abilityControlBlock_ == null ? emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.getDefaultInstance() : abilityControlBlock_;
-        } else {
-          return abilityControlBlockBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.AbilityControlBlock ability_control_block = 7;</code>
-       */
-      public Builder setAbilityControlBlock(emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock value) {
-        if (abilityControlBlockBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          abilityControlBlock_ = value;
-          onChanged();
-        } else {
-          abilityControlBlockBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityControlBlock ability_control_block = 7;</code>
-       */
-      public Builder setAbilityControlBlock(
-          emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder builderForValue) {
-        if (abilityControlBlockBuilder_ == null) {
-          abilityControlBlock_ = builderForValue.build();
-          onChanged();
-        } else {
-          abilityControlBlockBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityControlBlock ability_control_block = 7;</code>
-       */
-      public Builder mergeAbilityControlBlock(emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock value) {
-        if (abilityControlBlockBuilder_ == null) {
-          if (abilityControlBlock_ != null) {
-            abilityControlBlock_ =
-              emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.newBuilder(abilityControlBlock_).mergeFrom(value).buildPartial();
-          } else {
-            abilityControlBlock_ = value;
-          }
-          onChanged();
-        } else {
-          abilityControlBlockBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityControlBlock ability_control_block = 7;</code>
-       */
-      public Builder clearAbilityControlBlock() {
-        if (abilityControlBlockBuilder_ == null) {
-          abilityControlBlock_ = null;
-          onChanged();
-        } else {
-          abilityControlBlock_ = null;
-          abilityControlBlockBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.AbilityControlBlock ability_control_block = 7;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder getAbilityControlBlockBuilder() {
-        
-        onChanged();
-        return getAbilityControlBlockFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.AbilityControlBlock ability_control_block = 7;</code>
-       */
-      public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder getAbilityControlBlockOrBuilder() {
-        if (abilityControlBlockBuilder_ != null) {
-          return abilityControlBlockBuilder_.getMessageOrBuilder();
-        } else {
-          return abilityControlBlock_ == null ?
-              emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.getDefaultInstance() : abilityControlBlock_;
-        }
-      }
-      /**
-       * <code>.AbilityControlBlock ability_control_block = 7;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder> 
-          getAbilityControlBlockFieldBuilder() {
-        if (abilityControlBlockBuilder_ == null) {
-          abilityControlBlockBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder>(
-                  getAbilityControlBlock(),
-                  getParentForChildren(),
-                  isClean());
-          abilityControlBlock_ = null;
-        }
-        return abilityControlBlockBuilder_;
-      }
-
       private emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo teamAbilityInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder> teamAbilityInfoBuilder_;
       /**
-       * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+       * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
        * @return Whether the teamAbilityInfo field is set.
        */
       public boolean hasTeamAbilityInfo() {
         return teamAbilityInfoBuilder_ != null || teamAbilityInfo_ != null;
       }
       /**
-       * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+       * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
        * @return The teamAbilityInfo.
        */
       public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getTeamAbilityInfo() {
@@ -767,7 +609,7 @@ public final class TeamEnterSceneInfoOuterClass {
         }
       }
       /**
-       * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+       * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
        */
       public Builder setTeamAbilityInfo(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo value) {
         if (teamAbilityInfoBuilder_ == null) {
@@ -783,7 +625,7 @@ public final class TeamEnterSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+       * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
        */
       public Builder setTeamAbilityInfo(
           emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder builderForValue) {
@@ -797,7 +639,7 @@ public final class TeamEnterSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+       * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
        */
       public Builder mergeTeamAbilityInfo(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo value) {
         if (teamAbilityInfoBuilder_ == null) {
@@ -815,7 +657,7 @@ public final class TeamEnterSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+       * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
        */
       public Builder clearTeamAbilityInfo() {
         if (teamAbilityInfoBuilder_ == null) {
@@ -829,7 +671,7 @@ public final class TeamEnterSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+       * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
        */
       public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder getTeamAbilityInfoBuilder() {
         
@@ -837,7 +679,7 @@ public final class TeamEnterSceneInfoOuterClass {
         return getTeamAbilityInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+       * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
        */
       public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getTeamAbilityInfoOrBuilder() {
         if (teamAbilityInfoBuilder_ != null) {
@@ -848,7 +690,7 @@ public final class TeamEnterSceneInfoOuterClass {
         }
       }
       /**
-       * <code>.AbilitySyncStateInfo team_ability_info = 8;</code>
+       * <code>.AbilitySyncStateInfo team_ability_info = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder> 
@@ -862,6 +704,156 @@ public final class TeamEnterSceneInfoOuterClass {
           teamAbilityInfo_ = null;
         }
         return teamAbilityInfoBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock abilityControlBlock_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder> abilityControlBlockBuilder_;
+      /**
+       * <code>.AbilityControlBlock ability_control_block = 5;</code>
+       * @return Whether the abilityControlBlock field is set.
+       */
+      public boolean hasAbilityControlBlock() {
+        return abilityControlBlockBuilder_ != null || abilityControlBlock_ != null;
+      }
+      /**
+       * <code>.AbilityControlBlock ability_control_block = 5;</code>
+       * @return The abilityControlBlock.
+       */
+      public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock getAbilityControlBlock() {
+        if (abilityControlBlockBuilder_ == null) {
+          return abilityControlBlock_ == null ? emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.getDefaultInstance() : abilityControlBlock_;
+        } else {
+          return abilityControlBlockBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.AbilityControlBlock ability_control_block = 5;</code>
+       */
+      public Builder setAbilityControlBlock(emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock value) {
+        if (abilityControlBlockBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          abilityControlBlock_ = value;
+          onChanged();
+        } else {
+          abilityControlBlockBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityControlBlock ability_control_block = 5;</code>
+       */
+      public Builder setAbilityControlBlock(
+          emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder builderForValue) {
+        if (abilityControlBlockBuilder_ == null) {
+          abilityControlBlock_ = builderForValue.build();
+          onChanged();
+        } else {
+          abilityControlBlockBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityControlBlock ability_control_block = 5;</code>
+       */
+      public Builder mergeAbilityControlBlock(emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock value) {
+        if (abilityControlBlockBuilder_ == null) {
+          if (abilityControlBlock_ != null) {
+            abilityControlBlock_ =
+              emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.newBuilder(abilityControlBlock_).mergeFrom(value).buildPartial();
+          } else {
+            abilityControlBlock_ = value;
+          }
+          onChanged();
+        } else {
+          abilityControlBlockBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityControlBlock ability_control_block = 5;</code>
+       */
+      public Builder clearAbilityControlBlock() {
+        if (abilityControlBlockBuilder_ == null) {
+          abilityControlBlock_ = null;
+          onChanged();
+        } else {
+          abilityControlBlock_ = null;
+          abilityControlBlockBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.AbilityControlBlock ability_control_block = 5;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder getAbilityControlBlockBuilder() {
+        
+        onChanged();
+        return getAbilityControlBlockFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.AbilityControlBlock ability_control_block = 5;</code>
+       */
+      public emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder getAbilityControlBlockOrBuilder() {
+        if (abilityControlBlockBuilder_ != null) {
+          return abilityControlBlockBuilder_.getMessageOrBuilder();
+        } else {
+          return abilityControlBlock_ == null ?
+              emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.getDefaultInstance() : abilityControlBlock_;
+        }
+      }
+      /**
+       * <code>.AbilityControlBlock ability_control_block = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder> 
+          getAbilityControlBlockFieldBuilder() {
+        if (abilityControlBlockBuilder_ == null) {
+          abilityControlBlockBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock.Builder, emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlockOrBuilder>(
+                  getAbilityControlBlock(),
+                  getParentForChildren(),
+                  isClean());
+          abilityControlBlock_ = null;
+        }
+        return abilityControlBlockBuilder_;
+      }
+
+      private int teamEntityId_ ;
+      /**
+       * <code>uint32 team_entity_id = 15;</code>
+       * @return The teamEntityId.
+       */
+      @java.lang.Override
+      public int getTeamEntityId() {
+        return teamEntityId_;
+      }
+      /**
+       * <code>uint32 team_entity_id = 15;</code>
+       * @param value The teamEntityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTeamEntityId(int value) {
+        
+        teamEntityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 team_entity_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTeamEntityId() {
+        
+        teamEntityId_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -932,10 +924,10 @@ public final class TeamEnterSceneInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030TeamEnterSceneInfo.proto\032\031AbilityContr" +
       "olBlock.proto\032\032AbilitySyncStateInfo.prot" +
-      "o\"\223\001\n\022TeamEnterSceneInfo\022\026\n\016team_entity_" +
-      "id\030\005 \001(\r\0223\n\025ability_control_block\030\007 \001(\0132" +
-      "\024.AbilityControlBlock\0220\n\021team_ability_in" +
-      "fo\030\010 \001(\0132\025.AbilitySyncStateInfoB\033\n\031emu.g" +
+      "o\"\223\001\n\022TeamEnterSceneInfo\0220\n\021team_ability" +
+      "_info\030\002 \001(\0132\025.AbilitySyncStateInfo\0223\n\025ab" +
+      "ility_control_block\030\005 \001(\0132\024.AbilityContr" +
+      "olBlock\022\026\n\016team_entity_id\030\017 \001(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -949,7 +941,7 @@ public final class TeamEnterSceneInfoOuterClass {
     internal_static_TeamEnterSceneInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TeamEnterSceneInfo_descriptor,
-        new java.lang.String[] { "TeamEntityId", "AbilityControlBlock", "TeamAbilityInfo", });
+        new java.lang.String[] { "TeamAbilityInfo", "AbilityControlBlock", "TeamEntityId", });
     emu.grasscutter.net.proto.AbilityControlBlockOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.getDescriptor();
   }

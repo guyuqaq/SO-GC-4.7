@@ -43,17 +43,12 @@ public final class PullRecentChatRspOuterClass {
         int index);
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 308
-   * Obf: LOLOHADFKJG
-   * </pre>
-   *
    * Protobuf type {@code PullRecentChatRsp}
    */
   public static final class PullRecentChatRsp extends
@@ -100,7 +95,7 @@ public final class PullRecentChatRspOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 32: {
 
               retcode_ = input.readInt32();
               break;
@@ -189,10 +184,10 @@ public final class PullRecentChatRspOuterClass {
       return chatInfo_.get(index);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 4;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -215,7 +210,7 @@ public final class PullRecentChatRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(4, retcode_);
       }
       for (int i = 0; i < chatInfo_.size(); i++) {
         output.writeMessage(11, chatInfo_.get(i));
@@ -231,7 +226,7 @@ public final class PullRecentChatRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(4, retcode_);
       }
       for (int i = 0; i < chatInfo_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -369,11 +364,6 @@ public final class PullRecentChatRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 308
-     * Obf: LOLOHADFKJG
-     * </pre>
-     *
      * Protobuf type {@code PullRecentChatRsp}
      */
     public static final class Builder extends
@@ -806,7 +796,7 @@ public final class PullRecentChatRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 4;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -814,7 +804,7 @@ public final class PullRecentChatRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 4;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -825,7 +815,7 @@ public final class PullRecentChatRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -903,7 +893,7 @@ public final class PullRecentChatRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027PullRecentChatRsp.proto\032\016ChatInfo.prot" +
       "o\"B\n\021PullRecentChatRsp\022\034\n\tchat_info\030\013 \003(" +
-      "\0132\t.ChatInfo\022\017\n\007retcode\030\t \001(\005B\033\n\031emu.gra" +
+      "\0132\t.ChatInfo\022\017\n\007retcode\030\004 \001(\005B\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

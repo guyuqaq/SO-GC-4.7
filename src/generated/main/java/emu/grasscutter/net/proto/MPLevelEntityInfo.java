@@ -3,8 +3,8 @@
 
 package emu.grasscutter.net.proto;
 
-public final class MPLevelEntityInfoOuterClass {
-  private MPLevelEntityInfoOuterClass() {}
+public final class MPLevelEntityInfo {
+  private MPLevelEntityInfo() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -14,8 +14,8 @@ public final class MPLevelEntityInfoOuterClass {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface MPLevelEntityInfoOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:MPLevelEntityInfo)
+  public interface MpLevelEntityInfoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:MpLevelEntityInfo)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -46,25 +46,25 @@ public final class MPLevelEntityInfoOuterClass {
     int getEntityId();
   }
   /**
-   * Protobuf type {@code MPLevelEntityInfo}
+   * Protobuf type {@code MpLevelEntityInfo}
    */
-  public static final class MPLevelEntityInfo extends
+  public static final class MpLevelEntityInfo extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:MPLevelEntityInfo)
-      MPLevelEntityInfoOrBuilder {
+      // @@protoc_insertion_point(message_implements:MpLevelEntityInfo)
+      MpLevelEntityInfoOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use MPLevelEntityInfo.newBuilder() to construct.
-    private MPLevelEntityInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use MpLevelEntityInfo.newBuilder() to construct.
+    private MpLevelEntityInfo(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private MPLevelEntityInfo() {
+    private MpLevelEntityInfo() {
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new MPLevelEntityInfo();
+      return new MpLevelEntityInfo();
     }
 
     @java.lang.Override
@@ -72,7 +72,7 @@ public final class MPLevelEntityInfoOuterClass {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private MPLevelEntityInfo(
+    private MpLevelEntityInfo(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -134,15 +134,15 @@ public final class MPLevelEntityInfoOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.internal_static_MPLevelEntityInfo_descriptor;
+      return emu.grasscutter.net.proto.MPLevelEntityInfo.internal_static_MpLevelEntityInfo_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.internal_static_MPLevelEntityInfo_fieldAccessorTable
+      return emu.grasscutter.net.proto.MPLevelEntityInfo.internal_static_MpLevelEntityInfo_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.class, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder.class);
+              emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo.class, emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo.Builder.class);
     }
 
     public static final int ABILITY_INFO_FIELD_NUMBER = 2;
@@ -247,10 +247,10 @@ public final class MPLevelEntityInfoOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo)) {
+      if (!(obj instanceof emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo)) {
         return super.equals(obj);
       }
-      emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo other = (emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo) obj;
+      emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo other = (emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo) obj;
 
       if (hasAbilityInfo() != other.hasAbilityInfo()) return false;
       if (hasAbilityInfo()) {
@@ -285,69 +285,69 @@ public final class MPLevelEntityInfoOuterClass {
       return hash;
     }
 
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(byte[] data)
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(java.io.InputStream input)
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseDelimitedFrom(java.io.InputStream input)
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseDelimitedFrom(
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parseFrom(
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -360,7 +360,7 @@ public final class MPLevelEntityInfoOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo prototype) {
+    public static Builder newBuilder(emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -376,26 +376,26 @@ public final class MPLevelEntityInfoOuterClass {
       return builder;
     }
     /**
-     * Protobuf type {@code MPLevelEntityInfo}
+     * Protobuf type {@code MpLevelEntityInfo}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:MPLevelEntityInfo)
-        emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfoOrBuilder {
+        // @@protoc_insertion_point(builder_implements:MpLevelEntityInfo)
+        emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.internal_static_MPLevelEntityInfo_descriptor;
+        return emu.grasscutter.net.proto.MPLevelEntityInfo.internal_static_MpLevelEntityInfo_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.internal_static_MPLevelEntityInfo_fieldAccessorTable
+        return emu.grasscutter.net.proto.MPLevelEntityInfo.internal_static_MpLevelEntityInfo_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.class, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder.class);
+                emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo.class, emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo.Builder.class);
       }
 
-      // Construct using emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.newBuilder()
+      // Construct using emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -429,17 +429,17 @@ public final class MPLevelEntityInfoOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.internal_static_MPLevelEntityInfo_descriptor;
+        return emu.grasscutter.net.proto.MPLevelEntityInfo.internal_static_MpLevelEntityInfo_descriptor;
       }
 
       @java.lang.Override
-      public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo getDefaultInstanceForType() {
-        return emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.getDefaultInstance();
+      public emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo getDefaultInstanceForType() {
+        return emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo.getDefaultInstance();
       }
 
       @java.lang.Override
-      public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo build() {
-        emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo result = buildPartial();
+      public emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo build() {
+        emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -447,8 +447,8 @@ public final class MPLevelEntityInfoOuterClass {
       }
 
       @java.lang.Override
-      public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo buildPartial() {
-        emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo result = new emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo(this);
+      public emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo buildPartial() {
+        emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo result = new emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo(this);
         if (abilityInfoBuilder_ == null) {
           result.abilityInfo_ = abilityInfo_;
         } else {
@@ -494,16 +494,16 @@ public final class MPLevelEntityInfoOuterClass {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo) {
-          return mergeFrom((emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo)other);
+        if (other instanceof emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo) {
+          return mergeFrom((emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo other) {
-        if (other == emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.getDefaultInstance()) return this;
+      public Builder mergeFrom(emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo other) {
+        if (other == emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo.getDefaultInstance()) return this;
         if (other.hasAbilityInfo()) {
           mergeAbilityInfo(other.getAbilityInfo());
         }
@@ -528,11 +528,11 @@ public final class MPLevelEntityInfoOuterClass {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo parsedMessage = null;
+        emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo) e.getUnfinishedMessage();
+          parsedMessage = (emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -735,51 +735,51 @@ public final class MPLevelEntityInfoOuterClass {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:MPLevelEntityInfo)
+      // @@protoc_insertion_point(builder_scope:MpLevelEntityInfo)
     }
 
-    // @@protoc_insertion_point(class_scope:MPLevelEntityInfo)
-    private static final emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:MpLevelEntityInfo)
+    private static final emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo();
+      DEFAULT_INSTANCE = new emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo();
     }
 
-    public static emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo getDefaultInstance() {
+    public static emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<MPLevelEntityInfo>
-        PARSER = new com.google.protobuf.AbstractParser<MPLevelEntityInfo>() {
+    private static final com.google.protobuf.Parser<MpLevelEntityInfo>
+        PARSER = new com.google.protobuf.AbstractParser<MpLevelEntityInfo>() {
       @java.lang.Override
-      public MPLevelEntityInfo parsePartialFrom(
+      public MpLevelEntityInfo parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MPLevelEntityInfo(input, extensionRegistry);
+        return new MpLevelEntityInfo(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<MPLevelEntityInfo> parser() {
+    public static com.google.protobuf.Parser<MpLevelEntityInfo> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<MPLevelEntityInfo> getParserForType() {
+    public com.google.protobuf.Parser<MpLevelEntityInfo> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo getDefaultInstanceForType() {
+    public emu.grasscutter.net.proto.MPLevelEntityInfo.MpLevelEntityInfo getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_MPLevelEntityInfo_descriptor;
+    internal_static_MpLevelEntityInfo_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_MPLevelEntityInfo_fieldAccessorTable;
+      internal_static_MpLevelEntityInfo_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -790,7 +790,7 @@ public final class MPLevelEntityInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027MPLevelEntityInfo.proto\032\032AbilitySyncSt" +
-      "ateInfo.proto\"n\n\021MPLevelEntityInfo\022+\n\014ab" +
+      "ateInfo.proto\"n\n\021MpLevelEntityInfo\022+\n\014ab" +
       "ility_info\030\002 \001(\0132\025.AbilitySyncStateInfo\022" +
       "\031\n\021authority_peer_id\030\t \001(\r\022\021\n\tentity_id\030" +
       "\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
@@ -801,11 +801,11 @@ public final class MPLevelEntityInfoOuterClass {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.getDescriptor(),
         });
-    internal_static_MPLevelEntityInfo_descriptor =
+    internal_static_MpLevelEntityInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_MPLevelEntityInfo_fieldAccessorTable = new
+    internal_static_MpLevelEntityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_MPLevelEntityInfo_descriptor,
+        internal_static_MpLevelEntityInfo_descriptor,
         new java.lang.String[] { "AbilityInfo", "AuthorityPeerId", "EntityId", });
     emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.getDescriptor();
   }

@@ -12,16 +12,18 @@ public class PacketOpcodesUtils {
             Set.of(
                     PacketOpcodes.PingReq,
                     PacketOpcodes.PingRsp,
-                    PacketOpcodes.WorldPlayerRTTNotify,
-                    PacketOpcodes.UnionCmdNotify,
-                    PacketOpcodes.QueryPathReq,
-                    PacketOpcodes.QueryPathRsp,
+//                    PacketOpcodes.WorldPlayerRTTNotify,
+//                    PacketOpcodes.UnionCmdNotify,
+//                    PacketOpcodes.QueryPathReq,
+//                    PacketOpcodes.QueryPathRsp,
 
                     // Satiation sends these every tick
                     PacketOpcodes.PlayerTimeNotify,
-                    PacketOpcodes.PlayerGameTimeNotify,
-                    PacketOpcodes.AvatarPropNotify,
-                    PacketOpcodes.AvatarSatiationDataNotify);
+                    PacketOpcodes.SceneEntityMoveNotify
+//                    PacketOpcodes.PlayerGameTimeNotify,
+//                    PacketOpcodes.AvatarPropNotify,
+//                    PacketOpcodes.AvatarSatiationDataNotify
+            );
     private static final Int2ObjectMap<String> opcodeMap;
 
     static {

@@ -19,7 +19,11 @@ public final class EnterSceneDoneRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 enter_scene_token = 12;</code>
+     * <pre>
+     * 4.5.0
+     * </pre>
+     *
+     * <code>uint32 enter_scene_token = 8;</code>
      * @return The enterSceneToken.
      */
     int getEnterSceneToken();
@@ -31,11 +35,6 @@ public final class EnterSceneDoneRspOuterClass {
     int getRetcode();
   }
   /**
-   * <pre>
-   * CmdId: 24814
-   * Obf: AHBDCDEOHII
-   * </pre>
-   *
    * Protobuf type {@code EnterSceneDoneRsp}
    */
   public static final class EnterSceneDoneRsp extends
@@ -80,7 +79,7 @@ public final class EnterSceneDoneRspOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 64: {
 
               enterSceneToken_ = input.readUInt32();
               break;
@@ -122,10 +121,14 @@ public final class EnterSceneDoneRspOuterClass {
               emu.grasscutter.net.proto.EnterSceneDoneRspOuterClass.EnterSceneDoneRsp.class, emu.grasscutter.net.proto.EnterSceneDoneRspOuterClass.EnterSceneDoneRsp.Builder.class);
     }
 
-    public static final int ENTER_SCENE_TOKEN_FIELD_NUMBER = 12;
+    public static final int ENTER_SCENE_TOKEN_FIELD_NUMBER = 8;
     private int enterSceneToken_;
     /**
-     * <code>uint32 enter_scene_token = 12;</code>
+     * <pre>
+     * 4.5.0
+     * </pre>
+     *
+     * <code>uint32 enter_scene_token = 8;</code>
      * @return The enterSceneToken.
      */
     @java.lang.Override
@@ -159,7 +162,7 @@ public final class EnterSceneDoneRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (enterSceneToken_ != 0) {
-        output.writeUInt32(12, enterSceneToken_);
+        output.writeUInt32(8, enterSceneToken_);
       }
       if (retcode_ != 0) {
         output.writeInt32(15, retcode_);
@@ -175,7 +178,7 @@ public final class EnterSceneDoneRspOuterClass {
       size = 0;
       if (enterSceneToken_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, enterSceneToken_);
+          .computeUInt32Size(8, enterSceneToken_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -311,11 +314,6 @@ public final class EnterSceneDoneRspOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 24814
-     * Obf: AHBDCDEOHII
-     * </pre>
-     *
      * Protobuf type {@code EnterSceneDoneRsp}
      */
     public static final class Builder extends
@@ -470,7 +468,11 @@ public final class EnterSceneDoneRspOuterClass {
 
       private int enterSceneToken_ ;
       /**
-       * <code>uint32 enter_scene_token = 12;</code>
+       * <pre>
+       * 4.5.0
+       * </pre>
+       *
+       * <code>uint32 enter_scene_token = 8;</code>
        * @return The enterSceneToken.
        */
       @java.lang.Override
@@ -478,7 +480,11 @@ public final class EnterSceneDoneRspOuterClass {
         return enterSceneToken_;
       }
       /**
-       * <code>uint32 enter_scene_token = 12;</code>
+       * <pre>
+       * 4.5.0
+       * </pre>
+       *
+       * <code>uint32 enter_scene_token = 8;</code>
        * @param value The enterSceneToken to set.
        * @return This builder for chaining.
        */
@@ -489,7 +495,11 @@ public final class EnterSceneDoneRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 enter_scene_token = 12;</code>
+       * <pre>
+       * 4.5.0
+       * </pre>
+       *
+       * <code>uint32 enter_scene_token = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearEnterSceneToken() {
@@ -597,7 +607,7 @@ public final class EnterSceneDoneRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027EnterSceneDoneRsp.proto\"?\n\021EnterSceneD" +
-      "oneRsp\022\031\n\021enter_scene_token\030\014 \001(\r\022\017\n\007ret" +
+      "oneRsp\022\031\n\021enter_scene_token\030\010 \001(\r\022\017\n\007ret" +
       "code\030\017 \001(\005B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };

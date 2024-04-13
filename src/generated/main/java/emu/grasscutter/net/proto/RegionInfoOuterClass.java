@@ -343,10 +343,6 @@ public final class RegionInfoOuterClass {
         getGameBizBytes();
   }
   /**
-   * <pre>
-   * Obf: FHNLCIOBJDG
-   * </pre>
-   *
    * Protobuf type {@code RegionInfo}
    */
   public static final class RegionInfo extends
@@ -2025,10 +2021,6 @@ public final class RegionInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: FHNLCIOBJDG
-     * </pre>
-     *
      * Protobuf type {@code RegionInfo}
      */
     public static final class Builder extends

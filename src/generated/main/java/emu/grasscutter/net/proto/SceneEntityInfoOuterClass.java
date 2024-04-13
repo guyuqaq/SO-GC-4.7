@@ -19,74 +19,6 @@ public final class SceneEntityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ProtEntityType entity_type = 1;</code>
-     * @return The enum numeric value on the wire for entityType.
-     */
-    int getEntityTypeValue();
-    /**
-     * <code>.ProtEntityType entity_type = 1;</code>
-     * @return The entityType.
-     */
-    emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType getEntityType();
-
-    /**
-     * <code>uint32 entity_id = 2;</code>
-     * @return The entityId.
-     */
-    int getEntityId();
-
-    /**
-     * <code>string name = 3;</code>
-     * @return The name.
-     */
-    java.lang.String getName();
-    /**
-     * <code>string name = 3;</code>
-     * @return The bytes for name.
-     */
-    com.google.protobuf.ByteString
-        getNameBytes();
-
-    /**
-     * <code>.MotionInfo motion_info = 4;</code>
-     * @return Whether the motionInfo field is set.
-     */
-    boolean hasMotionInfo();
-    /**
-     * <code>.MotionInfo motion_info = 4;</code>
-     * @return The motionInfo.
-     */
-    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo();
-    /**
-     * <code>.MotionInfo motion_info = 4;</code>
-     */
-    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder();
-
-    /**
-     * <code>repeated .PropPair prop_list = 5;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.PropPairOuterClass.PropPair> 
-        getPropListList();
-    /**
-     * <code>repeated .PropPair prop_list = 5;</code>
-     */
-    emu.grasscutter.net.proto.PropPairOuterClass.PropPair getPropList(int index);
-    /**
-     * <code>repeated .PropPair prop_list = 5;</code>
-     */
-    int getPropListCount();
-    /**
-     * <code>repeated .PropPair prop_list = 5;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.PropPairOuterClass.PropPairOrBuilder> 
-        getPropListOrBuilderList();
-    /**
-     * <code>repeated .PropPair prop_list = 5;</code>
-     */
-    emu.grasscutter.net.proto.PropPairOuterClass.PropPairOrBuilder getPropListOrBuilder(
-        int index);
-
-    /**
      * <code>repeated .FightPropPair fight_prop_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> 
@@ -109,123 +41,6 @@ public final class SceneEntityInfoOuterClass {
      */
     emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder getFightPropListOrBuilder(
         int index);
-
-    /**
-     * <code>uint32 life_state = 7;</code>
-     * @return The lifeState.
-     */
-    int getLifeState();
-
-    /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> 
-        getAnimatorParaListList();
-    /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair getAnimatorParaList(int index);
-    /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-     */
-    int getAnimatorParaListCount();
-    /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> 
-        getAnimatorParaListOrBuilderList();
-    /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-     */
-    emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder getAnimatorParaListOrBuilder(
-        int index);
-
-    /**
-     * <code>.SceneAvatarInfo avatar = 10;</code>
-     * @return Whether the avatar field is set.
-     */
-    boolean hasAvatar();
-    /**
-     * <code>.SceneAvatarInfo avatar = 10;</code>
-     * @return The avatar.
-     */
-    emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo getAvatar();
-    /**
-     * <code>.SceneAvatarInfo avatar = 10;</code>
-     */
-    emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfoOrBuilder getAvatarOrBuilder();
-
-    /**
-     * <code>.SceneMonsterInfo monster = 11;</code>
-     * @return Whether the monster field is set.
-     */
-    boolean hasMonster();
-    /**
-     * <code>.SceneMonsterInfo monster = 11;</code>
-     * @return The monster.
-     */
-    emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo getMonster();
-    /**
-     * <code>.SceneMonsterInfo monster = 11;</code>
-     */
-    emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfoOrBuilder getMonsterOrBuilder();
-
-    /**
-     * <code>.SceneNpcInfo npc = 12;</code>
-     * @return Whether the npc field is set.
-     */
-    boolean hasNpc();
-    /**
-     * <code>.SceneNpcInfo npc = 12;</code>
-     * @return The npc.
-     */
-    emu.grasscutter.net.proto.SceneNpcInfoOuterClass.SceneNpcInfo getNpc();
-    /**
-     * <code>.SceneNpcInfo npc = 12;</code>
-     */
-    emu.grasscutter.net.proto.SceneNpcInfoOuterClass.SceneNpcInfoOrBuilder getNpcOrBuilder();
-
-    /**
-     * <code>.SceneGadgetInfo gadget = 13;</code>
-     * @return Whether the gadget field is set.
-     */
-    boolean hasGadget();
-    /**
-     * <code>.SceneGadgetInfo gadget = 13;</code>
-     * @return The gadget.
-     */
-    emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfo getGadget();
-    /**
-     * <code>.SceneGadgetInfo gadget = 13;</code>
-     */
-    emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfoOrBuilder getGadgetOrBuilder();
-
-    /**
-     * <code>uint32 last_move_scene_time_ms = 17;</code>
-     * @return The lastMoveSceneTimeMs.
-     */
-    int getLastMoveSceneTimeMs();
-
-    /**
-     * <code>uint32 last_move_reliable_seq = 18;</code>
-     * @return The lastMoveReliableSeq.
-     */
-    int getLastMoveReliableSeq();
-
-    /**
-     * <code>.EntityClientData entity_client_data = 19;</code>
-     * @return Whether the entityClientData field is set.
-     */
-    boolean hasEntityClientData();
-    /**
-     * <code>.EntityClientData entity_client_data = 19;</code>
-     * @return The entityClientData.
-     */
-    emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData getEntityClientData();
-    /**
-     * <code>.EntityClientData entity_client_data = 19;</code>
-     */
-    emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder getEntityClientDataOrBuilder();
 
     /**
      * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
@@ -292,6 +107,72 @@ public final class SceneEntityInfoOuterClass {
         getTagListBytes(int index);
 
     /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> 
+        getAnimatorParaListList();
+    /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair getAnimatorParaList(int index);
+    /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    int getAnimatorParaListCount();
+    /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> 
+        getAnimatorParaListOrBuilderList();
+    /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder getAnimatorParaListOrBuilder(
+        int index);
+
+    /**
+     * <code>string name = 3;</code>
+     * @return The name.
+     */
+    java.lang.String getName();
+    /**
+     * <code>string name = 3;</code>
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>.MotionInfo motion_info = 4;</code>
+     * @return Whether the motionInfo field is set.
+     */
+    boolean hasMotionInfo();
+    /**
+     * <code>.MotionInfo motion_info = 4;</code>
+     * @return The motionInfo.
+     */
+    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo getMotionInfo();
+    /**
+     * <code>.MotionInfo motion_info = 4;</code>
+     */
+    emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfoOrBuilder getMotionInfoOrBuilder();
+
+    /**
+     * <code>.EntityClientData entity_client_data = 19;</code>
+     * @return Whether the entityClientData field is set.
+     */
+    boolean hasEntityClientData();
+    /**
+     * <code>.EntityClientData entity_client_data = 19;</code>
+     * @return The entityClientData.
+     */
+    emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData getEntityClientData();
+    /**
+     * <code>.EntityClientData entity_client_data = 19;</code>
+     */
+    emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder getEntityClientDataOrBuilder();
+
+    /**
      * <code>repeated .ServerBuff server_buff_list = 23;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> 
@@ -315,13 +196,128 @@ public final class SceneEntityInfoOuterClass {
     emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
         int index);
 
+    /**
+     * <code>repeated .PropPair prop_list = 5;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.PropPairOuterClass.PropPair> 
+        getPropListList();
+    /**
+     * <code>repeated .PropPair prop_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.PropPairOuterClass.PropPair getPropList(int index);
+    /**
+     * <code>repeated .PropPair prop_list = 5;</code>
+     */
+    int getPropListCount();
+    /**
+     * <code>repeated .PropPair prop_list = 5;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.PropPairOuterClass.PropPairOrBuilder> 
+        getPropListOrBuilderList();
+    /**
+     * <code>repeated .PropPair prop_list = 5;</code>
+     */
+    emu.grasscutter.net.proto.PropPairOuterClass.PropPairOrBuilder getPropListOrBuilder(
+        int index);
+
+    /**
+     * <code>uint32 life_state = 7;</code>
+     * @return The lifeState.
+     */
+    int getLifeState();
+
+    /**
+     * <code>uint32 entity_id = 2;</code>
+     * @return The entityId.
+     */
+    int getEntityId();
+
+    /**
+     * <code>.ProtEntityType entity_type = 1;</code>
+     * @return The enum numeric value on the wire for entityType.
+     */
+    int getEntityTypeValue();
+    /**
+     * <code>.ProtEntityType entity_type = 1;</code>
+     * @return The entityType.
+     */
+    emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType getEntityType();
+
+    /**
+     * <code>uint32 last_move_reliable_seq = 18;</code>
+     * @return The lastMoveReliableSeq.
+     */
+    int getLastMoveReliableSeq();
+
+    /**
+     * <code>uint32 last_move_scene_time_ms = 17;</code>
+     * @return The lastMoveSceneTimeMs.
+     */
+    int getLastMoveSceneTimeMs();
+
+    /**
+     * <code>.SceneAvatarInfo avatar = 10;</code>
+     * @return Whether the avatar field is set.
+     */
+    boolean hasAvatar();
+    /**
+     * <code>.SceneAvatarInfo avatar = 10;</code>
+     * @return The avatar.
+     */
+    emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfo getAvatar();
+    /**
+     * <code>.SceneAvatarInfo avatar = 10;</code>
+     */
+    emu.grasscutter.net.proto.SceneAvatarInfoOuterClass.SceneAvatarInfoOrBuilder getAvatarOrBuilder();
+
+    /**
+     * <code>.SceneMonsterInfo monster = 11;</code>
+     * @return Whether the monster field is set.
+     */
+    boolean hasMonster();
+    /**
+     * <code>.SceneMonsterInfo monster = 11;</code>
+     * @return The monster.
+     */
+    emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo getMonster();
+    /**
+     * <code>.SceneMonsterInfo monster = 11;</code>
+     */
+    emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfoOrBuilder getMonsterOrBuilder();
+
+    /**
+     * <code>.SceneNpcInfo npc = 12;</code>
+     * @return Whether the npc field is set.
+     */
+    boolean hasNpc();
+    /**
+     * <code>.SceneNpcInfo npc = 12;</code>
+     * @return The npc.
+     */
+    emu.grasscutter.net.proto.SceneNpcInfoOuterClass.SceneNpcInfo getNpc();
+    /**
+     * <code>.SceneNpcInfo npc = 12;</code>
+     */
+    emu.grasscutter.net.proto.SceneNpcInfoOuterClass.SceneNpcInfoOrBuilder getNpcOrBuilder();
+
+    /**
+     * <code>.SceneGadgetInfo gadget = 13;</code>
+     * @return Whether the gadget field is set.
+     */
+    boolean hasGadget();
+    /**
+     * <code>.SceneGadgetInfo gadget = 13;</code>
+     * @return The gadget.
+     */
+    emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfo getGadget();
+    /**
+     * <code>.SceneGadgetInfo gadget = 13;</code>
+     */
+    emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfoOrBuilder getGadgetOrBuilder();
+
     public emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.EntityCase getEntityCase();
   }
   /**
-   * <pre>
-   * Obf: DGPPPPBJILO
-   * </pre>
-   *
    * Protobuf type {@code SceneEntityInfo}
    */
   public static final class SceneEntityInfo extends
@@ -334,14 +330,14 @@ public final class SceneEntityInfoOuterClass {
       super(builder);
     }
     private SceneEntityInfo() {
-      entityType_ = 0;
-      name_ = "";
-      propList_ = java.util.Collections.emptyList();
       fightPropList_ = java.util.Collections.emptyList();
-      animatorParaList_ = java.util.Collections.emptyList();
       entityEnvironmentInfoList_ = java.util.Collections.emptyList();
       tagList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      animatorParaList_ = java.util.Collections.emptyList();
+      name_ = "";
       serverBuffList_ = java.util.Collections.emptyList();
+      propList_ = java.util.Collections.emptyList();
+      entityType_ = 0;
     }
 
     @java.lang.Override
@@ -406,18 +402,18 @@ public final class SceneEntityInfoOuterClass {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
                 propList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PropPairOuterClass.PropPair>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000020;
               }
               propList_.add(
                   input.readMessage(emu.grasscutter.net.proto.PropPairOuterClass.PropPair.parser(), extensionRegistry));
               break;
             }
             case 50: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 fightPropList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair>();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               fightPropList_.add(
                   input.readMessage(emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.parser(), extensionRegistry));
@@ -429,9 +425,9 @@ public final class SceneEntityInfoOuterClass {
               break;
             }
             case 74: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 animatorParaList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair>();
-                mutable_bitField0_ |= 0x00000004;
+                mutable_bitField0_ |= 0x00000008;
               }
               animatorParaList_.add(
                   input.readMessage(emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.parser(), extensionRegistry));
@@ -517,9 +513,9 @@ public final class SceneEntityInfoOuterClass {
               break;
             }
             case 162: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 entityEnvironmentInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo>();
-                mutable_bitField0_ |= 0x00000008;
+                mutable_bitField0_ |= 0x00000002;
               }
               entityEnvironmentInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.parser(), extensionRegistry));
@@ -540,17 +536,17 @@ public final class SceneEntityInfoOuterClass {
             }
             case 178: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 tagList_ = new com.google.protobuf.LazyStringArrayList();
-                mutable_bitField0_ |= 0x00000010;
+                mutable_bitField0_ |= 0x00000004;
               }
               tagList_.add(s);
               break;
             }
             case 186: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                 serverBuffList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff>();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000010;
               }
               serverBuffList_.add(
                   input.readMessage(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.parser(), extensionRegistry));
@@ -571,22 +567,22 @@ public final class SceneEntityInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000020) != 0)) {
           propList_ = java.util.Collections.unmodifiableList(propList_);
         }
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           fightPropList_ = java.util.Collections.unmodifiableList(fightPropList_);
         }
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
+        if (((mutable_bitField0_ & 0x00000008) != 0)) {
           animatorParaList_ = java.util.Collections.unmodifiableList(animatorParaList_);
         }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           entityEnvironmentInfoList_ = java.util.Collections.unmodifiableList(entityEnvironmentInfoList_);
         }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
+        if (((mutable_bitField0_ & 0x00000004) != 0)) {
           tagList_ = tagList_.getUnmodifiableView();
         }
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+        if (((mutable_bitField0_ & 0x00000010) != 0)) {
           serverBuffList_ = java.util.Collections.unmodifiableList(serverBuffList_);
         }
         this.unknownFields = unknownFields.build();
@@ -651,34 +647,185 @@ public final class SceneEntityInfoOuterClass {
           entityCase_);
     }
 
-    public static final int ENTITY_TYPE_FIELD_NUMBER = 1;
-    private int entityType_;
+    public static final int FIGHT_PROP_LIST_FIELD_NUMBER = 6;
+    private java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> fightPropList_;
     /**
-     * <code>.ProtEntityType entity_type = 1;</code>
-     * @return The enum numeric value on the wire for entityType.
-     */
-    @java.lang.Override public int getEntityTypeValue() {
-      return entityType_;
-    }
-    /**
-     * <code>.ProtEntityType entity_type = 1;</code>
-     * @return The entityType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType getEntityType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType result = emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.valueOf(entityType_);
-      return result == null ? emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.UNRECOGNIZED : result;
-    }
-
-    public static final int ENTITY_ID_FIELD_NUMBER = 2;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 2;</code>
-     * @return The entityId.
+     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
      */
     @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
+    public java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> getFightPropListList() {
+      return fightPropList_;
+    }
+    /**
+     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder> 
+        getFightPropListOrBuilderList() {
+      return fightPropList_;
+    }
+    /**
+     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+     */
+    @java.lang.Override
+    public int getFightPropListCount() {
+      return fightPropList_.size();
+    }
+    /**
+     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair getFightPropList(int index) {
+      return fightPropList_.get(index);
+    }
+    /**
+     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder getFightPropListOrBuilder(
+        int index) {
+      return fightPropList_.get(index);
+    }
+
+    public static final int ENTITY_ENVIRONMENT_INFO_LIST_FIELD_NUMBER = 20;
+    private java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> entityEnvironmentInfoList_;
+    /**
+     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> getEntityEnvironmentInfoListList() {
+      return entityEnvironmentInfoList_;
+    }
+    /**
+     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder> 
+        getEntityEnvironmentInfoListOrBuilderList() {
+      return entityEnvironmentInfoList_;
+    }
+    /**
+     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+     */
+    @java.lang.Override
+    public int getEntityEnvironmentInfoListCount() {
+      return entityEnvironmentInfoList_.size();
+    }
+    /**
+     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo getEntityEnvironmentInfoList(int index) {
+      return entityEnvironmentInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder getEntityEnvironmentInfoListOrBuilder(
+        int index) {
+      return entityEnvironmentInfoList_.get(index);
+    }
+
+    public static final int ENTITY_AUTHORITY_INFO_FIELD_NUMBER = 21;
+    private emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo entityAuthorityInfo_;
+    /**
+     * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+     * @return Whether the entityAuthorityInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasEntityAuthorityInfo() {
+      return entityAuthorityInfo_ != null;
+    }
+    /**
+     * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+     * @return The entityAuthorityInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo getEntityAuthorityInfo() {
+      return entityAuthorityInfo_ == null ? emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.getDefaultInstance() : entityAuthorityInfo_;
+    }
+    /**
+     * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder getEntityAuthorityInfoOrBuilder() {
+      return getEntityAuthorityInfo();
+    }
+
+    public static final int TAG_LIST_FIELD_NUMBER = 22;
+    private com.google.protobuf.LazyStringList tagList_;
+    /**
+     * <code>repeated string tag_list = 22;</code>
+     * @return A list containing the tagList.
+     */
+    public com.google.protobuf.ProtocolStringList
+        getTagListList() {
+      return tagList_;
+    }
+    /**
+     * <code>repeated string tag_list = 22;</code>
+     * @return The count of tagList.
+     */
+    public int getTagListCount() {
+      return tagList_.size();
+    }
+    /**
+     * <code>repeated string tag_list = 22;</code>
+     * @param index The index of the element to return.
+     * @return The tagList at the given index.
+     */
+    public java.lang.String getTagList(int index) {
+      return tagList_.get(index);
+    }
+    /**
+     * <code>repeated string tag_list = 22;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the tagList at the given index.
+     */
+    public com.google.protobuf.ByteString
+        getTagListBytes(int index) {
+      return tagList_.getByteString(index);
+    }
+
+    public static final int ANIMATOR_PARA_LIST_FIELD_NUMBER = 9;
+    private java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> animatorParaList_;
+    /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> getAnimatorParaListList() {
+      return animatorParaList_;
+    }
+    /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> 
+        getAnimatorParaListOrBuilderList() {
+      return animatorParaList_;
+    }
+    /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    @java.lang.Override
+    public int getAnimatorParaListCount() {
+      return animatorParaList_.size();
+    }
+    /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair getAnimatorParaList(int index) {
+      return animatorParaList_.get(index);
+    }
+    /**
+     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder getAnimatorParaListOrBuilder(
+        int index) {
+      return animatorParaList_.get(index);
     }
 
     public static final int NAME_FIELD_NUMBER = 3;
@@ -745,6 +892,72 @@ public final class SceneEntityInfoOuterClass {
       return getMotionInfo();
     }
 
+    public static final int ENTITY_CLIENT_DATA_FIELD_NUMBER = 19;
+    private emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData entityClientData_;
+    /**
+     * <code>.EntityClientData entity_client_data = 19;</code>
+     * @return Whether the entityClientData field is set.
+     */
+    @java.lang.Override
+    public boolean hasEntityClientData() {
+      return entityClientData_ != null;
+    }
+    /**
+     * <code>.EntityClientData entity_client_data = 19;</code>
+     * @return The entityClientData.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData getEntityClientData() {
+      return entityClientData_ == null ? emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.getDefaultInstance() : entityClientData_;
+    }
+    /**
+     * <code>.EntityClientData entity_client_data = 19;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder getEntityClientDataOrBuilder() {
+      return getEntityClientData();
+    }
+
+    public static final int SERVER_BUFF_LIST_FIELD_NUMBER = 23;
+    private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_;
+    /**
+     * <code>repeated .ServerBuff server_buff_list = 23;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
+      return serverBuffList_;
+    }
+    /**
+     * <code>repeated .ServerBuff server_buff_list = 23;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
+        getServerBuffListOrBuilderList() {
+      return serverBuffList_;
+    }
+    /**
+     * <code>repeated .ServerBuff server_buff_list = 23;</code>
+     */
+    @java.lang.Override
+    public int getServerBuffListCount() {
+      return serverBuffList_.size();
+    }
+    /**
+     * <code>repeated .ServerBuff server_buff_list = 23;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
+      return serverBuffList_.get(index);
+    }
+    /**
+     * <code>repeated .ServerBuff server_buff_list = 23;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
+        int index) {
+      return serverBuffList_.get(index);
+    }
+
     public static final int PROP_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.PropPairOuterClass.PropPair> propList_;
     /**
@@ -785,46 +998,6 @@ public final class SceneEntityInfoOuterClass {
       return propList_.get(index);
     }
 
-    public static final int FIGHT_PROP_LIST_FIELD_NUMBER = 6;
-    private java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> fightPropList_;
-    /**
-     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> getFightPropListList() {
-      return fightPropList_;
-    }
-    /**
-     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder> 
-        getFightPropListOrBuilderList() {
-      return fightPropList_;
-    }
-    /**
-     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-     */
-    @java.lang.Override
-    public int getFightPropListCount() {
-      return fightPropList_.size();
-    }
-    /**
-     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair getFightPropList(int index) {
-      return fightPropList_.get(index);
-    }
-    /**
-     * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder getFightPropListOrBuilder(
-        int index) {
-      return fightPropList_.get(index);
-    }
-
     public static final int LIFE_STATE_FIELD_NUMBER = 7;
     private int lifeState_;
     /**
@@ -836,44 +1009,56 @@ public final class SceneEntityInfoOuterClass {
       return lifeState_;
     }
 
-    public static final int ANIMATOR_PARA_LIST_FIELD_NUMBER = 9;
-    private java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> animatorParaList_;
+    public static final int ENTITY_ID_FIELD_NUMBER = 2;
+    private int entityId_;
     /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     * <code>uint32 entity_id = 2;</code>
+     * @return The entityId.
      */
     @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> getAnimatorParaListList() {
-      return animatorParaList_;
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int ENTITY_TYPE_FIELD_NUMBER = 1;
+    private int entityType_;
+    /**
+     * <code>.ProtEntityType entity_type = 1;</code>
+     * @return The enum numeric value on the wire for entityType.
+     */
+    @java.lang.Override public int getEntityTypeValue() {
+      return entityType_;
     }
     /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     * <code>.ProtEntityType entity_type = 1;</code>
+     * @return The entityType.
      */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> 
-        getAnimatorParaListOrBuilderList() {
-      return animatorParaList_;
+    @java.lang.Override public emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType getEntityType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType result = emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.valueOf(entityType_);
+      return result == null ? emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.UNRECOGNIZED : result;
     }
+
+    public static final int LAST_MOVE_RELIABLE_SEQ_FIELD_NUMBER = 18;
+    private int lastMoveReliableSeq_;
     /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     * <code>uint32 last_move_reliable_seq = 18;</code>
+     * @return The lastMoveReliableSeq.
      */
     @java.lang.Override
-    public int getAnimatorParaListCount() {
-      return animatorParaList_.size();
+    public int getLastMoveReliableSeq() {
+      return lastMoveReliableSeq_;
     }
+
+    public static final int LAST_MOVE_SCENE_TIME_MS_FIELD_NUMBER = 17;
+    private int lastMoveSceneTimeMs_;
     /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+     * <code>uint32 last_move_scene_time_ms = 17;</code>
+     * @return The lastMoveSceneTimeMs.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair getAnimatorParaList(int index) {
-      return animatorParaList_.get(index);
-    }
-    /**
-     * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder getAnimatorParaListOrBuilder(
-        int index) {
-      return animatorParaList_.get(index);
+    public int getLastMoveSceneTimeMs() {
+      return lastMoveSceneTimeMs_;
     }
 
     public static final int AVATAR_FIELD_NUMBER = 10;
@@ -998,195 +1183,6 @@ public final class SceneEntityInfoOuterClass {
          return (emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfo) entity_;
       }
       return emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfo.getDefaultInstance();
-    }
-
-    public static final int LAST_MOVE_SCENE_TIME_MS_FIELD_NUMBER = 17;
-    private int lastMoveSceneTimeMs_;
-    /**
-     * <code>uint32 last_move_scene_time_ms = 17;</code>
-     * @return The lastMoveSceneTimeMs.
-     */
-    @java.lang.Override
-    public int getLastMoveSceneTimeMs() {
-      return lastMoveSceneTimeMs_;
-    }
-
-    public static final int LAST_MOVE_RELIABLE_SEQ_FIELD_NUMBER = 18;
-    private int lastMoveReliableSeq_;
-    /**
-     * <code>uint32 last_move_reliable_seq = 18;</code>
-     * @return The lastMoveReliableSeq.
-     */
-    @java.lang.Override
-    public int getLastMoveReliableSeq() {
-      return lastMoveReliableSeq_;
-    }
-
-    public static final int ENTITY_CLIENT_DATA_FIELD_NUMBER = 19;
-    private emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData entityClientData_;
-    /**
-     * <code>.EntityClientData entity_client_data = 19;</code>
-     * @return Whether the entityClientData field is set.
-     */
-    @java.lang.Override
-    public boolean hasEntityClientData() {
-      return entityClientData_ != null;
-    }
-    /**
-     * <code>.EntityClientData entity_client_data = 19;</code>
-     * @return The entityClientData.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData getEntityClientData() {
-      return entityClientData_ == null ? emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.getDefaultInstance() : entityClientData_;
-    }
-    /**
-     * <code>.EntityClientData entity_client_data = 19;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder getEntityClientDataOrBuilder() {
-      return getEntityClientData();
-    }
-
-    public static final int ENTITY_ENVIRONMENT_INFO_LIST_FIELD_NUMBER = 20;
-    private java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> entityEnvironmentInfoList_;
-    /**
-     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> getEntityEnvironmentInfoListList() {
-      return entityEnvironmentInfoList_;
-    }
-    /**
-     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder> 
-        getEntityEnvironmentInfoListOrBuilderList() {
-      return entityEnvironmentInfoList_;
-    }
-    /**
-     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-     */
-    @java.lang.Override
-    public int getEntityEnvironmentInfoListCount() {
-      return entityEnvironmentInfoList_.size();
-    }
-    /**
-     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo getEntityEnvironmentInfoList(int index) {
-      return entityEnvironmentInfoList_.get(index);
-    }
-    /**
-     * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder getEntityEnvironmentInfoListOrBuilder(
-        int index) {
-      return entityEnvironmentInfoList_.get(index);
-    }
-
-    public static final int ENTITY_AUTHORITY_INFO_FIELD_NUMBER = 21;
-    private emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo entityAuthorityInfo_;
-    /**
-     * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-     * @return Whether the entityAuthorityInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasEntityAuthorityInfo() {
-      return entityAuthorityInfo_ != null;
-    }
-    /**
-     * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-     * @return The entityAuthorityInfo.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo getEntityAuthorityInfo() {
-      return entityAuthorityInfo_ == null ? emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.getDefaultInstance() : entityAuthorityInfo_;
-    }
-    /**
-     * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder getEntityAuthorityInfoOrBuilder() {
-      return getEntityAuthorityInfo();
-    }
-
-    public static final int TAG_LIST_FIELD_NUMBER = 22;
-    private com.google.protobuf.LazyStringList tagList_;
-    /**
-     * <code>repeated string tag_list = 22;</code>
-     * @return A list containing the tagList.
-     */
-    public com.google.protobuf.ProtocolStringList
-        getTagListList() {
-      return tagList_;
-    }
-    /**
-     * <code>repeated string tag_list = 22;</code>
-     * @return The count of tagList.
-     */
-    public int getTagListCount() {
-      return tagList_.size();
-    }
-    /**
-     * <code>repeated string tag_list = 22;</code>
-     * @param index The index of the element to return.
-     * @return The tagList at the given index.
-     */
-    public java.lang.String getTagList(int index) {
-      return tagList_.get(index);
-    }
-    /**
-     * <code>repeated string tag_list = 22;</code>
-     * @param index The index of the value to return.
-     * @return The bytes of the tagList at the given index.
-     */
-    public com.google.protobuf.ByteString
-        getTagListBytes(int index) {
-      return tagList_.getByteString(index);
-    }
-
-    public static final int SERVER_BUFF_LIST_FIELD_NUMBER = 23;
-    private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_;
-    /**
-     * <code>repeated .ServerBuff server_buff_list = 23;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
-      return serverBuffList_;
-    }
-    /**
-     * <code>repeated .ServerBuff server_buff_list = 23;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
-        getServerBuffListOrBuilderList() {
-      return serverBuffList_;
-    }
-    /**
-     * <code>repeated .ServerBuff server_buff_list = 23;</code>
-     */
-    @java.lang.Override
-    public int getServerBuffListCount() {
-      return serverBuffList_.size();
-    }
-    /**
-     * <code>repeated .ServerBuff server_buff_list = 23;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
-      return serverBuffList_.get(index);
-    }
-    /**
-     * <code>repeated .ServerBuff server_buff_list = 23;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
-        int index) {
-      return serverBuffList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1363,33 +1359,8 @@ public final class SceneEntityInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo other = (emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo) obj;
 
-      if (entityType_ != other.entityType_) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (!getName()
-          .equals(other.getName())) return false;
-      if (hasMotionInfo() != other.hasMotionInfo()) return false;
-      if (hasMotionInfo()) {
-        if (!getMotionInfo()
-            .equals(other.getMotionInfo())) return false;
-      }
-      if (!getPropListList()
-          .equals(other.getPropListList())) return false;
       if (!getFightPropListList()
           .equals(other.getFightPropListList())) return false;
-      if (getLifeState()
-          != other.getLifeState()) return false;
-      if (!getAnimatorParaListList()
-          .equals(other.getAnimatorParaListList())) return false;
-      if (getLastMoveSceneTimeMs()
-          != other.getLastMoveSceneTimeMs()) return false;
-      if (getLastMoveReliableSeq()
-          != other.getLastMoveReliableSeq()) return false;
-      if (hasEntityClientData() != other.hasEntityClientData()) return false;
-      if (hasEntityClientData()) {
-        if (!getEntityClientData()
-            .equals(other.getEntityClientData())) return false;
-      }
       if (!getEntityEnvironmentInfoListList()
           .equals(other.getEntityEnvironmentInfoListList())) return false;
       if (hasEntityAuthorityInfo() != other.hasEntityAuthorityInfo()) return false;
@@ -1399,8 +1370,33 @@ public final class SceneEntityInfoOuterClass {
       }
       if (!getTagListList()
           .equals(other.getTagListList())) return false;
+      if (!getAnimatorParaListList()
+          .equals(other.getAnimatorParaListList())) return false;
+      if (!getName()
+          .equals(other.getName())) return false;
+      if (hasMotionInfo() != other.hasMotionInfo()) return false;
+      if (hasMotionInfo()) {
+        if (!getMotionInfo()
+            .equals(other.getMotionInfo())) return false;
+      }
+      if (hasEntityClientData() != other.hasEntityClientData()) return false;
+      if (hasEntityClientData()) {
+        if (!getEntityClientData()
+            .equals(other.getEntityClientData())) return false;
+      }
       if (!getServerBuffListList()
           .equals(other.getServerBuffListList())) return false;
+      if (!getPropListList()
+          .equals(other.getPropListList())) return false;
+      if (getLifeState()
+          != other.getLifeState()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (entityType_ != other.entityType_) return false;
+      if (getLastMoveReliableSeq()
+          != other.getLastMoveReliableSeq()) return false;
+      if (getLastMoveSceneTimeMs()
+          != other.getLastMoveSceneTimeMs()) return false;
       if (!getEntityCase().equals(other.getEntityCase())) return false;
       switch (entityCase_) {
         case 10:
@@ -1433,37 +1429,9 @@ public final class SceneEntityInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ENTITY_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + entityType_;
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
-      if (hasMotionInfo()) {
-        hash = (37 * hash) + MOTION_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getMotionInfo().hashCode();
-      }
-      if (getPropListCount() > 0) {
-        hash = (37 * hash) + PROP_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getPropListList().hashCode();
-      }
       if (getFightPropListCount() > 0) {
         hash = (37 * hash) + FIGHT_PROP_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFightPropListList().hashCode();
-      }
-      hash = (37 * hash) + LIFE_STATE_FIELD_NUMBER;
-      hash = (53 * hash) + getLifeState();
-      if (getAnimatorParaListCount() > 0) {
-        hash = (37 * hash) + ANIMATOR_PARA_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getAnimatorParaListList().hashCode();
-      }
-      hash = (37 * hash) + LAST_MOVE_SCENE_TIME_MS_FIELD_NUMBER;
-      hash = (53 * hash) + getLastMoveSceneTimeMs();
-      hash = (37 * hash) + LAST_MOVE_RELIABLE_SEQ_FIELD_NUMBER;
-      hash = (53 * hash) + getLastMoveReliableSeq();
-      if (hasEntityClientData()) {
-        hash = (37 * hash) + ENTITY_CLIENT_DATA_FIELD_NUMBER;
-        hash = (53 * hash) + getEntityClientData().hashCode();
       }
       if (getEntityEnvironmentInfoListCount() > 0) {
         hash = (37 * hash) + ENTITY_ENVIRONMENT_INFO_LIST_FIELD_NUMBER;
@@ -1477,10 +1445,38 @@ public final class SceneEntityInfoOuterClass {
         hash = (37 * hash) + TAG_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTagListList().hashCode();
       }
+      if (getAnimatorParaListCount() > 0) {
+        hash = (37 * hash) + ANIMATOR_PARA_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getAnimatorParaListList().hashCode();
+      }
+      hash = (37 * hash) + NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getName().hashCode();
+      if (hasMotionInfo()) {
+        hash = (37 * hash) + MOTION_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getMotionInfo().hashCode();
+      }
+      if (hasEntityClientData()) {
+        hash = (37 * hash) + ENTITY_CLIENT_DATA_FIELD_NUMBER;
+        hash = (53 * hash) + getEntityClientData().hashCode();
+      }
       if (getServerBuffListCount() > 0) {
         hash = (37 * hash) + SERVER_BUFF_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getServerBuffListList().hashCode();
       }
+      if (getPropListCount() > 0) {
+        hash = (37 * hash) + PROP_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPropListList().hashCode();
+      }
+      hash = (37 * hash) + LIFE_STATE_FIELD_NUMBER;
+      hash = (53 * hash) + getLifeState();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + ENTITY_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + entityType_;
+      hash = (37 * hash) + LAST_MOVE_RELIABLE_SEQ_FIELD_NUMBER;
+      hash = (53 * hash) + getLastMoveReliableSeq();
+      hash = (37 * hash) + LAST_MOVE_SCENE_TIME_MS_FIELD_NUMBER;
+      hash = (53 * hash) + getLastMoveSceneTimeMs();
       switch (entityCase_) {
         case 10:
           hash = (37 * hash) + AVATAR_FIELD_NUMBER;
@@ -1597,10 +1593,6 @@ public final class SceneEntityInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: DGPPPPBJILO
-     * </pre>
-     *
      * Protobuf type {@code SceneEntityInfo}
      */
     public static final class Builder extends
@@ -1633,61 +1625,25 @@ public final class SceneEntityInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getPropListFieldBuilder();
           getFightPropListFieldBuilder();
-          getAnimatorParaListFieldBuilder();
           getEntityEnvironmentInfoListFieldBuilder();
+          getAnimatorParaListFieldBuilder();
           getServerBuffListFieldBuilder();
+          getPropListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        entityType_ = 0;
-
-        entityId_ = 0;
-
-        name_ = "";
-
-        if (motionInfoBuilder_ == null) {
-          motionInfo_ = null;
-        } else {
-          motionInfo_ = null;
-          motionInfoBuilder_ = null;
-        }
-        if (propListBuilder_ == null) {
-          propList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
-        } else {
-          propListBuilder_.clear();
-        }
         if (fightPropListBuilder_ == null) {
           fightPropList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           fightPropListBuilder_.clear();
         }
-        lifeState_ = 0;
-
-        if (animatorParaListBuilder_ == null) {
-          animatorParaList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-        } else {
-          animatorParaListBuilder_.clear();
-        }
-        lastMoveSceneTimeMs_ = 0;
-
-        lastMoveReliableSeq_ = 0;
-
-        if (entityClientDataBuilder_ == null) {
-          entityClientData_ = null;
-        } else {
-          entityClientData_ = null;
-          entityClientDataBuilder_ = null;
-        }
         if (entityEnvironmentInfoListBuilder_ == null) {
           entityEnvironmentInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           entityEnvironmentInfoListBuilder_.clear();
         }
@@ -1698,13 +1654,49 @@ public final class SceneEntityInfoOuterClass {
           entityAuthorityInfoBuilder_ = null;
         }
         tagList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000004);
+        if (animatorParaListBuilder_ == null) {
+          animatorParaList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        } else {
+          animatorParaListBuilder_.clear();
+        }
+        name_ = "";
+
+        if (motionInfoBuilder_ == null) {
+          motionInfo_ = null;
+        } else {
+          motionInfo_ = null;
+          motionInfoBuilder_ = null;
+        }
+        if (entityClientDataBuilder_ == null) {
+          entityClientData_ = null;
+        } else {
+          entityClientData_ = null;
+          entityClientDataBuilder_ = null;
+        }
         if (serverBuffListBuilder_ == null) {
           serverBuffList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00000010);
         } else {
           serverBuffListBuilder_.clear();
         }
+        if (propListBuilder_ == null) {
+          propList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+        } else {
+          propListBuilder_.clear();
+        }
+        lifeState_ = 0;
+
+        entityId_ = 0;
+
+        entityType_ = 0;
+
+        lastMoveReliableSeq_ = 0;
+
+        lastMoveSceneTimeMs_ = 0;
+
         entityCase_ = 0;
         entity_ = null;
         return this;
@@ -1734,42 +1726,77 @@ public final class SceneEntityInfoOuterClass {
       public emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo buildPartial() {
         emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo result = new emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo(this);
         int from_bitField0_ = bitField0_;
-        result.entityType_ = entityType_;
-        result.entityId_ = entityId_;
+        if (fightPropListBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            fightPropList_ = java.util.Collections.unmodifiableList(fightPropList_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.fightPropList_ = fightPropList_;
+        } else {
+          result.fightPropList_ = fightPropListBuilder_.build();
+        }
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) != 0)) {
+            entityEnvironmentInfoList_ = java.util.Collections.unmodifiableList(entityEnvironmentInfoList_);
+            bitField0_ = (bitField0_ & ~0x00000002);
+          }
+          result.entityEnvironmentInfoList_ = entityEnvironmentInfoList_;
+        } else {
+          result.entityEnvironmentInfoList_ = entityEnvironmentInfoListBuilder_.build();
+        }
+        if (entityAuthorityInfoBuilder_ == null) {
+          result.entityAuthorityInfo_ = entityAuthorityInfo_;
+        } else {
+          result.entityAuthorityInfo_ = entityAuthorityInfoBuilder_.build();
+        }
+        if (((bitField0_ & 0x00000004) != 0)) {
+          tagList_ = tagList_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.tagList_ = tagList_;
+        if (animatorParaListBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) != 0)) {
+            animatorParaList_ = java.util.Collections.unmodifiableList(animatorParaList_);
+            bitField0_ = (bitField0_ & ~0x00000008);
+          }
+          result.animatorParaList_ = animatorParaList_;
+        } else {
+          result.animatorParaList_ = animatorParaListBuilder_.build();
+        }
         result.name_ = name_;
         if (motionInfoBuilder_ == null) {
           result.motionInfo_ = motionInfo_;
         } else {
           result.motionInfo_ = motionInfoBuilder_.build();
         }
+        if (entityClientDataBuilder_ == null) {
+          result.entityClientData_ = entityClientData_;
+        } else {
+          result.entityClientData_ = entityClientDataBuilder_.build();
+        }
+        if (serverBuffListBuilder_ == null) {
+          if (((bitField0_ & 0x00000010) != 0)) {
+            serverBuffList_ = java.util.Collections.unmodifiableList(serverBuffList_);
+            bitField0_ = (bitField0_ & ~0x00000010);
+          }
+          result.serverBuffList_ = serverBuffList_;
+        } else {
+          result.serverBuffList_ = serverBuffListBuilder_.build();
+        }
         if (propListBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000020) != 0)) {
             propList_ = java.util.Collections.unmodifiableList(propList_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000020);
           }
           result.propList_ = propList_;
         } else {
           result.propList_ = propListBuilder_.build();
         }
-        if (fightPropListBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0)) {
-            fightPropList_ = java.util.Collections.unmodifiableList(fightPropList_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.fightPropList_ = fightPropList_;
-        } else {
-          result.fightPropList_ = fightPropListBuilder_.build();
-        }
         result.lifeState_ = lifeState_;
-        if (animatorParaListBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) != 0)) {
-            animatorParaList_ = java.util.Collections.unmodifiableList(animatorParaList_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.animatorParaList_ = animatorParaList_;
-        } else {
-          result.animatorParaList_ = animatorParaListBuilder_.build();
-        }
+        result.entityId_ = entityId_;
+        result.entityType_ = entityType_;
+        result.lastMoveReliableSeq_ = lastMoveReliableSeq_;
+        result.lastMoveSceneTimeMs_ = lastMoveSceneTimeMs_;
         if (entityCase_ == 10) {
           if (avatarBuilder_ == null) {
             result.entity_ = entity_;
@@ -1797,41 +1824,6 @@ public final class SceneEntityInfoOuterClass {
           } else {
             result.entity_ = gadgetBuilder_.build();
           }
-        }
-        result.lastMoveSceneTimeMs_ = lastMoveSceneTimeMs_;
-        result.lastMoveReliableSeq_ = lastMoveReliableSeq_;
-        if (entityClientDataBuilder_ == null) {
-          result.entityClientData_ = entityClientData_;
-        } else {
-          result.entityClientData_ = entityClientDataBuilder_.build();
-        }
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) != 0)) {
-            entityEnvironmentInfoList_ = java.util.Collections.unmodifiableList(entityEnvironmentInfoList_);
-            bitField0_ = (bitField0_ & ~0x00000008);
-          }
-          result.entityEnvironmentInfoList_ = entityEnvironmentInfoList_;
-        } else {
-          result.entityEnvironmentInfoList_ = entityEnvironmentInfoListBuilder_.build();
-        }
-        if (entityAuthorityInfoBuilder_ == null) {
-          result.entityAuthorityInfo_ = entityAuthorityInfo_;
-        } else {
-          result.entityAuthorityInfo_ = entityAuthorityInfoBuilder_.build();
-        }
-        if (((bitField0_ & 0x00000010) != 0)) {
-          tagList_ = tagList_.getUnmodifiableView();
-          bitField0_ = (bitField0_ & ~0x00000010);
-        }
-        result.tagList_ = tagList_;
-        if (serverBuffListBuilder_ == null) {
-          if (((bitField0_ & 0x00000020) != 0)) {
-            serverBuffList_ = java.util.Collections.unmodifiableList(serverBuffList_);
-            bitField0_ = (bitField0_ & ~0x00000020);
-          }
-          result.serverBuffList_ = serverBuffList_;
-        } else {
-          result.serverBuffList_ = serverBuffListBuilder_.build();
         }
         result.entityCase_ = entityCase_;
         onBuilt();
@@ -1882,50 +1874,11 @@ public final class SceneEntityInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo other) {
         if (other == emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.getDefaultInstance()) return this;
-        if (other.entityType_ != 0) {
-          setEntityTypeValue(other.getEntityTypeValue());
-        }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
-        }
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          onChanged();
-        }
-        if (other.hasMotionInfo()) {
-          mergeMotionInfo(other.getMotionInfo());
-        }
-        if (propListBuilder_ == null) {
-          if (!other.propList_.isEmpty()) {
-            if (propList_.isEmpty()) {
-              propList_ = other.propList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-            } else {
-              ensurePropListIsMutable();
-              propList_.addAll(other.propList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.propList_.isEmpty()) {
-            if (propListBuilder_.isEmpty()) {
-              propListBuilder_.dispose();
-              propListBuilder_ = null;
-              propList_ = other.propList_;
-              bitField0_ = (bitField0_ & ~0x00000001);
-              propListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getPropListFieldBuilder() : null;
-            } else {
-              propListBuilder_.addAllMessages(other.propList_);
-            }
-          }
-        }
         if (fightPropListBuilder_ == null) {
           if (!other.fightPropList_.isEmpty()) {
             if (fightPropList_.isEmpty()) {
               fightPropList_ = other.fightPropList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
             } else {
               ensureFightPropListIsMutable();
               fightPropList_.addAll(other.fightPropList_);
@@ -1938,7 +1891,7 @@ public final class SceneEntityInfoOuterClass {
               fightPropListBuilder_.dispose();
               fightPropListBuilder_ = null;
               fightPropList_ = other.fightPropList_;
-              bitField0_ = (bitField0_ & ~0x00000002);
+              bitField0_ = (bitField0_ & ~0x00000001);
               fightPropListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getFightPropListFieldBuilder() : null;
@@ -1947,49 +1900,11 @@ public final class SceneEntityInfoOuterClass {
             }
           }
         }
-        if (other.getLifeState() != 0) {
-          setLifeState(other.getLifeState());
-        }
-        if (animatorParaListBuilder_ == null) {
-          if (!other.animatorParaList_.isEmpty()) {
-            if (animatorParaList_.isEmpty()) {
-              animatorParaList_ = other.animatorParaList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureAnimatorParaListIsMutable();
-              animatorParaList_.addAll(other.animatorParaList_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.animatorParaList_.isEmpty()) {
-            if (animatorParaListBuilder_.isEmpty()) {
-              animatorParaListBuilder_.dispose();
-              animatorParaListBuilder_ = null;
-              animatorParaList_ = other.animatorParaList_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              animatorParaListBuilder_ = 
-                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getAnimatorParaListFieldBuilder() : null;
-            } else {
-              animatorParaListBuilder_.addAllMessages(other.animatorParaList_);
-            }
-          }
-        }
-        if (other.getLastMoveSceneTimeMs() != 0) {
-          setLastMoveSceneTimeMs(other.getLastMoveSceneTimeMs());
-        }
-        if (other.getLastMoveReliableSeq() != 0) {
-          setLastMoveReliableSeq(other.getLastMoveReliableSeq());
-        }
-        if (other.hasEntityClientData()) {
-          mergeEntityClientData(other.getEntityClientData());
-        }
         if (entityEnvironmentInfoListBuilder_ == null) {
           if (!other.entityEnvironmentInfoList_.isEmpty()) {
             if (entityEnvironmentInfoList_.isEmpty()) {
               entityEnvironmentInfoList_ = other.entityEnvironmentInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureEntityEnvironmentInfoListIsMutable();
               entityEnvironmentInfoList_.addAll(other.entityEnvironmentInfoList_);
@@ -2002,7 +1917,7 @@ public final class SceneEntityInfoOuterClass {
               entityEnvironmentInfoListBuilder_.dispose();
               entityEnvironmentInfoListBuilder_ = null;
               entityEnvironmentInfoList_ = other.entityEnvironmentInfoList_;
-              bitField0_ = (bitField0_ & ~0x00000008);
+              bitField0_ = (bitField0_ & ~0x00000002);
               entityEnvironmentInfoListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getEntityEnvironmentInfoListFieldBuilder() : null;
@@ -2017,18 +1932,54 @@ public final class SceneEntityInfoOuterClass {
         if (!other.tagList_.isEmpty()) {
           if (tagList_.isEmpty()) {
             tagList_ = other.tagList_;
-            bitField0_ = (bitField0_ & ~0x00000010);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureTagListIsMutable();
             tagList_.addAll(other.tagList_);
           }
           onChanged();
         }
+        if (animatorParaListBuilder_ == null) {
+          if (!other.animatorParaList_.isEmpty()) {
+            if (animatorParaList_.isEmpty()) {
+              animatorParaList_ = other.animatorParaList_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+            } else {
+              ensureAnimatorParaListIsMutable();
+              animatorParaList_.addAll(other.animatorParaList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.animatorParaList_.isEmpty()) {
+            if (animatorParaListBuilder_.isEmpty()) {
+              animatorParaListBuilder_.dispose();
+              animatorParaListBuilder_ = null;
+              animatorParaList_ = other.animatorParaList_;
+              bitField0_ = (bitField0_ & ~0x00000008);
+              animatorParaListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getAnimatorParaListFieldBuilder() : null;
+            } else {
+              animatorParaListBuilder_.addAllMessages(other.animatorParaList_);
+            }
+          }
+        }
+        if (!other.getName().isEmpty()) {
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.hasMotionInfo()) {
+          mergeMotionInfo(other.getMotionInfo());
+        }
+        if (other.hasEntityClientData()) {
+          mergeEntityClientData(other.getEntityClientData());
+        }
         if (serverBuffListBuilder_ == null) {
           if (!other.serverBuffList_.isEmpty()) {
             if (serverBuffList_.isEmpty()) {
               serverBuffList_ = other.serverBuffList_;
-              bitField0_ = (bitField0_ & ~0x00000020);
+              bitField0_ = (bitField0_ & ~0x00000010);
             } else {
               ensureServerBuffListIsMutable();
               serverBuffList_.addAll(other.serverBuffList_);
@@ -2041,7 +1992,7 @@ public final class SceneEntityInfoOuterClass {
               serverBuffListBuilder_.dispose();
               serverBuffListBuilder_ = null;
               serverBuffList_ = other.serverBuffList_;
-              bitField0_ = (bitField0_ & ~0x00000020);
+              bitField0_ = (bitField0_ & ~0x00000010);
               serverBuffListBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getServerBuffListFieldBuilder() : null;
@@ -2049,6 +2000,47 @@ public final class SceneEntityInfoOuterClass {
               serverBuffListBuilder_.addAllMessages(other.serverBuffList_);
             }
           }
+        }
+        if (propListBuilder_ == null) {
+          if (!other.propList_.isEmpty()) {
+            if (propList_.isEmpty()) {
+              propList_ = other.propList_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+            } else {
+              ensurePropListIsMutable();
+              propList_.addAll(other.propList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.propList_.isEmpty()) {
+            if (propListBuilder_.isEmpty()) {
+              propListBuilder_.dispose();
+              propListBuilder_ = null;
+              propList_ = other.propList_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+              propListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getPropListFieldBuilder() : null;
+            } else {
+              propListBuilder_.addAllMessages(other.propList_);
+            }
+          }
+        }
+        if (other.getLifeState() != 0) {
+          setLifeState(other.getLifeState());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
+        }
+        if (other.entityType_ != 0) {
+          setEntityTypeValue(other.getEntityTypeValue());
+        }
+        if (other.getLastMoveReliableSeq() != 0) {
+          setLastMoveReliableSeq(other.getLastMoveReliableSeq());
+        }
+        if (other.getLastMoveSceneTimeMs() != 0) {
+          setLastMoveSceneTimeMs(other.getLastMoveSceneTimeMs());
         }
         switch (other.getEntityCase()) {
           case AVATAR: {
@@ -2116,89 +2108,953 @@ public final class SceneEntityInfoOuterClass {
 
       private int bitField0_;
 
-      private int entityType_ = 0;
-      /**
-       * <code>.ProtEntityType entity_type = 1;</code>
-       * @return The enum numeric value on the wire for entityType.
-       */
-      @java.lang.Override public int getEntityTypeValue() {
-        return entityType_;
+      private java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> fightPropList_ =
+        java.util.Collections.emptyList();
+      private void ensureFightPropListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          fightPropList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair>(fightPropList_);
+          bitField0_ |= 0x00000001;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder> fightPropListBuilder_;
+
       /**
-       * <code>.ProtEntityType entity_type = 1;</code>
-       * @param value The enum numeric value on the wire for entityType to set.
-       * @return This builder for chaining.
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
        */
-      public Builder setEntityTypeValue(int value) {
-        
-        entityType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.ProtEntityType entity_type = 1;</code>
-       * @return The entityType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType getEntityType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType result = emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.valueOf(entityType_);
-        return result == null ? emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.ProtEntityType entity_type = 1;</code>
-       * @param value The entityType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityType(emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType value) {
-        if (value == null) {
-          throw new NullPointerException();
+      public java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> getFightPropListList() {
+        if (fightPropListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(fightPropList_);
+        } else {
+          return fightPropListBuilder_.getMessageList();
         }
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public int getFightPropListCount() {
+        if (fightPropListBuilder_ == null) {
+          return fightPropList_.size();
+        } else {
+          return fightPropListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair getFightPropList(int index) {
+        if (fightPropListBuilder_ == null) {
+          return fightPropList_.get(index);
+        } else {
+          return fightPropListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public Builder setFightPropList(
+          int index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair value) {
+        if (fightPropListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFightPropListIsMutable();
+          fightPropList_.set(index, value);
+          onChanged();
+        } else {
+          fightPropListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public Builder setFightPropList(
+          int index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder builderForValue) {
+        if (fightPropListBuilder_ == null) {
+          ensureFightPropListIsMutable();
+          fightPropList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          fightPropListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public Builder addFightPropList(emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair value) {
+        if (fightPropListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFightPropListIsMutable();
+          fightPropList_.add(value);
+          onChanged();
+        } else {
+          fightPropListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public Builder addFightPropList(
+          int index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair value) {
+        if (fightPropListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureFightPropListIsMutable();
+          fightPropList_.add(index, value);
+          onChanged();
+        } else {
+          fightPropListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public Builder addFightPropList(
+          emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder builderForValue) {
+        if (fightPropListBuilder_ == null) {
+          ensureFightPropListIsMutable();
+          fightPropList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          fightPropListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public Builder addFightPropList(
+          int index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder builderForValue) {
+        if (fightPropListBuilder_ == null) {
+          ensureFightPropListIsMutable();
+          fightPropList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          fightPropListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public Builder addAllFightPropList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> values) {
+        if (fightPropListBuilder_ == null) {
+          ensureFightPropListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, fightPropList_);
+          onChanged();
+        } else {
+          fightPropListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public Builder clearFightPropList() {
+        if (fightPropListBuilder_ == null) {
+          fightPropList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          fightPropListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public Builder removeFightPropList(int index) {
+        if (fightPropListBuilder_ == null) {
+          ensureFightPropListIsMutable();
+          fightPropList_.remove(index);
+          onChanged();
+        } else {
+          fightPropListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder getFightPropListBuilder(
+          int index) {
+        return getFightPropListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder getFightPropListOrBuilder(
+          int index) {
+        if (fightPropListBuilder_ == null) {
+          return fightPropList_.get(index);  } else {
+          return fightPropListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder> 
+           getFightPropListOrBuilderList() {
+        if (fightPropListBuilder_ != null) {
+          return fightPropListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(fightPropList_);
+        }
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder addFightPropListBuilder() {
+        return getFightPropListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder addFightPropListBuilder(
+          int index) {
+        return getFightPropListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder> 
+           getFightPropListBuilderList() {
+        return getFightPropListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder> 
+          getFightPropListFieldBuilder() {
+        if (fightPropListBuilder_ == null) {
+          fightPropListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder>(
+                  fightPropList_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          fightPropList_ = null;
+        }
+        return fightPropListBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> entityEnvironmentInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensureEntityEnvironmentInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          entityEnvironmentInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo>(entityEnvironmentInfoList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder> entityEnvironmentInfoListBuilder_;
+
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> getEntityEnvironmentInfoListList() {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(entityEnvironmentInfoList_);
+        } else {
+          return entityEnvironmentInfoListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public int getEntityEnvironmentInfoListCount() {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          return entityEnvironmentInfoList_.size();
+        } else {
+          return entityEnvironmentInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo getEntityEnvironmentInfoList(int index) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          return entityEnvironmentInfoList_.get(index);
+        } else {
+          return entityEnvironmentInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public Builder setEntityEnvironmentInfoList(
+          int index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo value) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEntityEnvironmentInfoListIsMutable();
+          entityEnvironmentInfoList_.set(index, value);
+          onChanged();
+        } else {
+          entityEnvironmentInfoListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public Builder setEntityEnvironmentInfoList(
+          int index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder builderForValue) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          ensureEntityEnvironmentInfoListIsMutable();
+          entityEnvironmentInfoList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          entityEnvironmentInfoListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public Builder addEntityEnvironmentInfoList(emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo value) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEntityEnvironmentInfoListIsMutable();
+          entityEnvironmentInfoList_.add(value);
+          onChanged();
+        } else {
+          entityEnvironmentInfoListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public Builder addEntityEnvironmentInfoList(
+          int index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo value) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEntityEnvironmentInfoListIsMutable();
+          entityEnvironmentInfoList_.add(index, value);
+          onChanged();
+        } else {
+          entityEnvironmentInfoListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public Builder addEntityEnvironmentInfoList(
+          emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder builderForValue) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          ensureEntityEnvironmentInfoListIsMutable();
+          entityEnvironmentInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          entityEnvironmentInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public Builder addEntityEnvironmentInfoList(
+          int index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder builderForValue) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          ensureEntityEnvironmentInfoListIsMutable();
+          entityEnvironmentInfoList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          entityEnvironmentInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public Builder addAllEntityEnvironmentInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> values) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          ensureEntityEnvironmentInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, entityEnvironmentInfoList_);
+          onChanged();
+        } else {
+          entityEnvironmentInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public Builder clearEntityEnvironmentInfoList() {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          entityEnvironmentInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000002);
+          onChanged();
+        } else {
+          entityEnvironmentInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public Builder removeEntityEnvironmentInfoList(int index) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          ensureEntityEnvironmentInfoListIsMutable();
+          entityEnvironmentInfoList_.remove(index);
+          onChanged();
+        } else {
+          entityEnvironmentInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder getEntityEnvironmentInfoListBuilder(
+          int index) {
+        return getEntityEnvironmentInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder getEntityEnvironmentInfoListOrBuilder(
+          int index) {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          return entityEnvironmentInfoList_.get(index);  } else {
+          return entityEnvironmentInfoListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder> 
+           getEntityEnvironmentInfoListOrBuilderList() {
+        if (entityEnvironmentInfoListBuilder_ != null) {
+          return entityEnvironmentInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(entityEnvironmentInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder addEntityEnvironmentInfoListBuilder() {
+        return getEntityEnvironmentInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder addEntityEnvironmentInfoListBuilder(
+          int index) {
+        return getEntityEnvironmentInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder> 
+           getEntityEnvironmentInfoListBuilderList() {
+        return getEntityEnvironmentInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder> 
+          getEntityEnvironmentInfoListFieldBuilder() {
+        if (entityEnvironmentInfoListBuilder_ == null) {
+          entityEnvironmentInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder>(
+                  entityEnvironmentInfoList_,
+                  ((bitField0_ & 0x00000002) != 0),
+                  getParentForChildren(),
+                  isClean());
+          entityEnvironmentInfoList_ = null;
+        }
+        return entityEnvironmentInfoListBuilder_;
+      }
+
+      private emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo entityAuthorityInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder> entityAuthorityInfoBuilder_;
+      /**
+       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+       * @return Whether the entityAuthorityInfo field is set.
+       */
+      public boolean hasEntityAuthorityInfo() {
+        return entityAuthorityInfoBuilder_ != null || entityAuthorityInfo_ != null;
+      }
+      /**
+       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+       * @return The entityAuthorityInfo.
+       */
+      public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo getEntityAuthorityInfo() {
+        if (entityAuthorityInfoBuilder_ == null) {
+          return entityAuthorityInfo_ == null ? emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.getDefaultInstance() : entityAuthorityInfo_;
+        } else {
+          return entityAuthorityInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+       */
+      public Builder setEntityAuthorityInfo(emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo value) {
+        if (entityAuthorityInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          entityAuthorityInfo_ = value;
+          onChanged();
+        } else {
+          entityAuthorityInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+       */
+      public Builder setEntityAuthorityInfo(
+          emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder builderForValue) {
+        if (entityAuthorityInfoBuilder_ == null) {
+          entityAuthorityInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          entityAuthorityInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+       */
+      public Builder mergeEntityAuthorityInfo(emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo value) {
+        if (entityAuthorityInfoBuilder_ == null) {
+          if (entityAuthorityInfo_ != null) {
+            entityAuthorityInfo_ =
+              emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.newBuilder(entityAuthorityInfo_).mergeFrom(value).buildPartial();
+          } else {
+            entityAuthorityInfo_ = value;
+          }
+          onChanged();
+        } else {
+          entityAuthorityInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+       */
+      public Builder clearEntityAuthorityInfo() {
+        if (entityAuthorityInfoBuilder_ == null) {
+          entityAuthorityInfo_ = null;
+          onChanged();
+        } else {
+          entityAuthorityInfo_ = null;
+          entityAuthorityInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+       */
+      public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder getEntityAuthorityInfoBuilder() {
         
-        entityType_ = value.getNumber();
+        onChanged();
+        return getEntityAuthorityInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+       */
+      public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder getEntityAuthorityInfoOrBuilder() {
+        if (entityAuthorityInfoBuilder_ != null) {
+          return entityAuthorityInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return entityAuthorityInfo_ == null ?
+              emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.getDefaultInstance() : entityAuthorityInfo_;
+        }
+      }
+      /**
+       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder> 
+          getEntityAuthorityInfoFieldBuilder() {
+        if (entityAuthorityInfoBuilder_ == null) {
+          entityAuthorityInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder>(
+                  getEntityAuthorityInfo(),
+                  getParentForChildren(),
+                  isClean());
+          entityAuthorityInfo_ = null;
+        }
+        return entityAuthorityInfoBuilder_;
+      }
+
+      private com.google.protobuf.LazyStringList tagList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureTagListIsMutable() {
+        if (!((bitField0_ & 0x00000004) != 0)) {
+          tagList_ = new com.google.protobuf.LazyStringArrayList(tagList_);
+          bitField0_ |= 0x00000004;
+         }
+      }
+      /**
+       * <code>repeated string tag_list = 22;</code>
+       * @return A list containing the tagList.
+       */
+      public com.google.protobuf.ProtocolStringList
+          getTagListList() {
+        return tagList_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string tag_list = 22;</code>
+       * @return The count of tagList.
+       */
+      public int getTagListCount() {
+        return tagList_.size();
+      }
+      /**
+       * <code>repeated string tag_list = 22;</code>
+       * @param index The index of the element to return.
+       * @return The tagList at the given index.
+       */
+      public java.lang.String getTagList(int index) {
+        return tagList_.get(index);
+      }
+      /**
+       * <code>repeated string tag_list = 22;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the tagList at the given index.
+       */
+      public com.google.protobuf.ByteString
+          getTagListBytes(int index) {
+        return tagList_.getByteString(index);
+      }
+      /**
+       * <code>repeated string tag_list = 22;</code>
+       * @param index The index to set the value at.
+       * @param value The tagList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTagList(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureTagListIsMutable();
+        tagList_.set(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>.ProtEntityType entity_type = 1;</code>
+       * <code>repeated string tag_list = 22;</code>
+       * @param value The tagList to add.
        * @return This builder for chaining.
        */
-      public Builder clearEntityType() {
-        
-        entityType_ = 0;
+      public Builder addTagList(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureTagListIsMutable();
+        tagList_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string tag_list = 22;</code>
+       * @param values The tagList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllTagList(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureTagListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, tagList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string tag_list = 22;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTagList() {
+        tagList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string tag_list = 22;</code>
+       * @param value The bytes of the tagList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addTagListBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureTagListIsMutable();
+        tagList_.add(value);
         onChanged();
         return this;
       }
 
-      private int entityId_ ;
+      private java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> animatorParaList_ =
+        java.util.Collections.emptyList();
+      private void ensureAnimatorParaListIsMutable() {
+        if (!((bitField0_ & 0x00000008) != 0)) {
+          animatorParaList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair>(animatorParaList_);
+          bitField0_ |= 0x00000008;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> animatorParaListBuilder_;
+
       /**
-       * <code>uint32 entity_id = 2;</code>
-       * @return The entityId.
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
        */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
+      public java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> getAnimatorParaListList() {
+        if (animatorParaListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(animatorParaList_);
+        } else {
+          return animatorParaListBuilder_.getMessageList();
+        }
       }
       /**
-       * <code>uint32 entity_id = 2;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
        */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
+      public int getAnimatorParaListCount() {
+        if (animatorParaListBuilder_ == null) {
+          return animatorParaList_.size();
+        } else {
+          return animatorParaListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair getAnimatorParaList(int index) {
+        if (animatorParaListBuilder_ == null) {
+          return animatorParaList_.get(index);
+        } else {
+          return animatorParaListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public Builder setAnimatorParaList(
+          int index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair value) {
+        if (animatorParaListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAnimatorParaListIsMutable();
+          animatorParaList_.set(index, value);
+          onChanged();
+        } else {
+          animatorParaListBuilder_.setMessage(index, value);
+        }
         return this;
       }
       /**
-       * <code>uint32 entity_id = 2;</code>
-       * @return This builder for chaining.
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
        */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
+      public Builder setAnimatorParaList(
+          int index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder builderForValue) {
+        if (animatorParaListBuilder_ == null) {
+          ensureAnimatorParaListIsMutable();
+          animatorParaList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          animatorParaListBuilder_.setMessage(index, builderForValue.build());
+        }
         return this;
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public Builder addAnimatorParaList(emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair value) {
+        if (animatorParaListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAnimatorParaListIsMutable();
+          animatorParaList_.add(value);
+          onChanged();
+        } else {
+          animatorParaListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public Builder addAnimatorParaList(
+          int index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair value) {
+        if (animatorParaListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAnimatorParaListIsMutable();
+          animatorParaList_.add(index, value);
+          onChanged();
+        } else {
+          animatorParaListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public Builder addAnimatorParaList(
+          emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder builderForValue) {
+        if (animatorParaListBuilder_ == null) {
+          ensureAnimatorParaListIsMutable();
+          animatorParaList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          animatorParaListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public Builder addAnimatorParaList(
+          int index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder builderForValue) {
+        if (animatorParaListBuilder_ == null) {
+          ensureAnimatorParaListIsMutable();
+          animatorParaList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          animatorParaListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public Builder addAllAnimatorParaList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> values) {
+        if (animatorParaListBuilder_ == null) {
+          ensureAnimatorParaListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, animatorParaList_);
+          onChanged();
+        } else {
+          animatorParaListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public Builder clearAnimatorParaList() {
+        if (animatorParaListBuilder_ == null) {
+          animatorParaList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000008);
+          onChanged();
+        } else {
+          animatorParaListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public Builder removeAnimatorParaList(int index) {
+        if (animatorParaListBuilder_ == null) {
+          ensureAnimatorParaListIsMutable();
+          animatorParaList_.remove(index);
+          onChanged();
+        } else {
+          animatorParaListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder getAnimatorParaListBuilder(
+          int index) {
+        return getAnimatorParaListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder getAnimatorParaListOrBuilder(
+          int index) {
+        if (animatorParaListBuilder_ == null) {
+          return animatorParaList_.get(index);  } else {
+          return animatorParaListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> 
+           getAnimatorParaListOrBuilderList() {
+        if (animatorParaListBuilder_ != null) {
+          return animatorParaListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(animatorParaList_);
+        }
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder addAnimatorParaListBuilder() {
+        return getAnimatorParaListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder addAnimatorParaListBuilder(
+          int index) {
+        return getAnimatorParaListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder> 
+           getAnimatorParaListBuilderList() {
+        return getAnimatorParaListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> 
+          getAnimatorParaListFieldBuilder() {
+        if (animatorParaListBuilder_ == null) {
+          animatorParaListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder>(
+                  animatorParaList_,
+                  ((bitField0_ & 0x00000008) != 0),
+                  getParentForChildren(),
+                  isClean());
+          animatorParaList_ = null;
+        }
+        return animatorParaListBuilder_;
       }
 
       private java.lang.Object name_ = "";
@@ -2396,12 +3252,371 @@ public final class SceneEntityInfoOuterClass {
         return motionInfoBuilder_;
       }
 
+      private emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData entityClientData_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder> entityClientDataBuilder_;
+      /**
+       * <code>.EntityClientData entity_client_data = 19;</code>
+       * @return Whether the entityClientData field is set.
+       */
+      public boolean hasEntityClientData() {
+        return entityClientDataBuilder_ != null || entityClientData_ != null;
+      }
+      /**
+       * <code>.EntityClientData entity_client_data = 19;</code>
+       * @return The entityClientData.
+       */
+      public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData getEntityClientData() {
+        if (entityClientDataBuilder_ == null) {
+          return entityClientData_ == null ? emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.getDefaultInstance() : entityClientData_;
+        } else {
+          return entityClientDataBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.EntityClientData entity_client_data = 19;</code>
+       */
+      public Builder setEntityClientData(emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData value) {
+        if (entityClientDataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          entityClientData_ = value;
+          onChanged();
+        } else {
+          entityClientDataBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EntityClientData entity_client_data = 19;</code>
+       */
+      public Builder setEntityClientData(
+          emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder builderForValue) {
+        if (entityClientDataBuilder_ == null) {
+          entityClientData_ = builderForValue.build();
+          onChanged();
+        } else {
+          entityClientDataBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EntityClientData entity_client_data = 19;</code>
+       */
+      public Builder mergeEntityClientData(emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData value) {
+        if (entityClientDataBuilder_ == null) {
+          if (entityClientData_ != null) {
+            entityClientData_ =
+              emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.newBuilder(entityClientData_).mergeFrom(value).buildPartial();
+          } else {
+            entityClientData_ = value;
+          }
+          onChanged();
+        } else {
+          entityClientDataBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EntityClientData entity_client_data = 19;</code>
+       */
+      public Builder clearEntityClientData() {
+        if (entityClientDataBuilder_ == null) {
+          entityClientData_ = null;
+          onChanged();
+        } else {
+          entityClientData_ = null;
+          entityClientDataBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.EntityClientData entity_client_data = 19;</code>
+       */
+      public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder getEntityClientDataBuilder() {
+        
+        onChanged();
+        return getEntityClientDataFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.EntityClientData entity_client_data = 19;</code>
+       */
+      public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder getEntityClientDataOrBuilder() {
+        if (entityClientDataBuilder_ != null) {
+          return entityClientDataBuilder_.getMessageOrBuilder();
+        } else {
+          return entityClientData_ == null ?
+              emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.getDefaultInstance() : entityClientData_;
+        }
+      }
+      /**
+       * <code>.EntityClientData entity_client_data = 19;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder> 
+          getEntityClientDataFieldBuilder() {
+        if (entityClientDataBuilder_ == null) {
+          entityClientDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder>(
+                  getEntityClientData(),
+                  getParentForChildren(),
+                  isClean());
+          entityClientData_ = null;
+        }
+        return entityClientDataBuilder_;
+      }
+
+      private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_ =
+        java.util.Collections.emptyList();
+      private void ensureServerBuffListIsMutable() {
+        if (!((bitField0_ & 0x00000010) != 0)) {
+          serverBuffList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff>(serverBuffList_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> serverBuffListBuilder_;
+
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
+        if (serverBuffListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(serverBuffList_);
+        } else {
+          return serverBuffListBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public int getServerBuffListCount() {
+        if (serverBuffListBuilder_ == null) {
+          return serverBuffList_.size();
+        } else {
+          return serverBuffListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
+        if (serverBuffListBuilder_ == null) {
+          return serverBuffList_.get(index);
+        } else {
+          return serverBuffListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public Builder setServerBuffList(
+          int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
+        if (serverBuffListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureServerBuffListIsMutable();
+          serverBuffList_.set(index, value);
+          onChanged();
+        } else {
+          serverBuffListBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public Builder setServerBuffList(
+          int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
+        if (serverBuffListBuilder_ == null) {
+          ensureServerBuffListIsMutable();
+          serverBuffList_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          serverBuffListBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public Builder addServerBuffList(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
+        if (serverBuffListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureServerBuffListIsMutable();
+          serverBuffList_.add(value);
+          onChanged();
+        } else {
+          serverBuffListBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public Builder addServerBuffList(
+          int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
+        if (serverBuffListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureServerBuffListIsMutable();
+          serverBuffList_.add(index, value);
+          onChanged();
+        } else {
+          serverBuffListBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public Builder addServerBuffList(
+          emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
+        if (serverBuffListBuilder_ == null) {
+          ensureServerBuffListIsMutable();
+          serverBuffList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          serverBuffListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public Builder addServerBuffList(
+          int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
+        if (serverBuffListBuilder_ == null) {
+          ensureServerBuffListIsMutable();
+          serverBuffList_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          serverBuffListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public Builder addAllServerBuffList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> values) {
+        if (serverBuffListBuilder_ == null) {
+          ensureServerBuffListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, serverBuffList_);
+          onChanged();
+        } else {
+          serverBuffListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public Builder clearServerBuffList() {
+        if (serverBuffListBuilder_ == null) {
+          serverBuffList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000010);
+          onChanged();
+        } else {
+          serverBuffListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public Builder removeServerBuffList(int index) {
+        if (serverBuffListBuilder_ == null) {
+          ensureServerBuffListIsMutable();
+          serverBuffList_.remove(index);
+          onChanged();
+        } else {
+          serverBuffListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder getServerBuffListBuilder(
+          int index) {
+        return getServerBuffListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
+          int index) {
+        if (serverBuffListBuilder_ == null) {
+          return serverBuffList_.get(index);  } else {
+          return serverBuffListBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
+           getServerBuffListOrBuilderList() {
+        if (serverBuffListBuilder_ != null) {
+          return serverBuffListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(serverBuffList_);
+        }
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder() {
+        return getServerBuffListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder(
+          int index) {
+        return getServerBuffListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .ServerBuff server_buff_list = 23;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder> 
+           getServerBuffListBuilderList() {
+        return getServerBuffListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
+          getServerBuffListFieldBuilder() {
+        if (serverBuffListBuilder_ == null) {
+          serverBuffListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder>(
+                  serverBuffList_,
+                  ((bitField0_ & 0x00000010) != 0),
+                  getParentForChildren(),
+                  isClean());
+          serverBuffList_ = null;
+        }
+        return serverBuffListBuilder_;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.PropPairOuterClass.PropPair> propList_ =
         java.util.Collections.emptyList();
       private void ensurePropListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000020) != 0)) {
           propList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PropPairOuterClass.PropPair>(propList_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000020;
          }
       }
 
@@ -2551,7 +3766,7 @@ public final class SceneEntityInfoOuterClass {
       public Builder clearPropList() {
         if (propListBuilder_ == null) {
           propList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000020);
           onChanged();
         } else {
           propListBuilder_.clear();
@@ -2628,252 +3843,12 @@ public final class SceneEntityInfoOuterClass {
           propListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.PropPairOuterClass.PropPair, emu.grasscutter.net.proto.PropPairOuterClass.PropPair.Builder, emu.grasscutter.net.proto.PropPairOuterClass.PropPairOrBuilder>(
                   propList_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
                   isClean());
           propList_ = null;
         }
         return propListBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> fightPropList_ =
-        java.util.Collections.emptyList();
-      private void ensureFightPropListIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          fightPropList_ = new java.util.ArrayList<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair>(fightPropList_);
-          bitField0_ |= 0x00000002;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder> fightPropListBuilder_;
-
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> getFightPropListList() {
-        if (fightPropListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(fightPropList_);
-        } else {
-          return fightPropListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public int getFightPropListCount() {
-        if (fightPropListBuilder_ == null) {
-          return fightPropList_.size();
-        } else {
-          return fightPropListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair getFightPropList(int index) {
-        if (fightPropListBuilder_ == null) {
-          return fightPropList_.get(index);
-        } else {
-          return fightPropListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public Builder setFightPropList(
-          int index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair value) {
-        if (fightPropListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureFightPropListIsMutable();
-          fightPropList_.set(index, value);
-          onChanged();
-        } else {
-          fightPropListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public Builder setFightPropList(
-          int index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder builderForValue) {
-        if (fightPropListBuilder_ == null) {
-          ensureFightPropListIsMutable();
-          fightPropList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          fightPropListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public Builder addFightPropList(emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair value) {
-        if (fightPropListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureFightPropListIsMutable();
-          fightPropList_.add(value);
-          onChanged();
-        } else {
-          fightPropListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public Builder addFightPropList(
-          int index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair value) {
-        if (fightPropListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureFightPropListIsMutable();
-          fightPropList_.add(index, value);
-          onChanged();
-        } else {
-          fightPropListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public Builder addFightPropList(
-          emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder builderForValue) {
-        if (fightPropListBuilder_ == null) {
-          ensureFightPropListIsMutable();
-          fightPropList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          fightPropListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public Builder addFightPropList(
-          int index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder builderForValue) {
-        if (fightPropListBuilder_ == null) {
-          ensureFightPropListIsMutable();
-          fightPropList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          fightPropListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public Builder addAllFightPropList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair> values) {
-        if (fightPropListBuilder_ == null) {
-          ensureFightPropListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, fightPropList_);
-          onChanged();
-        } else {
-          fightPropListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public Builder clearFightPropList() {
-        if (fightPropListBuilder_ == null) {
-          fightPropList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          fightPropListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public Builder removeFightPropList(int index) {
-        if (fightPropListBuilder_ == null) {
-          ensureFightPropListIsMutable();
-          fightPropList_.remove(index);
-          onChanged();
-        } else {
-          fightPropListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder getFightPropListBuilder(
-          int index) {
-        return getFightPropListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder getFightPropListOrBuilder(
-          int index) {
-        if (fightPropListBuilder_ == null) {
-          return fightPropList_.get(index);  } else {
-          return fightPropListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder> 
-           getFightPropListOrBuilderList() {
-        if (fightPropListBuilder_ != null) {
-          return fightPropListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(fightPropList_);
-        }
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder addFightPropListBuilder() {
-        return getFightPropListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder addFightPropListBuilder(
-          int index) {
-        return getFightPropListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .FightPropPair fight_prop_list = 6;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder> 
-           getFightPropListBuilderList() {
-        return getFightPropListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder> 
-          getFightPropListFieldBuilder() {
-        if (fightPropListBuilder_ == null) {
-          fightPropListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPair.Builder, emu.grasscutter.net.proto.FightPropPairOuterClass.FightPropPairOrBuilder>(
-                  fightPropList_,
-                  ((bitField0_ & 0x00000002) != 0),
-                  getParentForChildren(),
-                  isClean());
-          fightPropList_ = null;
-        }
-        return fightPropListBuilder_;
       }
 
       private int lifeState_ ;
@@ -2907,244 +3882,151 @@ public final class SceneEntityInfoOuterClass {
         return this;
       }
 
-      private java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> animatorParaList_ =
-        java.util.Collections.emptyList();
-      private void ensureAnimatorParaListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          animatorParaList_ = new java.util.ArrayList<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair>(animatorParaList_);
-          bitField0_ |= 0x00000004;
-         }
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 2;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 2;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
       }
 
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> animatorParaListBuilder_;
+      private int entityType_ = 0;
+      /**
+       * <code>.ProtEntityType entity_type = 1;</code>
+       * @return The enum numeric value on the wire for entityType.
+       */
+      @java.lang.Override public int getEntityTypeValue() {
+        return entityType_;
+      }
+      /**
+       * <code>.ProtEntityType entity_type = 1;</code>
+       * @param value The enum numeric value on the wire for entityType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityTypeValue(int value) {
+        
+        entityType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ProtEntityType entity_type = 1;</code>
+       * @return The entityType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType getEntityType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType result = emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.valueOf(entityType_);
+        return result == null ? emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.ProtEntityType entity_type = 1;</code>
+       * @param value The entityType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityType(emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        entityType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.ProtEntityType entity_type = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityType() {
+        
+        entityType_ = 0;
+        onChanged();
+        return this;
+      }
 
+      private int lastMoveReliableSeq_ ;
       /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       * <code>uint32 last_move_reliable_seq = 18;</code>
+       * @return The lastMoveReliableSeq.
        */
-      public java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> getAnimatorParaListList() {
-        if (animatorParaListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(animatorParaList_);
-        } else {
-          return animatorParaListBuilder_.getMessageList();
-        }
+      @java.lang.Override
+      public int getLastMoveReliableSeq() {
+        return lastMoveReliableSeq_;
       }
       /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       * <code>uint32 last_move_reliable_seq = 18;</code>
+       * @param value The lastMoveReliableSeq to set.
+       * @return This builder for chaining.
        */
-      public int getAnimatorParaListCount() {
-        if (animatorParaListBuilder_ == null) {
-          return animatorParaList_.size();
-        } else {
-          return animatorParaListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair getAnimatorParaList(int index) {
-        if (animatorParaListBuilder_ == null) {
-          return animatorParaList_.get(index);
-        } else {
-          return animatorParaListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public Builder setAnimatorParaList(
-          int index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair value) {
-        if (animatorParaListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureAnimatorParaListIsMutable();
-          animatorParaList_.set(index, value);
-          onChanged();
-        } else {
-          animatorParaListBuilder_.setMessage(index, value);
-        }
+      public Builder setLastMoveReliableSeq(int value) {
+        
+        lastMoveReliableSeq_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       * <code>uint32 last_move_reliable_seq = 18;</code>
+       * @return This builder for chaining.
        */
-      public Builder setAnimatorParaList(
-          int index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder builderForValue) {
-        if (animatorParaListBuilder_ == null) {
-          ensureAnimatorParaListIsMutable();
-          animatorParaList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          animatorParaListBuilder_.setMessage(index, builderForValue.build());
-        }
+      public Builder clearLastMoveReliableSeq() {
+        
+        lastMoveReliableSeq_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lastMoveSceneTimeMs_ ;
+      /**
+       * <code>uint32 last_move_scene_time_ms = 17;</code>
+       * @return The lastMoveSceneTimeMs.
+       */
+      @java.lang.Override
+      public int getLastMoveSceneTimeMs() {
+        return lastMoveSceneTimeMs_;
+      }
+      /**
+       * <code>uint32 last_move_scene_time_ms = 17;</code>
+       * @param value The lastMoveSceneTimeMs to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLastMoveSceneTimeMs(int value) {
+        
+        lastMoveSceneTimeMs_ = value;
+        onChanged();
         return this;
       }
       /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
+       * <code>uint32 last_move_scene_time_ms = 17;</code>
+       * @return This builder for chaining.
        */
-      public Builder addAnimatorParaList(emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair value) {
-        if (animatorParaListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureAnimatorParaListIsMutable();
-          animatorParaList_.add(value);
-          onChanged();
-        } else {
-          animatorParaListBuilder_.addMessage(value);
-        }
+      public Builder clearLastMoveSceneTimeMs() {
+        
+        lastMoveSceneTimeMs_ = 0;
+        onChanged();
         return this;
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public Builder addAnimatorParaList(
-          int index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair value) {
-        if (animatorParaListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureAnimatorParaListIsMutable();
-          animatorParaList_.add(index, value);
-          onChanged();
-        } else {
-          animatorParaListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public Builder addAnimatorParaList(
-          emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder builderForValue) {
-        if (animatorParaListBuilder_ == null) {
-          ensureAnimatorParaListIsMutable();
-          animatorParaList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          animatorParaListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public Builder addAnimatorParaList(
-          int index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder builderForValue) {
-        if (animatorParaListBuilder_ == null) {
-          ensureAnimatorParaListIsMutable();
-          animatorParaList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          animatorParaListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public Builder addAllAnimatorParaList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair> values) {
-        if (animatorParaListBuilder_ == null) {
-          ensureAnimatorParaListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, animatorParaList_);
-          onChanged();
-        } else {
-          animatorParaListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public Builder clearAnimatorParaList() {
-        if (animatorParaListBuilder_ == null) {
-          animatorParaList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
-          onChanged();
-        } else {
-          animatorParaListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public Builder removeAnimatorParaList(int index) {
-        if (animatorParaListBuilder_ == null) {
-          ensureAnimatorParaListIsMutable();
-          animatorParaList_.remove(index);
-          onChanged();
-        } else {
-          animatorParaListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder getAnimatorParaListBuilder(
-          int index) {
-        return getAnimatorParaListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder getAnimatorParaListOrBuilder(
-          int index) {
-        if (animatorParaListBuilder_ == null) {
-          return animatorParaList_.get(index);  } else {
-          return animatorParaListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> 
-           getAnimatorParaListOrBuilderList() {
-        if (animatorParaListBuilder_ != null) {
-          return animatorParaListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(animatorParaList_);
-        }
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder addAnimatorParaListBuilder() {
-        return getAnimatorParaListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder addAnimatorParaListBuilder(
-          int index) {
-        return getAnimatorParaListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .AnimatorParameterValueInfoPair animator_para_list = 9;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder> 
-           getAnimatorParaListBuilderList() {
-        return getAnimatorParaListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder> 
-          getAnimatorParaListFieldBuilder() {
-        if (animatorParaListBuilder_ == null) {
-          animatorParaListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPair.Builder, emu.grasscutter.net.proto.AnimatorParameterValueInfoPairOuterClass.AnimatorParameterValueInfoPairOrBuilder>(
-                  animatorParaList_,
-                  ((bitField0_ & 0x00000004) != 0),
-                  getParentForChildren(),
-                  isClean());
-          animatorParaList_ = null;
-        }
-        return animatorParaListBuilder_;
       }
 
       private com.google.protobuf.SingleFieldBuilderV3<
@@ -3710,896 +4592,6 @@ public final class SceneEntityInfoOuterClass {
         onChanged();;
         return gadgetBuilder_;
       }
-
-      private int lastMoveSceneTimeMs_ ;
-      /**
-       * <code>uint32 last_move_scene_time_ms = 17;</code>
-       * @return The lastMoveSceneTimeMs.
-       */
-      @java.lang.Override
-      public int getLastMoveSceneTimeMs() {
-        return lastMoveSceneTimeMs_;
-      }
-      /**
-       * <code>uint32 last_move_scene_time_ms = 17;</code>
-       * @param value The lastMoveSceneTimeMs to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLastMoveSceneTimeMs(int value) {
-        
-        lastMoveSceneTimeMs_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 last_move_scene_time_ms = 17;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLastMoveSceneTimeMs() {
-        
-        lastMoveSceneTimeMs_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int lastMoveReliableSeq_ ;
-      /**
-       * <code>uint32 last_move_reliable_seq = 18;</code>
-       * @return The lastMoveReliableSeq.
-       */
-      @java.lang.Override
-      public int getLastMoveReliableSeq() {
-        return lastMoveReliableSeq_;
-      }
-      /**
-       * <code>uint32 last_move_reliable_seq = 18;</code>
-       * @param value The lastMoveReliableSeq to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLastMoveReliableSeq(int value) {
-        
-        lastMoveReliableSeq_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 last_move_reliable_seq = 18;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLastMoveReliableSeq() {
-        
-        lastMoveReliableSeq_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData entityClientData_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder> entityClientDataBuilder_;
-      /**
-       * <code>.EntityClientData entity_client_data = 19;</code>
-       * @return Whether the entityClientData field is set.
-       */
-      public boolean hasEntityClientData() {
-        return entityClientDataBuilder_ != null || entityClientData_ != null;
-      }
-      /**
-       * <code>.EntityClientData entity_client_data = 19;</code>
-       * @return The entityClientData.
-       */
-      public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData getEntityClientData() {
-        if (entityClientDataBuilder_ == null) {
-          return entityClientData_ == null ? emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.getDefaultInstance() : entityClientData_;
-        } else {
-          return entityClientDataBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.EntityClientData entity_client_data = 19;</code>
-       */
-      public Builder setEntityClientData(emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData value) {
-        if (entityClientDataBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          entityClientData_ = value;
-          onChanged();
-        } else {
-          entityClientDataBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EntityClientData entity_client_data = 19;</code>
-       */
-      public Builder setEntityClientData(
-          emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder builderForValue) {
-        if (entityClientDataBuilder_ == null) {
-          entityClientData_ = builderForValue.build();
-          onChanged();
-        } else {
-          entityClientDataBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EntityClientData entity_client_data = 19;</code>
-       */
-      public Builder mergeEntityClientData(emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData value) {
-        if (entityClientDataBuilder_ == null) {
-          if (entityClientData_ != null) {
-            entityClientData_ =
-              emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.newBuilder(entityClientData_).mergeFrom(value).buildPartial();
-          } else {
-            entityClientData_ = value;
-          }
-          onChanged();
-        } else {
-          entityClientDataBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EntityClientData entity_client_data = 19;</code>
-       */
-      public Builder clearEntityClientData() {
-        if (entityClientDataBuilder_ == null) {
-          entityClientData_ = null;
-          onChanged();
-        } else {
-          entityClientData_ = null;
-          entityClientDataBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EntityClientData entity_client_data = 19;</code>
-       */
-      public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder getEntityClientDataBuilder() {
-        
-        onChanged();
-        return getEntityClientDataFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.EntityClientData entity_client_data = 19;</code>
-       */
-      public emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder getEntityClientDataOrBuilder() {
-        if (entityClientDataBuilder_ != null) {
-          return entityClientDataBuilder_.getMessageOrBuilder();
-        } else {
-          return entityClientData_ == null ?
-              emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.getDefaultInstance() : entityClientData_;
-        }
-      }
-      /**
-       * <code>.EntityClientData entity_client_data = 19;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder> 
-          getEntityClientDataFieldBuilder() {
-        if (entityClientDataBuilder_ == null) {
-          entityClientDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientData.Builder, emu.grasscutter.net.proto.EntityClientDataOuterClass.EntityClientDataOrBuilder>(
-                  getEntityClientData(),
-                  getParentForChildren(),
-                  isClean());
-          entityClientData_ = null;
-        }
-        return entityClientDataBuilder_;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> entityEnvironmentInfoList_ =
-        java.util.Collections.emptyList();
-      private void ensureEntityEnvironmentInfoListIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
-          entityEnvironmentInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo>(entityEnvironmentInfoList_);
-          bitField0_ |= 0x00000008;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder> entityEnvironmentInfoListBuilder_;
-
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> getEntityEnvironmentInfoListList() {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(entityEnvironmentInfoList_);
-        } else {
-          return entityEnvironmentInfoListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public int getEntityEnvironmentInfoListCount() {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          return entityEnvironmentInfoList_.size();
-        } else {
-          return entityEnvironmentInfoListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo getEntityEnvironmentInfoList(int index) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          return entityEnvironmentInfoList_.get(index);
-        } else {
-          return entityEnvironmentInfoListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public Builder setEntityEnvironmentInfoList(
-          int index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo value) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureEntityEnvironmentInfoListIsMutable();
-          entityEnvironmentInfoList_.set(index, value);
-          onChanged();
-        } else {
-          entityEnvironmentInfoListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public Builder setEntityEnvironmentInfoList(
-          int index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder builderForValue) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          ensureEntityEnvironmentInfoListIsMutable();
-          entityEnvironmentInfoList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          entityEnvironmentInfoListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public Builder addEntityEnvironmentInfoList(emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo value) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureEntityEnvironmentInfoListIsMutable();
-          entityEnvironmentInfoList_.add(value);
-          onChanged();
-        } else {
-          entityEnvironmentInfoListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public Builder addEntityEnvironmentInfoList(
-          int index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo value) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureEntityEnvironmentInfoListIsMutable();
-          entityEnvironmentInfoList_.add(index, value);
-          onChanged();
-        } else {
-          entityEnvironmentInfoListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public Builder addEntityEnvironmentInfoList(
-          emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder builderForValue) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          ensureEntityEnvironmentInfoListIsMutable();
-          entityEnvironmentInfoList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          entityEnvironmentInfoListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public Builder addEntityEnvironmentInfoList(
-          int index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder builderForValue) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          ensureEntityEnvironmentInfoListIsMutable();
-          entityEnvironmentInfoList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          entityEnvironmentInfoListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public Builder addAllEntityEnvironmentInfoList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo> values) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          ensureEntityEnvironmentInfoListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, entityEnvironmentInfoList_);
-          onChanged();
-        } else {
-          entityEnvironmentInfoListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public Builder clearEntityEnvironmentInfoList() {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          entityEnvironmentInfoList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
-          onChanged();
-        } else {
-          entityEnvironmentInfoListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public Builder removeEntityEnvironmentInfoList(int index) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          ensureEntityEnvironmentInfoListIsMutable();
-          entityEnvironmentInfoList_.remove(index);
-          onChanged();
-        } else {
-          entityEnvironmentInfoListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder getEntityEnvironmentInfoListBuilder(
-          int index) {
-        return getEntityEnvironmentInfoListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder getEntityEnvironmentInfoListOrBuilder(
-          int index) {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          return entityEnvironmentInfoList_.get(index);  } else {
-          return entityEnvironmentInfoListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder> 
-           getEntityEnvironmentInfoListOrBuilderList() {
-        if (entityEnvironmentInfoListBuilder_ != null) {
-          return entityEnvironmentInfoListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(entityEnvironmentInfoList_);
-        }
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder addEntityEnvironmentInfoListBuilder() {
-        return getEntityEnvironmentInfoListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder addEntityEnvironmentInfoListBuilder(
-          int index) {
-        return getEntityEnvironmentInfoListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .EntityEnvironmentInfo entity_environment_info_list = 20;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder> 
-           getEntityEnvironmentInfoListBuilderList() {
-        return getEntityEnvironmentInfoListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder> 
-          getEntityEnvironmentInfoListFieldBuilder() {
-        if (entityEnvironmentInfoListBuilder_ == null) {
-          entityEnvironmentInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfo.Builder, emu.grasscutter.net.proto.EntityEnvironmentInfoOuterClass.EntityEnvironmentInfoOrBuilder>(
-                  entityEnvironmentInfoList_,
-                  ((bitField0_ & 0x00000008) != 0),
-                  getParentForChildren(),
-                  isClean());
-          entityEnvironmentInfoList_ = null;
-        }
-        return entityEnvironmentInfoListBuilder_;
-      }
-
-      private emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo entityAuthorityInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder> entityAuthorityInfoBuilder_;
-      /**
-       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-       * @return Whether the entityAuthorityInfo field is set.
-       */
-      public boolean hasEntityAuthorityInfo() {
-        return entityAuthorityInfoBuilder_ != null || entityAuthorityInfo_ != null;
-      }
-      /**
-       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-       * @return The entityAuthorityInfo.
-       */
-      public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo getEntityAuthorityInfo() {
-        if (entityAuthorityInfoBuilder_ == null) {
-          return entityAuthorityInfo_ == null ? emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.getDefaultInstance() : entityAuthorityInfo_;
-        } else {
-          return entityAuthorityInfoBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-       */
-      public Builder setEntityAuthorityInfo(emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo value) {
-        if (entityAuthorityInfoBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          entityAuthorityInfo_ = value;
-          onChanged();
-        } else {
-          entityAuthorityInfoBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-       */
-      public Builder setEntityAuthorityInfo(
-          emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder builderForValue) {
-        if (entityAuthorityInfoBuilder_ == null) {
-          entityAuthorityInfo_ = builderForValue.build();
-          onChanged();
-        } else {
-          entityAuthorityInfoBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-       */
-      public Builder mergeEntityAuthorityInfo(emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo value) {
-        if (entityAuthorityInfoBuilder_ == null) {
-          if (entityAuthorityInfo_ != null) {
-            entityAuthorityInfo_ =
-              emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.newBuilder(entityAuthorityInfo_).mergeFrom(value).buildPartial();
-          } else {
-            entityAuthorityInfo_ = value;
-          }
-          onChanged();
-        } else {
-          entityAuthorityInfoBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-       */
-      public Builder clearEntityAuthorityInfo() {
-        if (entityAuthorityInfoBuilder_ == null) {
-          entityAuthorityInfo_ = null;
-          onChanged();
-        } else {
-          entityAuthorityInfo_ = null;
-          entityAuthorityInfoBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-       */
-      public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder getEntityAuthorityInfoBuilder() {
-        
-        onChanged();
-        return getEntityAuthorityInfoFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-       */
-      public emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder getEntityAuthorityInfoOrBuilder() {
-        if (entityAuthorityInfoBuilder_ != null) {
-          return entityAuthorityInfoBuilder_.getMessageOrBuilder();
-        } else {
-          return entityAuthorityInfo_ == null ?
-              emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.getDefaultInstance() : entityAuthorityInfo_;
-        }
-      }
-      /**
-       * <code>.EntityAuthorityInfo entity_authority_info = 21;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder> 
-          getEntityAuthorityInfoFieldBuilder() {
-        if (entityAuthorityInfoBuilder_ == null) {
-          entityAuthorityInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder, emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfoOrBuilder>(
-                  getEntityAuthorityInfo(),
-                  getParentForChildren(),
-                  isClean());
-          entityAuthorityInfo_ = null;
-        }
-        return entityAuthorityInfoBuilder_;
-      }
-
-      private com.google.protobuf.LazyStringList tagList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      private void ensureTagListIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
-          tagList_ = new com.google.protobuf.LazyStringArrayList(tagList_);
-          bitField0_ |= 0x00000010;
-         }
-      }
-      /**
-       * <code>repeated string tag_list = 22;</code>
-       * @return A list containing the tagList.
-       */
-      public com.google.protobuf.ProtocolStringList
-          getTagListList() {
-        return tagList_.getUnmodifiableView();
-      }
-      /**
-       * <code>repeated string tag_list = 22;</code>
-       * @return The count of tagList.
-       */
-      public int getTagListCount() {
-        return tagList_.size();
-      }
-      /**
-       * <code>repeated string tag_list = 22;</code>
-       * @param index The index of the element to return.
-       * @return The tagList at the given index.
-       */
-      public java.lang.String getTagList(int index) {
-        return tagList_.get(index);
-      }
-      /**
-       * <code>repeated string tag_list = 22;</code>
-       * @param index The index of the value to return.
-       * @return The bytes of the tagList at the given index.
-       */
-      public com.google.protobuf.ByteString
-          getTagListBytes(int index) {
-        return tagList_.getByteString(index);
-      }
-      /**
-       * <code>repeated string tag_list = 22;</code>
-       * @param index The index to set the value at.
-       * @param value The tagList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTagList(
-          int index, java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureTagListIsMutable();
-        tagList_.set(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string tag_list = 22;</code>
-       * @param value The tagList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addTagList(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureTagListIsMutable();
-        tagList_.add(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string tag_list = 22;</code>
-       * @param values The tagList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllTagList(
-          java.lang.Iterable<java.lang.String> values) {
-        ensureTagListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, tagList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string tag_list = 22;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTagList() {
-        tagList_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000010);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated string tag_list = 22;</code>
-       * @param value The bytes of the tagList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addTagListBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        ensureTagListIsMutable();
-        tagList_.add(value);
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> serverBuffList_ =
-        java.util.Collections.emptyList();
-      private void ensureServerBuffListIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
-          serverBuffList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff>(serverBuffList_);
-          bitField0_ |= 0x00000020;
-         }
-      }
-
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> serverBuffListBuilder_;
-
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> getServerBuffListList() {
-        if (serverBuffListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(serverBuffList_);
-        } else {
-          return serverBuffListBuilder_.getMessageList();
-        }
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public int getServerBuffListCount() {
-        if (serverBuffListBuilder_ == null) {
-          return serverBuffList_.size();
-        } else {
-          return serverBuffListBuilder_.getCount();
-        }
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff getServerBuffList(int index) {
-        if (serverBuffListBuilder_ == null) {
-          return serverBuffList_.get(index);
-        } else {
-          return serverBuffListBuilder_.getMessage(index);
-        }
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public Builder setServerBuffList(
-          int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
-        if (serverBuffListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureServerBuffListIsMutable();
-          serverBuffList_.set(index, value);
-          onChanged();
-        } else {
-          serverBuffListBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public Builder setServerBuffList(
-          int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
-        if (serverBuffListBuilder_ == null) {
-          ensureServerBuffListIsMutable();
-          serverBuffList_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          serverBuffListBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public Builder addServerBuffList(emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
-        if (serverBuffListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureServerBuffListIsMutable();
-          serverBuffList_.add(value);
-          onChanged();
-        } else {
-          serverBuffListBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public Builder addServerBuffList(
-          int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff value) {
-        if (serverBuffListBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureServerBuffListIsMutable();
-          serverBuffList_.add(index, value);
-          onChanged();
-        } else {
-          serverBuffListBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public Builder addServerBuffList(
-          emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
-        if (serverBuffListBuilder_ == null) {
-          ensureServerBuffListIsMutable();
-          serverBuffList_.add(builderForValue.build());
-          onChanged();
-        } else {
-          serverBuffListBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public Builder addServerBuffList(
-          int index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder builderForValue) {
-        if (serverBuffListBuilder_ == null) {
-          ensureServerBuffListIsMutable();
-          serverBuffList_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          serverBuffListBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public Builder addAllServerBuffList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff> values) {
-        if (serverBuffListBuilder_ == null) {
-          ensureServerBuffListIsMutable();
-          com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, serverBuffList_);
-          onChanged();
-        } else {
-          serverBuffListBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public Builder clearServerBuffList() {
-        if (serverBuffListBuilder_ == null) {
-          serverBuffList_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000020);
-          onChanged();
-        } else {
-          serverBuffListBuilder_.clear();
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public Builder removeServerBuffList(int index) {
-        if (serverBuffListBuilder_ == null) {
-          ensureServerBuffListIsMutable();
-          serverBuffList_.remove(index);
-          onChanged();
-        } else {
-          serverBuffListBuilder_.remove(index);
-        }
-        return this;
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder getServerBuffListBuilder(
-          int index) {
-        return getServerBuffListFieldBuilder().getBuilder(index);
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder getServerBuffListOrBuilder(
-          int index) {
-        if (serverBuffListBuilder_ == null) {
-          return serverBuffList_.get(index);  } else {
-          return serverBuffListBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
-           getServerBuffListOrBuilderList() {
-        if (serverBuffListBuilder_ != null) {
-          return serverBuffListBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(serverBuffList_);
-        }
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder() {
-        return getServerBuffListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder addServerBuffListBuilder(
-          int index) {
-        return getServerBuffListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.getDefaultInstance());
-      }
-      /**
-       * <code>repeated .ServerBuff server_buff_list = 23;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder> 
-           getServerBuffListBuilderList() {
-        return getServerBuffListFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder> 
-          getServerBuffListFieldBuilder() {
-        if (serverBuffListBuilder_ == null) {
-          serverBuffListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuff.Builder, emu.grasscutter.net.proto.ServerBuffOuterClass.ServerBuffOrBuilder>(
-                  serverBuffList_,
-                  ((bitField0_ & 0x00000020) != 0),
-                  getParentForChildren(),
-                  isClean());
-          serverBuffList_ = null;
-        }
-        return serverBuffListBuilder_;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -4675,24 +4667,24 @@ public final class SceneEntityInfoOuterClass {
       "proto\032\025SceneGadgetInfo.proto\032\026EntityClie" +
       "ntData.proto\032\033EntityEnvironmentInfo.prot" +
       "o\032\031EntityAuthorityInfo.proto\032\020ServerBuff" +
-      ".proto\"\304\005\n\017SceneEntityInfo\022$\n\013entity_typ" +
-      "e\030\001 \001(\0162\017.ProtEntityType\022\021\n\tentity_id\030\002 " +
-      "\001(\r\022\014\n\004name\030\003 \001(\t\022 \n\013motion_info\030\004 \001(\0132\013" +
-      ".MotionInfo\022\034\n\tprop_list\030\005 \003(\0132\t.PropPai" +
-      "r\022\'\n\017fight_prop_list\030\006 \003(\0132\016.FightPropPa" +
-      "ir\022\022\n\nlife_state\030\007 \001(\r\022;\n\022animator_para_" +
-      "list\030\t \003(\0132\037.AnimatorParameterValueInfoP" +
-      "air\022\"\n\006avatar\030\n \001(\0132\020.SceneAvatarInfoH\000\022" +
-      "$\n\007monster\030\013 \001(\0132\021.SceneMonsterInfoH\000\022\034\n" +
-      "\003npc\030\014 \001(\0132\r.SceneNpcInfoH\000\022\"\n\006gadget\030\r " +
-      "\001(\0132\020.SceneGadgetInfoH\000\022\037\n\027last_move_sce" +
-      "ne_time_ms\030\021 \001(\r\022\036\n\026last_move_reliable_s" +
-      "eq\030\022 \001(\r\022-\n\022entity_client_data\030\023 \001(\0132\021.E" +
-      "ntityClientData\022<\n\034entity_environment_in" +
-      "fo_list\030\024 \003(\0132\026.EntityEnvironmentInfo\0223\n" +
-      "\025entity_authority_info\030\025 \001(\0132\024.EntityAut" +
-      "horityInfo\022\020\n\010tag_list\030\026 \003(\t\022%\n\020server_b" +
-      "uff_list\030\027 \003(\0132\013.ServerBuffB\010\n\006entityB\033\n" +
+      ".proto\"\304\005\n\017SceneEntityInfo\022\'\n\017fight_prop" +
+      "_list\030\006 \003(\0132\016.FightPropPair\022<\n\034entity_en" +
+      "vironment_info_list\030\024 \003(\0132\026.EntityEnviro" +
+      "nmentInfo\0223\n\025entity_authority_info\030\025 \001(\013" +
+      "2\024.EntityAuthorityInfo\022\020\n\010tag_list\030\026 \003(\t" +
+      "\022;\n\022animator_para_list\030\t \003(\0132\037.AnimatorP" +
+      "arameterValueInfoPair\022\014\n\004name\030\003 \001(\t\022 \n\013m" +
+      "otion_info\030\004 \001(\0132\013.MotionInfo\022-\n\022entity_" +
+      "client_data\030\023 \001(\0132\021.EntityClientData\022%\n\020" +
+      "server_buff_list\030\027 \003(\0132\013.ServerBuff\022\034\n\tp" +
+      "rop_list\030\005 \003(\0132\t.PropPair\022\022\n\nlife_state\030" +
+      "\007 \001(\r\022\021\n\tentity_id\030\002 \001(\r\022$\n\013entity_type\030" +
+      "\001 \001(\0162\017.ProtEntityType\022\036\n\026last_move_reli" +
+      "able_seq\030\022 \001(\r\022\037\n\027last_move_scene_time_m" +
+      "s\030\021 \001(\r\022\"\n\006avatar\030\n \001(\0132\020.SceneAvatarInf" +
+      "oH\000\022$\n\007monster\030\013 \001(\0132\021.SceneMonsterInfoH" +
+      "\000\022\034\n\003npc\030\014 \001(\0132\r.SceneNpcInfoH\000\022\"\n\006gadge" +
+      "t\030\r \001(\0132\020.SceneGadgetInfoH\000B\010\n\006entityB\033\n" +
       "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -4717,7 +4709,7 @@ public final class SceneEntityInfoOuterClass {
     internal_static_SceneEntityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneEntityInfo_descriptor,
-        new java.lang.String[] { "EntityType", "EntityId", "Name", "MotionInfo", "PropList", "FightPropList", "LifeState", "AnimatorParaList", "Avatar", "Monster", "Npc", "Gadget", "LastMoveSceneTimeMs", "LastMoveReliableSeq", "EntityClientData", "EntityEnvironmentInfoList", "EntityAuthorityInfo", "TagList", "ServerBuffList", "Entity", });
+        new java.lang.String[] { "FightPropList", "EntityEnvironmentInfoList", "EntityAuthorityInfo", "TagList", "AnimatorParaList", "Name", "MotionInfo", "EntityClientData", "ServerBuffList", "PropList", "LifeState", "EntityId", "EntityType", "LastMoveReliableSeq", "LastMoveSceneTimeMs", "Avatar", "Monster", "Npc", "Gadget", "Entity", });
     emu.grasscutter.net.proto.ProtEntityTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.MotionInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.PropPairOuterClass.getDescriptor();

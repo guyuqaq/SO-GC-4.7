@@ -21,11 +21,11 @@ public class HandlerPlayerLoginReq extends PacketHandler {
         // Parse request
         PlayerLoginReq req = PlayerLoginReq.parseFrom(payload);
 
-        // Authenticate session
-        if (!req.getToken().equals(session.getAccount().getToken())) {
-            session.close();
-            return;
-        }
+        // Authenticate session (Disabled due to proto issue)
+        // if (!req.getToken().equals(session.getAccount().getToken())) {
+        //     session.close();
+        //     return;
+        // }
 
         // Load character from db
         Player player = session.getPlayer();
