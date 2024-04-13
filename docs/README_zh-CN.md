@@ -26,9 +26,17 @@
 
 - 获取Java 17：https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 - 获取[MongoDB社区版](https://www.mongodb.com/try/download/community)
-- 获取游戏4.0正式版 (如果你没有4.0的客户端，可以在这里找到）：
-[123pan share](https://www.123pan.com/s/HoqUVv-U7SBA.html)
-[github](https://github.com/JRSKelvin/GenshinRepository/blob/main/Version%204.0.0.md)
+- 获取游戏4.5正式版 (如果你没有4.5的客户端，可以在这里找到）：
+| Download link | Package size | MD5 checksum |
+| :---: | :---: | :---: |
+| [YuanShen_4.5.0.zip.001](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.001) | 10.0 GB | 7c95b8bb5590fd605e078a181c903f3e |
+| [YuanShen_4.5.0.zip.002](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.002) | 10.0 GB | 7815a01bcb91c10474bc3539fc0d232e |
+| [YuanShen_4.5.0.zip.003](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.003) | 10.0 GB | 353f806030061d199b1053532c59de77 |
+| [YuanShen_4.5.0.zip.004](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.004) | 10.0 GB | 8e39f2818022db946d50321090f0c974 |
+| [YuanShen_4.5.0.zip.005](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.005) | 10.0 GB | 1e806c1039b5fd2165917431fcf6ed79 |
+| [YuanShen_4.5.0.zip.006](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.006) | 10.0 GB | 39957945639182ec63bc7e45d0c19449 |
+| [YuanShen_4.5.0.zip.007](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.007) | 10.0 GB | fee2bd75b16d58180c452b3ddb8363f7 |
+| [YuanShen_4.5.0.zip.008](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.008) | 0.17 GB | 651df59aa6eb1ebe202dc8f24a690e36 |
 
 - 下载[最新的Cultivation版本](https://github.com/Grasscutters/Cultivation/releases/latest)（使用以“.msi”为后缀的安装包）。
 - 以管理员身份打开Cultivation，按右上角的下载按钮。

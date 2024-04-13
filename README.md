@@ -26,9 +26,17 @@
 
 - Get [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - Get [MongoDB Community Server](https://www.mongodb.com/try/download/community)
-- Get game version REL4.0.x (If you don't have a 4.0.x client, you can find it here and open any of the links to download it):
-[4.0.x Client-github](https://github.com/JRSKelvin/GenshinRepository/blob/main/Version%204.0.0.md)
-[4.0.x Client-cloud drive](https://www.123pan.com/s/HoqUVv-U7SBA.html)
+- Get game version REL4.5.0 (If you don't have a 4.5.0 client, you can find it here and download it) :
+| Download link | Package size | MD5 checksum |
+| :---: | :---: | :---: |
+| [GenshinImpact_4.5.0.zip.001](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.001) | 10.0 GB | f90ff656a5c84c299a9a0359e67d6133 |
+| [GenshinImpact_4.5.0.zip.002](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.002) | 10.0 GB | 8503c15c090ec71d699591d4782ac9ac |
+| [GenshinImpact_4.5.0.zip.003](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.003) | 10.0 GB | f57a42ced76275035216984ef3edb1b0 |
+| [GenshinImpact_4.5.0.zip.004](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.004) | 10.0 GB | 47b905fb1a6a3a3e8518002957ef543d |
+| [GenshinImpact_4.5.0.zip.005](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.005) | 10.0 GB | 9e2200dd6334f27ece3afd3008c83ee4 |
+| [GenshinImpact_4.5.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.006) | 10.0 GB | 1944ef5e7b24adb38157b5920d2662be |
+| [GenshinImpact_4.5.0.zip.007](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.007) | 10.0 GB | 815eeee0c40f125c8ac355551893e4cc |
+| [GenshinImpact_4.5.0.zip.008](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.008) | 0.17 GB | 95be2c4d704b1e2a8dad719344e66e63 |
 
 - Download the [latest Cultivation version](https://github.com/Grasscutters/Cultivation/releases/latest). Use the `.msi` installer.
 - After opening Cultivation (as admin), press the download button in the upper right corner. 
