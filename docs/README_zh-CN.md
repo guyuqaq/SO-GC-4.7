@@ -26,15 +26,19 @@
 
 - 获取Java 17：https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 - 获取[MongoDB社区版](https://www.mongodb.com/try/download/community)
-- 获取游戏4.5正式版 (如果你没有4.5的客户端，可以在这里找到）：
-[YuanShen_4.5.0.zip.001](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.001)
-[YuanShen_4.5.0.zip.002](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.002)
-[YuanShen_4.5.0.zip.003](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.003)
-[YuanShen_4.5.0.zip.004](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.004)
-[YuanShen_4.5.0.zip.005](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.005)
-[YuanShen_4.5.0.zip.006](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.006)
-[YuanShen_4.5.0.zip.007](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.007)
-[YuanShen_4.5.0.zip.008](https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20240301202812_kIdgwLMrsEqWTonu/YuanShen_4.5.0.zip.008)
+- 获取游戏4.5正式版 (如果你没有4.5的客户端，可以在这里找到，推荐使用OS客户端而不是CN）：
+
+| 下载链接 | 大小 | MD5 校验码 |
+| :---: | :---: | :---: |
+| [GenshinImpact_4.5.0.zip.001](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.001) | 10.0 GB | f90ff656a5c84c299a9a0359e67d6133 |
+| [GenshinImpact_4.5.0.zip.002](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.002) | 10.0 GB | 8503c15c090ec71d699591d4782ac9ac |
+| [GenshinImpact_4.5.0.zip.003](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.003) | 10.0 GB | f57a42ced76275035216984ef3edb1b0 |
+| [GenshinImpact_4.5.0.zip.004](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.004) | 10.0 GB | 47b905fb1a6a3a3e8518002957ef543d |
+| [GenshinImpact_4.5.0.zip.005](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.005) | 10.0 GB | 9e2200dd6334f27ece3afd3008c83ee4 |
+| [GenshinImpact_4.5.0.zip.006](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.006) | 10.0 GB | 1944ef5e7b24adb38157b5920d2662be |
+| [GenshinImpact_4.5.0.zip.007](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.007) | 10.0 GB | 815eeee0c40f125c8ac355551893e4cc |
+| [GenshinImpact_4.5.0.zip.008](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.008) | 0.17 GB | 95be2c4d704b1e2a8dad719344e66e63 |
+
 
 - 下载[最新的Cultivation版本](https://github.com/Grasscutters/Cultivation/releases/latest)（使用以“.msi”为后缀的安装包）。
 - 以管理员身份打开Cultivation，按右上角的下载按钮。
