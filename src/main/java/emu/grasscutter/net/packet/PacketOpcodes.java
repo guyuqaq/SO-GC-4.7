@@ -67,6 +67,10 @@ public final class PacketOpcodes {
     public static final int PlayerSetPauseReq = 28845;
     public static final int SceneTransToPointReq = 22538;
     public static final int SceneTransToPointRsp = 4635;
+    public static final int PlayerStoreNotify = 20155;
+    public static final int WearEquipRsp = 9831;
+    public static final int AvatarEquipChangeNotify = 9280;
+    public static final int WearEquipReq = 21829;
 
     // 4.5.0 Obfuscated
     public static final int OFCNFIEOFJD = 27048;
@@ -99,7 +103,6 @@ public final class PacketOpcodes {
     public static final int FAHBOAHLDAD = 7185;
     public static final int JKDLJPPMLEG = 24316;
     public static final int EIKNJOLFCJE = 24703;
-    public static final int PNFMOKMNJGM = 9831;
     public static final int EGDDDPGNJKP = 21726;
     public static final int CCMAOMADGDI = 22140;
     public static final int PEMBICEJKLB = 1816;
@@ -273,7 +276,6 @@ public final class PacketOpcodes {
     public static final int KNBKJADHOBL = 24801;
     public static final int ODEOEEDPNFC = 27707;
     public static final int FFNNAGBNCBM = 8863;
-    public static final int BHODMOOLEGO = 20155;
     public static final int NFKOBOCEHAC = 21481;
     public static final int AJFLDMFHKDH = 659;
     public static final int BGNNOFANNGO = 20812;
@@ -643,7 +645,6 @@ public final class PacketOpcodes {
     public static final int NCHKEFLAMIO = 29341;
     public static final int LBEBGCKGANI = 25865;
     public static final int GKGKNCGBACP = 27331;
-    public static final int ACMEDLBBMLJ = 9280;
     public static final int PLAEOEILAGJ = 23961;
     public static final int LLGHIKDDEIA = 26928;
     public static final int DCEOEFJBPCG = 3272;
@@ -2188,7 +2189,6 @@ public final class PacketOpcodes {
     public static final int LJFJABBLMNH = 27393;
     public static final int GPAPHDEJPOH = 6128;
     public static final int DHBADKIBKBH = 29155;
-    public static final int ENAEFLDLLHL = 21829;
     public static final int EAFHMDMLOLM = 28711;
     public static final int OEBEBNPFNAF = 26723;
     public static final int DADEKIMCCGE = 23803;
@@ -2944,7 +2944,6 @@ public final class PacketOpcodes {
     public static final int AvatarDieAnimationEndRsp = 1;
     public static final int AvatarEnterElementViewNotify = 1;
     public static final int AvatarEquipAffixStartNotify = 1;
-    public static final int AvatarEquipChangeNotify = 1;
     public static final int AvatarExpeditionAllDataReq = 1;
     public static final int AvatarExpeditionAllDataRsp = 1;
     public static final int AvatarExpeditionCallBackReq = 1;
@@ -4669,7 +4668,6 @@ public final class PacketOpcodes {
     public static final int PlayerSignatureNotify = 1;
     public static final int PlayerStartMatchReq = 1;
     public static final int PlayerStartMatchRsp = 1;
-    public static final int PlayerStoreNotify = 1;
     public static final int PlayerTimeNotify = 1;
     public static final int PlayerWorldSceneInfoListNotify = 1;
     public static final int PotionEnterDungeonNotify = 1;
@@ -5251,8 +5249,6 @@ public final class PacketOpcodes {
     public static final int WeaponPromoteRsp = 1;
     public static final int WeaponUpgradeReq = 1;
     public static final int WeaponUpgradeRsp = 1;
-    public static final int WearEquipReq = 1;
-    public static final int WearEquipRsp = 1;
     public static final int WidgetActiveChangeNotify = 1;
     public static final int WidgetCaptureAnimalReq = 1;
     public static final int WidgetCaptureAnimalRsp = 1;
