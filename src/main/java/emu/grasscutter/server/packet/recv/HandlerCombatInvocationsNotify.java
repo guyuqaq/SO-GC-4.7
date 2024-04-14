@@ -28,8 +28,8 @@ public class HandlerCombatInvocationsNotify extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
-        CombatInvocationsNotify notif = CombatInvocationsNotify.parseFrom(payload);
-        for (CombatInvokeEntry entry : notif.getInvokeListList()) {
+        CombatInvocationsNotify notify = CombatInvocationsNotify.parseFrom(payload);
+        for (CombatInvokeEntry entry : notify.getInvokeListList()) {
             // Handle combat invoke
             switch (entry.getArgumentType()) {
                 case COMBAT_TYPE_ARGUMENT_EVT_BEING_HIT -> {

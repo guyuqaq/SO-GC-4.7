@@ -73,6 +73,13 @@ public final class PacketOpcodes {
     public static final int WearEquipReq = 21829;
     public static final int WindSeedClientNotify = 27182;
     public static final int WindSeedType1Notify = 1610;
+    public static final int CombatInvocationsNotify = 28055;
+    public static final int EntityFightPropUpdateNotify = 2497;
+    public static final int SceneEntityDisappearNotify = 8508;
+    public static final int SceneEntityUpdateNotify = 23479;
+    public static final int AvatarLifeStateChangeNotify = 29088;
+    public static final int LifeStateChangeNotify = 22853;
+    public static final int WorldPlayerDieNotify = 27637;
 
     // 4.5.0 Obfuscated
     public static final int OFCNFIEOFJD = 27048;
@@ -1249,7 +1256,6 @@ public final class PacketOpcodes {
     public static final int IJDLOBJDKPD = 6189;
     public static final int FFABEOGFAAC = 457;
     public static final int JPANEFBBGNL = 22690;
-    public static final int JPNGKOEFODK = 28055;
     public static final int JDGILLIBGAJ = 25939;
     public static final int FDJIONCFIKO = 6423;
     public static final int DEHFCDNIIGM = 28490;
@@ -1323,7 +1329,6 @@ public final class PacketOpcodes {
     public static final int NELOFHJLCHJ = 25320;
     public static final int JAPFPOLBLDH = 22005;
     public static final int GEPNNJKAGMF = 5670;
-    public static final int KIGKFIGPIHE = 27637;
     public static final int BECDAMGDGHN = 25751;
     public static final int LNNJCKAMHHJ = 22484;
     public static final int EGGGPLAGJCA = 29071;
@@ -1341,7 +1346,6 @@ public final class PacketOpcodes {
     public static final int LAPALEABDJO = 24051;
     public static final int PFBKALEBNKE = 24955;
     public static final int IIKKLNJCOFO = 27516;
-    public static final int AKHGONCDIAI = 8508;
     public static final int BBGPJAIFPEC = 5995;
     public static final int EIEKKFAPFLD = 9498;
     public static final int HOFMPGEGFBL = 3188;
@@ -1520,7 +1524,6 @@ public final class PacketOpcodes {
     public static final int LBBNBEBILEG = 20973;
     public static final int NIEGNCPKFAP = 27615;
     public static final int EOJMLFKEHNG = 3353;
-    public static final int BLHCBILODBF = 29088;
     public static final int DOLPELGPLLI = 29551;
     public static final int GHMKHIBEEAH = 26967;
     public static final int LFFHDDNKKHJ = 27954;
@@ -2472,7 +2475,6 @@ public final class PacketOpcodes {
     public static final int IMDIOPPANDH = 23489;
     public static final int FFDGMJKLONK = 22924;
     public static final int IEEEHPGIIFE = 8708;
-    public static final int GMDCDIAMDHA = 2497;
     public static final int OIEICDEBJLG = 25681;
     public static final int KIBMOPCBHFF = 162;
     public static final int DMNGCOFKKOG = 9683;
@@ -2632,7 +2634,6 @@ public final class PacketOpcodes {
     public static final int OAJNMKJCKAD = 26441;
     public static final int EPKCMELFJIM = 29687;
     public static final int EJMPPIDAKLA = 9374;
-    public static final int EIHCBDOFIPE = 22853;
     public static final int JOFCDOMEGFP = 22113;
     public static final int COGKLGCFPIJ = 4952;
     public static final int LBPHBPPJDPL = 4092;
@@ -2961,7 +2962,6 @@ public final class PacketOpcodes {
     public static final int AvatarFollowRouteNotify = 1;
     public static final int AvatarGainCostumeNotify = 1;
     public static final int AvatarGainFlycloakNotify = 1;
-    public static final int AvatarLifeStateChangeNotify = 1;
     public static final int AvatarPromoteGetRewardReq = 1;
     public static final int AvatarPromoteGetRewardRsp = 1;
     public static final int AvatarPromoteReq = 1;
@@ -3232,7 +3232,6 @@ public final class PacketOpcodes {
     public static final int CoinCollectPrepareReq = 1;
     public static final int CoinCollectPrepareRsp = 1;
     public static final int CoinCollectPrepareStageNotify = 1;
-    public static final int CombatInvocationsNotify = 1;
     public static final int CombineDataNotify = 1;
     public static final int CombineFormulaDataNotify = 1;
     public static final int CombineReq = 1;
@@ -3487,7 +3486,6 @@ public final class PacketOpcodes {
     public static final int EntityConfigHashNotify = 1;
     public static final int EntityFightPropChangeReasonNotify = 1;
     public static final int EntityFightPropNotify = 1;
-    public static final int EntityFightPropUpdateNotify = 1;
     public static final int EntityForceSyncReq = 1;
     public static final int EntityForceSyncRsp = 1;
     public static final int EntityJumpNotify = 1;
@@ -4318,7 +4316,6 @@ public final class PacketOpcodes {
     public static final int LevelTagDataNotify = 1;
     public static final int LevelupCityReq = 1;
     public static final int LevelupCityRsp = 1;
-    public static final int LifeStateChangeNotify = 1;
     public static final int LikeCustomDungeonReq = 1;
     public static final int LikeCustomDungeonRsp = 1;
     public static final int LiveEndNotify = 1;
@@ -4853,12 +4850,10 @@ public final class PacketOpcodes {
     public static final int SceneEntitiesMoveCombineNotify = 1;
     public static final int SceneEntitiesMovesReq = 1;
     public static final int SceneEntitiesMovesRsp = 1;
-    public static final int SceneEntityDisappearNotify = 1;
     public static final int SceneEntityDrownReq = 1;
     public static final int SceneEntityDrownRsp = 1;
     public static final int SceneEntityMoveReq = 1;
     public static final int SceneEntityMoveRsp = 1;
-    public static final int SceneEntityUpdateNotify = 1;
     public static final int SceneForceLockNotify = 1;
     public static final int SceneForceUnlockNotify = 1;
     public static final int SceneGalleryInfoNotify = 1;
@@ -5306,7 +5301,6 @@ public final class PacketOpcodes {
     public static final int WorldOwnerBlossomBriefInfoNotify = 1;
     public static final int WorldOwnerBlossomScheduleInfoNotify = 1;
     public static final int WorldOwnerDailyTaskNotify = 1;
-    public static final int WorldPlayerDieNotify = 1;
     public static final int WorldPlayerInfoNotify = 1;
     public static final int WorldPlayerLocationNotify = 1;
     public static final int WorldPlayerRTTNotify = 1;
