@@ -71,6 +71,8 @@ public final class PacketOpcodes {
     public static final int WearEquipRsp = 9831;
     public static final int AvatarEquipChangeNotify = 9280;
     public static final int WearEquipReq = 21829;
+    public static final int WindSeedClientNotify = 27182;
+    public static final int WindSeedType1Notify = 1610;
 
     // 4.5.0 Obfuscated
     public static final int OFCNFIEOFJD = 27048;
@@ -408,7 +410,6 @@ public final class PacketOpcodes {
     public static final int HKMJFKLJHPD = 514;
     public static final int LCLEAFJMKIE = 2555;
     public static final int IDLAFJPKIPM = 4582;
-    public static final int FDKOFLLLKFG = 27182;
     public static final int IIFOKMDMHDN = 1052;
     public static final int ODNIFIKNJEC = 3982;
     public static final int INDPHDNIIEL = 7621;
@@ -1045,7 +1046,6 @@ public final class PacketOpcodes {
     public static final int ONMHLAMEAHB = 24005;
     public static final int DPKMHFNJEAE = 26911;
     public static final int GMCHGFGKHNB = 1161;
-    public static final int EJDNOAGEHPB = 1610;
     public static final int CGPHPLBMDIC = 24541;
     public static final int NFOLNJHABDM = 3013;
     public static final int LHNDPKAGMDE = 26691;
@@ -5271,8 +5271,6 @@ public final class PacketOpcodes {
     public static final int WindFieldGalleryInfoNotify = 1;
     public static final int WindFieldRestartDungeonReq = 1;
     public static final int WindFieldRestartDungeonRsp = 1;
-    public static final int WindSeedClientNotify = 1;
-    public static final int WindSeedType1Notify = 1;
     public static final int WindSeedType2Notify = 1;
     public static final int WindSeedType3Notify = 1;
     public static final int WinterCampAcceptAllGiveItemReq = 1;
