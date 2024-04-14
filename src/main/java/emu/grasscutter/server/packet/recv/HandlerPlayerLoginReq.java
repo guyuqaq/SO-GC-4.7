@@ -41,7 +41,7 @@ public class HandlerPlayerLoginReq extends PacketHandler {
             // session.setState(SessionState.PICKING_CHARACTER);
             // session.send(new BasePacket(PacketOpcodes.DoSetPlayerBornDataNotify));
 
-            // Hardcode default mc and nickname
+            // Hardcode default mc
             int avatarId = 10000007;
             Avatar mainCharacter = new Avatar(avatarId);
 

@@ -18,8 +18,7 @@ public class PacketOpcodesUtils {
 //                    PacketOpcodes.QueryPathRsp,
 
                     // Satiation sends these every tick
-                    PacketOpcodes.PlayerTimeNotify,
-                    PacketOpcodes.SceneEntityMoveNotify
+                    PacketOpcodes.PlayerTimeNotify
 //                    PacketOpcodes.PlayerGameTimeNotify,
 //                    PacketOpcodes.AvatarPropNotify,
 //                    PacketOpcodes.AvatarSatiationDataNotify

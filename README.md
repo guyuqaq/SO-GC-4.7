@@ -41,17 +41,12 @@
 | [GenshinImpact_4.5.0.zip.008](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240301203033_RZSIny3hwJ5nq959/GenshinImpact_4.5.0.zip.008) | 0.17 GB | 95be2c4d704b1e2a8dad719344e66e63 |
 
 
-- Download the [latest Cultivation version](https://github.com/Grasscutters/Cultivation/releases/latest). Use the `.msi` installer.
-- After opening Cultivation (as admin), press the download button in the upper right corner. 
-- Click `Download All-in-One`
-- Click the gear in the upper right corner
-- Set the game Install path to where your game is located.
-- Set the Custom Java Path to `C:\Program Files\Java\jdk-17\bin\java.exe`
-- Leave all other settings on default
+- Find the patch from somewhere on the internet.
+- Put the `version.dll` in to the folder of your game client.
+- Launch the server.
+- Launch the client and login.
 
-- Click the small button next to launch.
-- Click the launch button.
-- Log in with whatever username you want. Password can be anything.
+- Enjoy!
 
 ### Building
 

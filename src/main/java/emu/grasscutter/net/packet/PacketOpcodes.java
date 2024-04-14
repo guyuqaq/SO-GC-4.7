@@ -49,7 +49,7 @@ public final class PacketOpcodes {
     public static final int AvatarChangeCostumeNotify = 8370;
     public static final int AvatarWearFlycloakRsp = 25960;
     public static final int AvatarFlycloakChangeNotify = 23818;
-    public static final int SceneEntityMoveNotify = 25552;
+    public static final int UnionCmdNotify = 25552;
     public static final int GetPlayerFriendListRsp = 4270;
     public static final int GetPlayerFriendListReq = 1217;
     public static final int NpcTalkReq = 9937;
@@ -3122,6 +3122,7 @@ public final class PacketOpcodes {
     public static final int CPLDBPNPOEM = 1;
     public static final int CalcWeaponUpgradeReturnItemsReq = 1;
     public static final int CalcWeaponUpgradeReturnItemsRsp = 1;
+    public static final int SceneEntityMoveNotify = 1;
     public static final int CanUseSkillNotify = 1;
     public static final int CancelCityReputationRequestReq = 1;
     public static final int CancelCityReputationRequestRsp = 1;
@@ -5169,7 +5170,6 @@ public final class PacketOpcodes {
     public static final int TryInterruptRogueDiaryDungeonRsp = 1;
     public static final int UgcNotify = 1;
     public static final int UnfreezeGroupLimitNotify = 1;
-    public static final int UnionCmdNotify = 1;
     public static final int UnlockAvatarTalentReq = 1;
     public static final int UnlockAvatarTalentRsp = 1;
     public static final int UnlockCoopChapterReq = 1;
