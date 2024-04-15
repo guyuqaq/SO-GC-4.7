@@ -18,8 +18,11 @@ public class PacketOpcodesUtils {
 //                    PacketOpcodes.QueryPathRsp,
 
                     // Satiation sends these every tick
-                    PacketOpcodes.PlayerTimeNotify
-//                    PacketOpcodes.PlayerGameTimeNotify,
+                    PacketOpcodes.PlayerTimeNotify,
+                    PacketOpcodes.NEHELOFCELM,
+                    PacketOpcodes.EEPCNJBMIOP,
+                    PacketOpcodes.CMOPBPKBGDF,
+                    PacketOpcodes.PlayerGameTimeNotify
 //                    PacketOpcodes.AvatarPropNotify,
 //                    PacketOpcodes.AvatarSatiationDataNotify
             );

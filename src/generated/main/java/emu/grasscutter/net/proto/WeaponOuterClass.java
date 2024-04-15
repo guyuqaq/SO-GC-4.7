@@ -71,10 +71,6 @@ public final class WeaponOuterClass {
         int key);
   }
   /**
-   * <pre>
-   * Obf: NHOLFKPNLCH
-   * </pre>
-   *
    * Protobuf type {@code Weapon}
    */
   public static final class Weapon extends
@@ -506,10 +502,6 @@ public final class WeaponOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NHOLFKPNLCH
-     * </pre>
-     *
      * Protobuf type {@code Weapon}
      */
     public static final class Builder extends
