@@ -19,10 +19,11 @@ public class PacketOpcodesUtils {
 
                     // Satiation sends these every tick
                     PacketOpcodes.PlayerTimeNotify,
-                    PacketOpcodes.NEHELOFCELM,
+                    PacketOpcodes.AbilityInvocationsNotify,
                     PacketOpcodes.EEPCNJBMIOP,
                     PacketOpcodes.CMOPBPKBGDF,
-                    PacketOpcodes.PlayerGameTimeNotify
+                    PacketOpcodes.PlayerGameTimeNotify,
+                    PacketOpcodes.OGCBHENCLJJ
 //                    PacketOpcodes.AvatarPropNotify,
 //                    PacketOpcodes.AvatarSatiationDataNotify
             );

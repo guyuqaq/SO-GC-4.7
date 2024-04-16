@@ -29,6 +29,23 @@ public class PacketGadgetInteractRsp extends BasePacket {
         this.setData(proto.build());
     }
 
+    public PacketGadgetInteractRsp(
+        int gadgetId, int gadgetEntityId, InteractType interact, InterOpType opType) {
+        super(PacketOpcodes.GadgetInteractRsp);
+
+        var proto =
+            GadgetInteractRsp.newBuilder()
+                .setGadgetEntityId(gadgetEntityId)
+                .setInteractType(interact)
+                .setGadgetId(gadgetId);
+
+        if (opType != null) {
+            proto.setOpType(opType);
+        }
+
+        this.setData(proto.build());
+    }
+
     public PacketGadgetInteractRsp() {
         super(PacketOpcodes.GadgetInteractRsp);
 

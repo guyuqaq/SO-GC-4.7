@@ -15,10 +15,6 @@ public final class AbilityInvokeArgumentOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: LBKBGBCCGMA
-   * </pre>
-   *
    * Protobuf enum {@code AbilityInvokeArgument}
    */
   public enum AbilityInvokeArgument

@@ -99,6 +99,31 @@ public final class PacketOpcodes {
     public static final int ClientAbilityInitFinishNotify = 29194;
     public static final int SetEquipLockStateReq = 29155;
     public static final int SetEquipLockStateRsp = 9498;
+    public static final int GetActivityInfoRsp = 1628;
+    public static final int AbilityInvocationsNotify = 6819;
+    public static final int SetNameCardReq = 8517; // TODO: check if correct (another: 7206)
+    public static final int SetNameCardRsp = 6687;
+    public static final int UpdatePlayerShowNameCardListReq = 4170;
+    public static final int UpdatePlayerShowNameCardListRsp = 8130;
+    public static final int GetFriendShowNameCardInfoRsp = 5333; // TODO: no req yet
+    public static final int EntityFightPropChangeReasonNotify = 25903;
+    public static final int PlayerPropChangeNotify = 5425;
+    public static final int SetPlayerNameReq = 659;
+    public static final int SetPlayerNameRsp = 20219;
+    public static final int SetPlayerSignatureReq = 5604;
+    public static final int SetPlayerSignatureRsp = 293;
+    public static final int SetPlayerBirthdayReq = 29315;
+    public static final int SetPlayerBirthdayRsp = 6486;
+    public static final int EvtAiSyncSkillCdNotify = 9045;
+    public static final int PathfindingEnterSceneReq = 2355; // TODO: no rsp yet
+    public static final int ToTheMoonEnterSceneReq = 6125;
+    public static final int PlayerPropChangeReasonNotify = 25441;
+    public static final int WorldPlayerReviveReq = 25233; // TODO: no rsp yet
+    public static final int PlayerPropNotify = 28854;
+    public static final int EvtDoSkillSuccNotify = 3164;
+    public static final int EvtDestroyGadgetNotify = 3809;
+    public static final int EvtEntityRenderersChangedNotify = 7798;
+    public static final int AvatarFightPropUpdateNotify = 21785; // TODO: check if correct
 
     // 4.5.0 Obfuscated
     public static final int OFCNFIEOFJD = 27048;
@@ -122,7 +147,6 @@ public final class PacketOpcodes {
     public static final int FOCNKALGLNH = 9674;
     public static final int ADABGFHGAAB = 26569;
     public static final int LCNPPPBNBNG = 23956;
-    public static final int PCHHGKFAOEN = 25441;
     public static final int PODMPGEMFDM = 23706;
     public static final int BNIALJIFLMB = 25855;
     public static final int KBIJCIBKEPH = 7703;
@@ -155,7 +179,6 @@ public final class PacketOpcodes {
     public static final int BFFDMGGICNM = 1721;
     public static final int DEJDDADAELH = 7780;
     public static final int JOKLDGIDMPA = 25129;
-    public static final int BDJGDEKDJKE = 6486;
     public static final int MBENAHONKGP = 24646;
     public static final int FOBFNMKMDDC = 1590;
     public static final int HPCJGFGILHC = 4455;
@@ -181,7 +204,6 @@ public final class PacketOpcodes {
     public static final int OGPJEAAMACF = 29376;
     public static final int GIGKBBOBBPD = 3254;
     public static final int KFJPGGCCENI = 6623;
-    public static final int FKLNHIFLMDP = 29315;
     public static final int CECPOABDNBB = 1222;
     public static final int JOHKHFHKIJP = 22204;
     public static final int OIIIBMFEAOI = 5625;
@@ -304,7 +326,6 @@ public final class PacketOpcodes {
     public static final int ODEOEEDPNFC = 27707;
     public static final int FFNNAGBNCBM = 8863;
     public static final int NFKOBOCEHAC = 21481;
-    public static final int AJFLDMFHKDH = 659;
     public static final int BGNNOFANNGO = 20812;
     public static final int NBBPMBDEIKI = 4868;
     public static final int HDOEOJBMMCC = 29518;
@@ -337,7 +358,6 @@ public final class PacketOpcodes {
     public static final int KLENMACFOGN = 21668;
     public static final int BFPGIFDGAHA = 9522;
     public static final int OEDGNCHCFOH = 4102;
-    public static final int NOLKHHPDECB = 28854;
     public static final int NFCDMGBEPPP = 29237;
     public static final int JLLGCHODHPF = 2523;
     public static final int GHIOGOJALNF = 21548;
@@ -440,7 +460,6 @@ public final class PacketOpcodes {
     public static final int INDPHDNIIEL = 7621;
     public static final int HJMONKHHJKL = 5396;
     public static final int JNBNEHKLGNI = 23687;
-    public static final int HKONKHPIOHG = 25233;
     public static final int AFJEPKMGLGG = 552;
     public static final int NLIGCFFCNII = 523;
     public static final int MLPPLCEMPCF = 27753;
@@ -651,7 +670,6 @@ public final class PacketOpcodes {
     public static final int HHLDMPKDPDF = 25755;
     public static final int BGPJKMGKDLB = 1023;
     public static final int IKIJCPAEDKG = 26398;
-    public static final int BEILNHHMMML = 6125;
     public static final int FOHMEPBGFIO = 29128;
     public static final int ENEMACBHPIN = 27209;
     public static final int GJBIEPAOHGG = 7906;
@@ -683,7 +701,6 @@ public final class PacketOpcodes {
     public static final int DJKIJDAADCB = 20888;
     public static final int DBKJHAPACMN = 6678;
     public static final int LDCFCLPKFBO = 6430;
-    public static final int CHLAKHHOLOJ = 9045;
     public static final int KKJNHNCLANN = 4924;
     public static final int EAEOFFEJKMH = 2368;
     public static final int POJCHKOILKM = 9355;
@@ -980,7 +997,6 @@ public final class PacketOpcodes {
     public static final int KLANOFNEDPK = 24815;
     public static final int HAFGDHNNMMP = 23951;
     public static final int LCJBHEJNGFJ = 2366;
-    public static final int LHAJKNBAMKB = 21785;
     public static final int HHMPPAPDMKG = 26903;
     public static final int NALHIBAJCOK = 24087;
     public static final int MACCMNMKGEG = 24918;
@@ -1025,7 +1041,6 @@ public final class PacketOpcodes {
     public static final int KCBDMAOJNOP = 26820;
     public static final int EDIMKHBJNLM = 5106;
     public static final int JEPHHONPFMH = 3676;
-    public static final int FOABMLAOACB = 7798;
     public static final int OFKLILNIEJG = 4093;
     public static final int PMIIGHPMPPO = 20230;
     public static final int BDKPDNGKGFP = 27176;
@@ -1222,7 +1237,6 @@ public final class PacketOpcodes {
     public static final int HNOLCEHAFLO = 977;
     public static final int IFKNAAOKOMP = 20671;
     public static final int JNMBMBPEMGM = 21276;
-    public static final int NPKCMHCFGGL = 20219;
     public static final int DPMPKNJPMHN = 22581;
     public static final int DLBEAAOHBIG = 20806;
     public static final int KHFLKCHGJEM = 9648;
@@ -1241,7 +1255,6 @@ public final class PacketOpcodes {
     public static final int HDJNKGEFFJE = 20270;
     public static final int KOOOGAOIKBL = 28319;
     public static final int JLLABMLFENN = 26937;
-    public static final int CLEEMCBGLEF = 8517;
     public static final int GECOBMEDMPC = 23742;
     public static final int KCJKFGLMCBA = 1135;
     public static final int MNPBEJCPNNJ = 9883;
@@ -1374,7 +1387,6 @@ public final class PacketOpcodes {
     public static final int JAIMHJMAEMO = 6437;
     public static final int KFHKKOBCBNE = 7923;
     public static final int DPICEFPJHCM = 23703;
-    public static final int MEEAJLJFHOL = 3164;
     public static final int GBIEDOEJKCJ = 9827;
     public static final int FLMMPOONPHK = 29660;
     public static final int JEKHIOCKAAD = 95;
@@ -1564,7 +1576,6 @@ public final class PacketOpcodes {
     public static final int PKMGAHGADAE = 29786;
     public static final int NPBCCABDDFF = 1875;
     public static final int ANAEAPJBKJC = 5664;
-    public static final int NEHELOFCELM = 6819;
     public static final int PGDPHIPALJD = 2669;
     public static final int FCNIHGPEGJP = 7870;
     public static final int AIDLOGBLEJG = 8498;
@@ -1595,7 +1606,6 @@ public final class PacketOpcodes {
     public static final int CPHMCOCAAHO = 26014;
     public static final int IICDACJBIHB = 26500;
     public static final int PBEBEJACFIB = 25108;
-    public static final int PAMOKHOAHMB = 6687;
     public static final int PNDBNMMCEIC = 4448;
     public static final int DICILFHCPIC = 28153;
     public static final int OCLNHEMOJKP = 21933;
@@ -1660,7 +1670,6 @@ public final class PacketOpcodes {
     public static final int AMNNNIJDGFM = 4972;
     public static final int MGCFFOJMJPL = 24231;
     public static final int JIGJEGAJLIE = 3370;
-    public static final int KLCAALJGMEN = 2355;
     public static final int ODBLMFGLCLJ = 8917;
     public static final int NMEFDHGKOBF = 24248;
     public static final int MBKCJCEBONG = 20896;
@@ -1680,7 +1689,6 @@ public final class PacketOpcodes {
     public static final int MAILDEPBJFP = 5273;
     public static final int LAMBLJPJAPG = 20265;
     public static final int GLLEAJCENIA = 7305;
-    public static final int GKMNEEPIGPI = 1628;
     public static final int PBBJLCBFLPK = 4017;
     public static final int IEGHAPHFOAO = 25916;
     public static final int OJPBBHGOJBN = 27085;
@@ -1788,7 +1796,6 @@ public final class PacketOpcodes {
     public static final int GDIDLIBGLDN = 25345;
     public static final int KKMNMFAIPCN = 26411;
     public static final int CNKFOEMFNLE = 20523;
-    public static final int BPJAABPLGKF = 293;
     public static final int CPJMEKFODOJ = 28579;
     public static final int FLGCIPBHOAB = 2330;
     public static final int CMIKLJDGBKJ = 2304;
@@ -1895,7 +1902,6 @@ public final class PacketOpcodes {
     public static final int CJMHCAPHIDK = 7343;
     public static final int KJFPNKJOKDL = 5615;
     public static final int CNPIIFIALAE = 3699;
-    public static final int NAKLEDJPAAA = 5425;
     public static final int BLJOOEDMJGD = 7647;
     public static final int GJBNFHPIPPF = 25158;
     public static final int JENJMFFJFOP = 3506;
@@ -1906,7 +1912,6 @@ public final class PacketOpcodes {
     public static final int DHJHCAEHFAI = 23686;
     public static final int FCACIAIMCBM = 28251;
     public static final int EJKFLDEKBIC = 24478;
-    public static final int NKCCKIHAAOG = 5333;
     public static final int MCBCALAGFLB = 2327;
     public static final int GAEOMACNCFG = 2832;
     public static final int LGGGABJBBFB = 9628;
@@ -2057,7 +2062,6 @@ public final class PacketOpcodes {
     public static final int NCDNOKHIKMH = 2520;
     public static final int ODIAHFHGGMP = 24890;
     public static final int HGCECLEGBKP = 21120;
-    public static final int NOBDKPLNPCE = 4170;
     public static final int FGLNGAPNAFO = 1394;
     public static final int DJJHKGNJEBH = 970;
     public static final int IHJDAJPANAO = 9589;
@@ -2221,7 +2225,6 @@ public final class PacketOpcodes {
     public static final int CALGHOCCIBE = 7795;
     public static final int OAMPHCJKJAJ = 4886;
     public static final int LKEFJOPMFMK = 124;
-    public static final int GGPPFCHLMKN = 25903;
     public static final int BCFAKFELMAE = 24687;
     public static final int JNHPHIHAIGH = 6002;
     public static final int AGFFDHONCGC = 28462;
@@ -2249,7 +2252,6 @@ public final class PacketOpcodes {
     public static final int FCDCAHCGFIH = 21797;
     public static final int GHLOEBNLJIH = 29393;
     public static final int HKIAKEEKGIC = 26748;
-    public static final int BPMDACFKNBD = 3809;
     public static final int ONHDHNLCLIF = 3152;
     public static final int CAOHPAJAJKE = 6331;
     public static final int JMOLFNOFBDE = 6562;
@@ -2628,7 +2630,6 @@ public final class PacketOpcodes {
     public static final int BNENEIACJAG = 9092;
     public static final int MFPFLBMGBIA = 28913;
     public static final int IBHEKNEMAKE = 827;
-    public static final int BKMFICIDKLG = 5604;
     public static final int JAPDEHPKPOP = 916;
     public static final int MBMIKIMJBGF = 26408;
     public static final int BCFNELGGFNH = 21294;
@@ -2766,7 +2767,6 @@ public final class PacketOpcodes {
     public static final int NHBNAGCMEEL = 24578;
     public static final int KKMDKLJEDNC = 22090;
     public static final int AKCLDDPAKFB = 3602;
-    public static final int JPNGGNNKEEE = 8130;
     public static final int HGCEIDAGDNN = 27985;
     public static final int JLIOBJCBJKH = 3379;
     public static final int MBIABNIENIB = 1379;
@@ -2849,7 +2849,6 @@ public final class PacketOpcodes {
     public static final int AbilityChangeNotify = 1;
     public static final int AbilityInvocationFailNotify = 1;
     public static final int AbilityInvocationFixedNotify = 1;
-    public static final int AbilityInvocationsNotify = 1;
     public static final int AcceptCityReputationRequestReq = 1;
     public static final int AcceptCityReputationRequestRsp = 1;
     public static final int AchievementAllDataNotify = 1;
@@ -2956,7 +2955,6 @@ public final class PacketOpcodes {
     public static final int AvatarFetterLevelRewardReq = 1;
     public static final int AvatarFetterLevelRewardRsp = 1;
     public static final int AvatarFightPropNotify = 1;
-    public static final int AvatarFightPropUpdateNotify = 1;
     public static final int AvatarFollowRouteNotify = 1;
     public static final int AvatarGainCostumeNotify = 1;
     public static final int AvatarGainFlycloakNotify = 1;
@@ -3477,7 +3475,6 @@ public final class PacketOpcodes {
     public static final int EntityAiSyncNotify = 1;
     public static final int EntityAuthorityChangeNotify = 1;
     public static final int EntityConfigHashNotify = 1;
-    public static final int EntityFightPropChangeReasonNotify = 1;
     public static final int EntityFightPropNotify = 1;
     public static final int EntityForceSyncReq = 1;
     public static final int EntityForceSyncRsp = 1;
@@ -3488,7 +3485,6 @@ public final class PacketOpcodes {
     public static final int EquipRoguelikeRuneReq = 1;
     public static final int EquipRoguelikeRuneRsp = 1;
     public static final int EvtAiSyncCombatThreatInfoNotify = 1;
-    public static final int EvtAiSyncSkillCdNotify = 1;
     public static final int EvtAnimatorParameterNotify = 1;
     public static final int EvtAnimatorStateChangedNotify = 1;
     public static final int EvtAvatarEnterFocusNotify = 1;
@@ -3502,10 +3498,7 @@ public final class PacketOpcodes {
     public static final int EvtBulletHitNotify = 1;
     public static final int EvtBulletMoveNotify = 1;
     public static final int EvtCostStaminaNotify = 1;
-    public static final int EvtDestroyGadgetNotify = 1;
     public static final int EvtDestroyServerGadgetNotify = 1;
-    public static final int EvtDoSkillSuccNotify = 1;
-    public static final int EvtEntityRenderersChangedNotify = 1;
     public static final int EvtEntityStartDieEndNotify = 1;
     public static final int EvtFaceToDirNotify = 1;
     public static final int EvtFaceToEntityNotify = 1;
@@ -3806,7 +3799,6 @@ public final class PacketOpcodes {
     public static final int GearActivityStartPlayPictureReq = 1;
     public static final int GearActivityStartPlayPictureRsp = 1;
     public static final int GetActivityInfoReq = 1;
-    public static final int GetActivityInfoRsp = 1;
     public static final int GetActivityScheduleReq = 1;
     public static final int GetActivityScheduleRsp = 1;
     public static final int GetActivityShopSheetInfoReq = 1;
@@ -3858,7 +3850,6 @@ public final class PacketOpcodes {
     public static final int GetFriendShowAvatarInfoReq = 1;
     public static final int GetFriendShowAvatarInfoRsp = 1;
     public static final int GetFriendShowNameCardInfoReq = 1;
-    public static final int GetFriendShowNameCardInfoRsp = 1;
     public static final int GetFurnitureCurModuleArrangeCountReq = 1;
     public static final int GetGameplayRecommendationReq = 1;
     public static final int GetGameplayRecommendationRsp = 1;
@@ -4528,7 +4519,6 @@ public final class PacketOpcodes {
     public static final int PSPlayerApplyEnterMpReq = 1;
     public static final int PSPlayerApplyEnterMpRsp = 1;
     public static final int ParentQuestInferenceDataNotify = 1;
-    public static final int PathfindingEnterSceneReq = 1;
     public static final int PathfindingEnterSceneRsp = 1;
     public static final int PathfindingPingNotify = 1;
     public static final int PerformOperationNotify = 1;
@@ -4630,9 +4620,6 @@ public final class PacketOpcodes {
     public static final int PlayerOfferingReq = 1;
     public static final int PlayerOfferingRsp = 1;
     public static final int PlayerPreEnterMpNotify = 1;
-    public static final int PlayerPropChangeNotify = 1;
-    public static final int PlayerPropChangeReasonNotify = 1;
-    public static final int PlayerPropNotify = 1;
     public static final int PlayerQuitDungeonReq = 1;
     public static final int PlayerQuitDungeonRsp = 1;
     public static final int PlayerQuitFromHomeNotify = 1;
@@ -4929,22 +4916,14 @@ public final class PacketOpcodes {
     public static final int SetIsAutoUnlockSpecificEquipReq = 1;
     public static final int SetIsAutoUnlockSpecificEquipRsp = 1;
     public static final int SetLimitOptimizationNotify = 1;
-    public static final int SetNameCardReq = 1;
-    public static final int SetNameCardRsp = 1;
     public static final int SetOpenStateReq = 1;
     public static final int SetOpenStateRsp = 1;
-    public static final int SetPlayerBirthdayReq = 1;
-    public static final int SetPlayerBirthdayRsp = 1;
     public static final int SetPlayerBornDataReq = 1;
     public static final int SetPlayerBornDataRsp = 1;
     public static final int SetPlayerHeadImageReq = 1;
     public static final int SetPlayerHeadImageRsp = 1;
-    public static final int SetPlayerNameReq = 1;
-    public static final int SetPlayerNameRsp = 1;
     public static final int SetPlayerPropReq = 1;
     public static final int SetPlayerPropRsp = 1;
-    public static final int SetPlayerSignatureReq = 1;
-    public static final int SetPlayerSignatureRsp = 1;
     public static final int SetSceneWeatherAreaReq = 1;
     public static final int SetSceneWeatherAreaRsp = 1;
     public static final int SetUpLunchBoxWidgetReq = 1;
@@ -5093,7 +5072,6 @@ public final class PacketOpcodes {
     public static final int TeamResonanceChangeNotify = 1;
     public static final int ToTheMoonAddObstacleReq = 1;
     public static final int ToTheMoonAddObstacleRsp = 1;
-    public static final int ToTheMoonEnterSceneReq = 1;
     public static final int ToTheMoonEnterSceneRsp = 1;
     public static final int ToTheMoonObstaclesModifyNotify = 1;
     public static final int ToTheMoonPingNotify = 1;
@@ -5168,8 +5146,6 @@ public final class PacketOpcodes {
     public static final int UpdatePS4FriendListRsp = 1;
     public static final int UpdatePlayerShowAvatarListReq = 1;
     public static final int UpdatePlayerShowAvatarListRsp = 1;
-    public static final int UpdatePlayerShowNameCardListReq = 1;
-    public static final int UpdatePlayerShowNameCardListRsp = 1;
     public static final int UpdateRedPointNotify = 1;
     public static final int UpdateReunionWatcherNotify = 1;
     public static final int UpdateSalvageBundleMarkReq = 1;
@@ -5285,7 +5261,6 @@ public final class PacketOpcodes {
     public static final int WorldPlayerInfoNotify = 1;
     public static final int WorldPlayerLocationNotify = 1;
     public static final int WorldPlayerRTTNotify = 1;
-    public static final int WorldPlayerReviveReq = 1;
     public static final int WorldPlayerReviveRsp = 1;
     public static final int WorldRoutineChangeNotify = 1;
     public static final int WorldRoutineTypeCloseNotify = 1;
