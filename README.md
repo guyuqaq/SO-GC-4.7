@@ -62,6 +62,7 @@ cd UnknownAnimeGamePS
 [Java Development Kit 17 | JDK](https://oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or higher
 [Git](https://git-scm.com/downloads)
 
+- **Sidenote**: Handbook generation may fail on some systems. To disable handbook generation, append `-PskipHandbook=1` to the `gradlew jar` command.
 
 - **For Windows**:
 ```shell
@@ -79,14 +80,11 @@ chmod +x gradlew
 
 ### You can find the output JAR in the project root folder.
 
-- **Sidenote**: Handbook generation may fail on some systems. To disable handbook generation, append `-PskipHandbook=1` to the `gradlew jar` command.
-
 ### Manually compile the handbook
 ```shell
 ./gradlew generateHandbook
 ```
 
-- **Sidenote**: Make sure to append the right prefix and suffix based on your operating system. (./ for linux | .\ for windows | add .bat on windows systems when compiling server/handbook)
 
 ## You're done with the building part!
 
