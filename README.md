@@ -60,6 +60,7 @@ cd UnknownAnimeGamePS
 **Requirements**:
 
 [Java Development Kit 17 | JDK](https://oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or higher
+
 [Git](https://git-scm.com/downloads)
 
 - **Sidenote**: Handbook generation may fail on some systems. To disable handbook generation, append `-PskipHandbook=1` to the `gradlew jar` command.
