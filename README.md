@@ -41,6 +41,8 @@
 
 - Find the patch from somewhere on the internet.
 - Put the `version.dll` in to the folder of your game client.
+- Find the old version of mihoyonet.dll (4.2.0) somewhere on the internet.
+- Put the old version of `mihoyonet.dll` in `GenshinImpact_Data/Plugins` folder.
 
 ## Let's build the server
 
