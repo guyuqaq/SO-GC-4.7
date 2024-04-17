@@ -21,12 +21,5 @@ public class HandlerGadgetInteractReq extends PacketHandler {
                 .getQuestManager()
                 .queueEvent(QuestContent.QUEST_CONTENT_INTERACT_GADGET, req.getGadgetId());
         session.getPlayer().interactWith(req.getGadgetEntityId(), req);
-
-//        session.getPlayer().sendPacket(
-//            new PacketGadgetInteractRsp(
-//                req.getGadgetId(),
-//                req.getGadgetEntityId(),
-//                InteractTypeOuterClass.InteractType.INTERACT_TYPE_NONE,
-//                InterOpTypeOuterClass.InterOpType.INTER_OP_TYPE_FINISH));
     }
 }
