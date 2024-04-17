@@ -12,7 +12,7 @@
 * Logging in
 * Combat
 * Friends list
-* Teleportation (-)
+* Teleportation (?)
 * Gacha system (-)
 * Co-op *partially* works (-)
 * Spawning monsters via console
