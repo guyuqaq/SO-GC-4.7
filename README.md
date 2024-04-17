@@ -12,17 +12,15 @@
 * Logging in
 * Combat
 * Friends list
-* Teleportation
-* Gacha system
-* Co-op *partially* works
+* Teleportation (-)
+* Gacha system (-)
+* Co-op *partially* works (-)
 * Spawning monsters via console
 * Inventory features (receiving items/characters, upgrading items/characters, etc)
 
-## Quick setup guide
+# Setup Guide
 
-**Note**: For support please join our [Discord](https://discord.gg/T5vZU6UyeG).
-
-### Quick Start (automatic)
+## Main Requirements
 
 - Get [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - Get [MongoDB Community Server](https://www.mongodb.com/try/download/community)
@@ -43,64 +41,60 @@
 
 - Find the patch from somewhere on the internet.
 - Put the `version.dll` in to the folder of your game client.
+
+## Let's build the server
+
+### 1. Clone the repository
+
+```shell
+git clone --recurse-submodules https://github.com/XeonSucksLAB/UnknownAnimeGamePS.git
+cd UnknownAnimeGamePS
+```
+
+**Curiosity**: Grasscutter uses Gradle to handle dependencies and building.
+
+### 2. Compile the actual Server
+
+**Sidenote**: Make sure to append the right prefix and suffix based on your operating system (./ for linux | .\ for windows | add .bat for windows systems when compiling server JAR/handbook).
+
+**Requirements**:
+
+[Java Development Kit 17 | JDK](https://oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or higher
+[Git](https://git-scm.com/downloads)
+
+
+- **For Windows**:
+```shell
+.\gradlew.bat
+.\gradlew.bat jar
+```
+*If you are wondering, the first command is to set up the environment while the 2nd one is for building the server JAR file.*
+
+- **For Linux**:
+```bash
+chmod +x gradlew
+./gradlew jar
+```
+*If you are wondering, the first command is to make the file executeable and for the rest refer to the windows explanation.*
+
+### You can find the output JAR in the project root folder.
+
+- **Sidenote**: Handbook generation may fail on some systems. To disable handbook generation, append `-PskipHandbook=1` to the `gradlew jar` command.
+
+### Manually compile the handbook
+```shell
+./gradlew generateHandbook
+```
+
+- **Sidenote**: Make sure to append the right prefix and suffix based on your operating system. (./ for linux | .\ for windows | add .bat on windows systems when compiling server/handbook)
+
+## You're done with the building part!
+
 - Launch the server.
 - Launch the client and login.
 
 - Enjoy!
 
-### Building
+### Troubleshooting
 
-Grasscutter uses Gradle to handle dependencies & building.
-
-**Requirements:**
-
-- [Java Development Kit 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) or higher
-- [Git](https://git-scm.com/downloads)
-- [NodeJS](https://nodejs.org/en/download) (Optional, for building the handbook)
-
-##### Clone
-
-```shell
-git clone --recurse-submodules https://github.com/Grasscutters/Grasscutter.git
-cd Grasscutter
-```
-
-##### Compile
-
-**Note**: Handbook generation may fail on some systems. To disable the handbook generation, append `-PskipHandbook=1` to the `gradlew jar` command.
-
-Windows:
-
-```shell
-.\gradlew.bat # Setting up environments
-.\gradlew jar
-```
-
-Linux (GNU):
-
-```bash
-chmod +x gradlew
-./gradlew jar
-```
-
-##### Compiling the Handbook (Manually)
-
-With Gradle:
-
-```shell
-./gradlew generateHandbook
-```
-
-With NPM:
-
-```shell
-cd src/handbook
-npm install
-npm run build
-```
-
-You can find the output jar in the root of the project folder.
-
-### Troubleshooting 
-
-For a list of common issues and solutions and to ask for help, please join [our Discord server](https://discord.gg/T5vZU6UyeG) and go to the support channel.
+TO DO
