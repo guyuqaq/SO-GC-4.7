@@ -15,10 +15,6 @@ public final class ChangeHpReasonOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: HANDEHKHMKN
-   * </pre>
-   *
    * Protobuf enum {@code ChangeHpReason}
    */
   public enum ChangeHpReason

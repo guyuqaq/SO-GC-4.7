@@ -121,7 +121,7 @@ public class MonsterData extends GameResource {
 
     @Getter
     public class HpDrops {
-        private int DropId;
-        private int HpPercent;
+        private int dropId;
+        private int hpPercent;
     }
 }

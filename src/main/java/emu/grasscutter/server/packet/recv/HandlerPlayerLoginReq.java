@@ -26,7 +26,8 @@ public class HandlerPlayerLoginReq extends PacketHandler {
         // Parse request
         PlayerLoginReq req = PlayerLoginReq.parseFrom(payload);
 
-        // Authenticate session (Disabled due to proto issue)
+        // TODO: fix proto field number
+        // Authenticate session
         // if (!req.getToken().equals(session.getAccount().getToken())) {
         //     session.close();
         //     return;
@@ -37,7 +38,8 @@ public class HandlerPlayerLoginReq extends PacketHandler {
 
         // Show opening cutscene if player has no avatars
         if (player.getAvatars().getAvatarCount() == 0) {
-            // Pick character (Disabled due to opcode issue)
+            // TODO: find DoSetPlayerBornDataNotify opcode
+            // Pick character
             // session.setState(SessionState.PICKING_CHARACTER);
             // session.send(new BasePacket(PacketOpcodes.DoSetPlayerBornDataNotify));
 

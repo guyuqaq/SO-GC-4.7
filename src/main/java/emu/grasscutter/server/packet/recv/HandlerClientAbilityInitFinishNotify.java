@@ -11,19 +11,19 @@ public class HandlerClientAbilityInitFinishNotify extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
-        ClientAbilityInitFinishNotify notif = ClientAbilityInitFinishNotify.parseFrom(payload);
+        ClientAbilityInitFinishNotify notify = ClientAbilityInitFinishNotify.parseFrom(payload);
 
         Player player = session.getPlayer();
 
         // Call skill end in the player's ability manager.
         player.getAbilityManager().onSkillEnd(player);
 
-        for (AbilityInvokeEntry entry : notif.getInvokesList()) {
+        for (AbilityInvokeEntry entry : notify.getInvokesList()) {
             player.getAbilityManager().onAbilityInvoke(entry);
             player.getClientAbilityInitFinishHandler().addEntry(entry.getForwardType(), entry);
         }
 
-        if (notif.getInvokesList().size() > 0) {
+        if (notify.getInvokesList().size() > 0) {
             session.getPlayer().getClientAbilityInitFinishHandler().update(session.getPlayer());
         }
     }

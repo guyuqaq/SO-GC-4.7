@@ -93,8 +93,9 @@ public final class AbilityManager extends BasePlayerManager {
                             > 0;
         }
 
-        if (this.burstCasterId == entityId
-                && (ability.getAvatarSkillStartIds().contains(this.burstSkillId) || skillInvincibility)) {
+        // TODO: fix the check
+        // if (this.burstCasterId == entityId
+                // && (ability.getAvatarSkillStartIds().contains(this.burstSkillId) || skillInvincibility)) {
             Grasscutter.getLogger()
                     .trace(
                             "Caster ID's {} burst successful, clearing energy and setting invulnerability",
@@ -105,7 +106,7 @@ public final class AbilityManager extends BasePlayerManager {
                     .handleEvtDoSkillSuccNotify(
                             this.player.getSession(), this.burstSkillId, this.burstCasterId);
             this.removePendingEnergyClear();
-        }
+        // }
     }
 
     public static void registerHandlers() {
