@@ -169,6 +169,7 @@ public final class PacketOpcodes {
     public static final int DungeonDieOptionReq = 20063;
     public static final int DungeonDieOptionRsp = 354;
     public static final int EntityAiSyncNotify = 919;
+    public static final int ServerAnnounceNotify = 8152;
 
     // 4.5.0 Obfuscated
     public static final int OFCNFIEOFJD = 27048;
@@ -1149,7 +1150,6 @@ public final class PacketOpcodes {
     public static final int DFAAFPIKALL = 3640;
     public static final int IJNCGFKHIEB = 2591;
     public static final int KJDJFHKECBJ = 24896;
-    public static final int DIIBEIOCLCG = 8152;
     public static final int OBJCLANGPFN = 7899;
     public static final int HIHDMNLGBAH = 8314;
     public static final int BDBPPJBFHPA = 4043;
@@ -4855,7 +4855,6 @@ public final class PacketOpcodes {
     public static final int SelectEffigyChallengeConditionRsp = 1;
     public static final int SelectRoguelikeDungeonCardReq = 1;
     public static final int SelectRoguelikeDungeonCardRsp = 1;
-    public static final int ServerAnnounceNotify = 1;
     public static final int ServerAnnounceRevokeNotify = 1;
     public static final int ServerBuffChangeNotify = 1;
     public static final int ServerCombatEndNotify = 1;
