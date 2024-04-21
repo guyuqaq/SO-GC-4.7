@@ -360,8 +360,6 @@ public class EnergyManager extends BasePlayerManager {
     private void generateElemBall(int ballId, Position position, int count) {
         // Generate a particle/orb with the specified parameters.
         ItemData itemData = GameData.getItemDataMap().get(ballId);
-        System.out.println("BallId: " + ballId);
-        System.out.println("ItemData: " + itemData);
         if (itemData == null) {
             return;
         }

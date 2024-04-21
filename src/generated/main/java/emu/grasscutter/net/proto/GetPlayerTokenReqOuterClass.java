@@ -19,19 +19,11 @@ public final class GetPlayerTokenReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
      * <code>string client_rand_key = 514;</code>
      * @return The clientRandKey.
      */
     java.lang.String getClientRandKey();
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
      * <code>string client_rand_key = 514;</code>
      * @return The bytes for clientRandKey.
      */
@@ -39,19 +31,11 @@ public final class GetPlayerTokenReqOuterClass {
         getClientRandKeyBytes();
 
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
      * <code>string account_uid = 14;</code>
      * @return The accountUid.
      */
     java.lang.String getAccountUid();
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
      * <code>string account_uid = 14;</code>
      * @return The bytes for accountUid.
      */
@@ -433,10 +417,6 @@ public final class GetPlayerTokenReqOuterClass {
     public static final int CLIENT_RAND_KEY_FIELD_NUMBER = 514;
     private volatile java.lang.Object clientRandKey_;
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
      * <code>string client_rand_key = 514;</code>
      * @return The clientRandKey.
      */
@@ -454,10 +434,6 @@ public final class GetPlayerTokenReqOuterClass {
       }
     }
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
      * <code>string client_rand_key = 514;</code>
      * @return The bytes for clientRandKey.
      */
@@ -479,10 +455,6 @@ public final class GetPlayerTokenReqOuterClass {
     public static final int ACCOUNT_UID_FIELD_NUMBER = 14;
     private volatile java.lang.Object accountUid_;
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
      * <code>string account_uid = 14;</code>
      * @return The accountUid.
      */
@@ -500,10 +472,6 @@ public final class GetPlayerTokenReqOuterClass {
       }
     }
     /**
-     * <pre>
-     * 4.5.0
-     * </pre>
-     *
      * <code>string account_uid = 14;</code>
      * @return The bytes for accountUid.
      */
@@ -1619,10 +1587,6 @@ public final class GetPlayerTokenReqOuterClass {
 
       private java.lang.Object clientRandKey_ = "";
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string client_rand_key = 514;</code>
        * @return The clientRandKey.
        */
@@ -1639,10 +1603,6 @@ public final class GetPlayerTokenReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string client_rand_key = 514;</code>
        * @return The bytes for clientRandKey.
        */
@@ -1660,10 +1620,6 @@ public final class GetPlayerTokenReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string client_rand_key = 514;</code>
        * @param value The clientRandKey to set.
        * @return This builder for chaining.
@@ -1679,10 +1635,6 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string client_rand_key = 514;</code>
        * @return This builder for chaining.
        */
@@ -1693,10 +1645,6 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string client_rand_key = 514;</code>
        * @param value The bytes for clientRandKey to set.
        * @return This builder for chaining.
@@ -1715,10 +1663,6 @@ public final class GetPlayerTokenReqOuterClass {
 
       private java.lang.Object accountUid_ = "";
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string account_uid = 14;</code>
        * @return The accountUid.
        */
@@ -1735,10 +1679,6 @@ public final class GetPlayerTokenReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string account_uid = 14;</code>
        * @return The bytes for accountUid.
        */
@@ -1756,10 +1696,6 @@ public final class GetPlayerTokenReqOuterClass {
         }
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string account_uid = 14;</code>
        * @param value The accountUid to set.
        * @return This builder for chaining.
@@ -1775,10 +1711,6 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string account_uid = 14;</code>
        * @return This builder for chaining.
        */
@@ -1789,10 +1721,6 @@ public final class GetPlayerTokenReqOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * 4.5.0
-       * </pre>
-       *
        * <code>string account_uid = 14;</code>
        * @param value The bytes for accountUid to set.
        * @return This builder for chaining.

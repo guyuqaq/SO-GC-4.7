@@ -55,6 +55,7 @@ import emu.grasscutter.server.game.GameSession.SessionState;
 import emu.grasscutter.server.packet.send.*;
 import emu.grasscutter.utils.*;
 import emu.grasscutter.utils.helpers.DateHelper;
+import emu.grasscutter.utils.objects.DatabaseObject;
 import emu.grasscutter.utils.objects.FieldFetch;
 import it.unimi.dsi.fastutil.ints.*;
 import lombok.*;
@@ -66,7 +67,7 @@ import java.util.concurrent.*;
 import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 
 @Entity(value = "players", useDiscriminator = false)
-public class Player implements PlayerHook, FieldFetch {
+public class Player implements DatabaseObject<Player>, PlayerHook, FieldFetch {
     @Id private int id;
     @Indexed(options = @IndexOptions(unique = true))
     @Getter private String accountId;
@@ -1341,8 +1342,25 @@ public class Player implements PlayerHook, FieldFetch {
         this.getTeamManager().setPlayer(this);
     }
 
+    /**
+     * Saves this object to the database.
+     * As of Grasscutter 1.7.1, this is by default a {@link DatabaseObject#deferSave()} call.
+     */
     public void save() {
         DatabaseHelper.savePlayer(this);
+    }
+
+    /**
+     * Saves this object to the database.
+     *
+     * @param immediate If true, this will be a {@link DatabaseObject#save()} call instead of a {@link DatabaseObject#deferSave()} call.
+     */
+    public void save(boolean immediate) {
+        if (immediate) {
+            DatabaseObject.super.save();
+        } else {
+            this.save();
+        }
     }
 
     // Called from tokenrsp
@@ -1509,7 +1527,7 @@ public class Player implements PlayerHook, FieldFetch {
             this.getEnterHomeRequests().clear();
 
             // Save to db
-            this.save();
+            this.save(true);
             this.getTeamManager().saveAvatars();
             this.getFriendsList().save();
 

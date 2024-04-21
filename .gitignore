@@ -62,6 +62,7 @@ tmp/
 /languages
 /proto
 /lua
+lib/kcp-1.5.1.jar
 
 /*.jar
 /*.sh

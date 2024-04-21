@@ -189,6 +189,9 @@ public final class Grasscutter {
 
     /** Server shutdown event. */
     private static void onShutdown() {
+        // Save all data.
+        Database.saveAll();
+
         // Disable all plugins.
         if (pluginManager != null) pluginManager.disablePlugins();
         // Shutdown the game server.
