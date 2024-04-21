@@ -427,8 +427,7 @@ public class GachaSystem extends BaseGameSystem {
                 FileUtils.getDataUserPath("")
                         .register(
                                 watchService,
-                                new WatchEvent.Kind[] {StandardWatchEventKinds.ENTRY_MODIFY},
-                                SensitivityWatchEventModifier.HIGH);
+                                new WatchEvent.Kind[]{StandardWatchEventKinds.ENTRY_MODIFY});
             } catch (Exception e) {
                 Grasscutter.getLogger()
                         .error(

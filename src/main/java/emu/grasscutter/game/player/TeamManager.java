@@ -991,14 +991,11 @@ public final class TeamManager extends BasePlayerDataManager {
         return respawnPoint.get().getPointData().getTranPos();
     }
 
-    /**
-     * Performs a bulk save operation on all avatars.
-     */
     public void saveAvatars() {
         // Save all avatars from active team
-        Database.saveAll(this.getActiveTeam().stream()
-            .map(EntityAvatar::getAvatar)
-            .toList());
+        for (EntityAvatar entity : this.getActiveTeam()) {
+            entity.getAvatar().save();
+        }
     }
 
     public void onPlayerLogin() { // Hack for now to fix resonances on login

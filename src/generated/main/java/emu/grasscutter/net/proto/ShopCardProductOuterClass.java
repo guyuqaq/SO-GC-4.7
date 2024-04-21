@@ -88,10 +88,6 @@ public final class ShopCardProductOuterClass {
     emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct.ResinCardOrBuilder getResinCardOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: LJJFPCDLGIJ
-   * </pre>
-   *
    * Protobuf type {@code ShopCardProduct}
    */
   public static final class ShopCardProduct extends
@@ -274,10 +270,6 @@ public final class ShopCardProductOuterClass {
           int index);
     }
     /**
-     * <pre>
-     * Obf: JIBALNEIBIK
-     * </pre>
-     *
      * Protobuf type {@code ShopCardProduct.ResinCard}
      */
     public static final class ResinCard extends
@@ -632,10 +624,6 @@ public final class ShopCardProductOuterClass {
         return builder;
       }
       /**
-       * <pre>
-       * Obf: JIBALNEIBIK
-       * </pre>
-       *
        * Protobuf type {@code ShopCardProduct.ResinCard}
        */
       public static final class Builder extends
@@ -1788,10 +1776,6 @@ public final class ShopCardProductOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: LJJFPCDLGIJ
-     * </pre>
-     *
      * Protobuf type {@code ShopCardProduct}
      */
     public static final class Builder extends
