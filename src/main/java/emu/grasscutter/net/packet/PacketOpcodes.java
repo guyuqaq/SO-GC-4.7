@@ -170,6 +170,16 @@ public final class PacketOpcodes {
     public static final int DungeonDieOptionRsp = 354;
     public static final int EntityAiSyncNotify = 919;
     public static final int ServerAnnounceNotify = 8152;
+    public static final int DungeonEntryToBeExploreNotify = 23968;
+    public static final int GetDungeonEntryExploreConditionReq = 4783;
+    public static final int GetDungeonEntryExploreConditionRsp = 22303;
+    public static final int DungeonSettleNotify = 26569;
+    public static final int TowerLevelEndNotify = 27218;
+    public static final int TrialAvatarFirstPassDungeonNotify = 29401;
+    public static final int QuestUpdateQuestVarReq = 2125;
+    public static final int DungeonWayPointNotify = 22654;
+    public static final int SceneForceUnlockNotify = 28994;
+    public static final int SceneForceLockNotify = 2000;
 
     // 4.5.0 Obfuscated
     public static final int OFCNFIEOFJD = 27048;
@@ -191,7 +201,6 @@ public final class PacketOpcodes {
     public static final int ENOFKODNGEA = 21419;
     public static final int NGGNLAFNBLB = 21906;
     public static final int FOCNKALGLNH = 9674;
-    public static final int ADABGFHGAAB = 26569;
     public static final int LCNPPPBNBNG = 23956;
     public static final int PODMPGEMFDM = 23706;
     public static final int BNIALJIFLMB = 25855;
@@ -292,7 +301,6 @@ public final class PacketOpcodes {
     public static final int DKGNAGNPDAL = 22898;
     public static final int KOKOFCFLDKM = 9713;
     public static final int MJLHMEHJMNG = 27793;
-    public static final int DILCDHAJCLG = 22303;
     public static final int GOFOIBKBOML = 7553;
     public static final int HAIGBJEHCBM = 5458;
     public static final int AJCMABJLBEK = 432;
@@ -762,7 +770,6 @@ public final class PacketOpcodes {
     public static final int LOAOOFDOBNJ = 7565;
     public static final int DAMJJLNBBIL = 23488;
     public static final int HKBFHEHOEDF = 8186;
-    public static final int PNMJPACNPNO = 27218;
     public static final int KOOJAEGPKEF = 5862;
     public static final int NBHFKKJNBAN = 26639;
     public static final int MCGHGIGHENA = 9712;
@@ -1083,7 +1090,6 @@ public final class PacketOpcodes {
     public static final int IMCEOAJGHEN = 21971;
     public static final int MIGGJGFIEIG = 24739;
     public static final int NAEGHHEKJLO = 26423;
-    public static final int GBJBKIAGPKC = 22654;
     public static final int KCFGPPCCGNC = 4339;
     public static final int ILOKEIKLIFI = 20739;
     public static final int CLDGIMKNHMM = 20791;
@@ -1332,7 +1338,6 @@ public final class PacketOpcodes {
     public static final int JGICIAOKOFE = 5119;
     public static final int MMHCPDMFKHP = 4331;
     public static final int PCAMJGPDPJH = 27536;
-    public static final int ADALOGNJGMJ = 29401;
     public static final int HMLILIKOCKA = 5869;
     public static final int IBHIJBCGCJI = 4728;
     public static final int IAFOAAJOCAE = 2992;
@@ -1513,7 +1518,6 @@ public final class PacketOpcodes {
     public static final int LIIDMJDLGAO = 23400;
     public static final int HGFAPNNOCNE = 27268;
     public static final int OBOOEONGHNK = 29086;
-    public static final int FOCOBPMDGHP = 23968;
     public static final int DJGFADPNNBO = 1707;
     public static final int BIPJPGNAGOC = 6998;
     public static final int CDKPIGNJBON = 6191;
@@ -1677,7 +1681,6 @@ public final class PacketOpcodes {
     public static final int AFCMGPAIBJP = 9133;
     public static final int AENKCIADPMI = 9856;
     public static final int LFOHHLPCKFD = 25847;
-    public static final int AFKFHPLMFMB = 2125;
     public static final int NEHFKMEOOHA = 6389;
     public static final int CCHAFCBJCJJ = 9405;
     public static final int GBGLNMDFMDO = 20509;
@@ -1871,7 +1874,6 @@ public final class PacketOpcodes {
     public static final int AAHEONGPAFK = 28442;
     public static final int CJDKCFJBEOE = 25147;
     public static final int KIOFLOBKAOG = 2622;
-    public static final int LGBJAELACLA = 2000;
     public static final int KMPCCABKCEE = 886;
     public static final int DKELHCECDPO = 9087;
     public static final int AMJKLDPFMIK = 2199;
@@ -2776,7 +2778,6 @@ public final class PacketOpcodes {
     public static final int JLIOBJCBJKH = 3379;
     public static final int MBIABNIENIB = 1379;
     public static final int KFLHKIODGHP = 21480;
-    public static final int CPBBIMINPGI = 28994;
     public static final int MMLNIICNACN = 3451;
     public static final int IAKMBJFEPJL = 26534;
     public static final int NMAKLCDFPOP = 27695;
@@ -2787,7 +2788,6 @@ public final class PacketOpcodes {
     public static final int GBOGKDBJOEO = 289;
     public static final int BHKHAOICNIJ = 2634;
     public static final int AKOBEJMPBDN = 21546;
-    public static final int INEEBMNDNIL = 4783;
     public static final int FIKIFFOAHDE = 26295;
     public static final int DLFJHKDFLGK = 3440;
     public static final int NNODEBGNLLL = 8851;
@@ -3366,7 +3366,6 @@ public final class PacketOpcodes {
     public static final int DungeonCandidateTeamSetReadyReq = 1;
     public static final int DungeonCandidateTeamSetReadyRsp = 1;
     public static final int DungeonDataNotify = 1;
-    public static final int DungeonEntryToBeExploreNotify = 1;
     public static final int DungeonFollowNotify = 1;
     public static final int DungeonGetStatueDropReq = 1;
     public static final int DungeonGetStatueDropRsp = 1;
@@ -3383,13 +3382,11 @@ public final class PacketOpcodes {
     public static final int DungeonRestartResultNotify = 1;
     public static final int DungeonRestartRsp = 1;
     public static final int DungeonReviseLevelNotify = 1;
-    public static final int DungeonSettleNotify = 1;
     public static final int DungeonShowReminderNotify = 1;
     public static final int DungeonSlipRevivePointActivateReq = 1;
     public static final int DungeonSlipRevivePointActivateRsp = 1;
     public static final int DungeonWayPointActivateReq = 1;
     public static final int DungeonWayPointActivateRsp = 1;
-    public static final int DungeonWayPointNotify = 1;
     public static final int EAAGMGDBHHB = 1;
     public static final int EAGFGNNJICL = 1;
     public static final int EAJBAEKKONE = 1;
@@ -3830,8 +3827,6 @@ public final class PacketOpcodes {
     public static final int GetCustomDungeonRsp = 1;
     public static final int GetDailyDungeonEntryInfoReq = 1;
     public static final int GetDailyDungeonEntryInfoRsp = 1;
-    public static final int GetDungeonEntryExploreConditionReq = 1;
-    public static final int GetDungeonEntryExploreConditionRsp = 1;
     public static final int GetExpeditionAssistInfoListReq = 1;
     public static final int GetExpeditionAssistInfoListRsp = 1;
     public static final int GetFriendShowAvatarInfoReq = 1;
@@ -4662,7 +4657,6 @@ public final class PacketOpcodes {
     public static final int QuestTransmitRsp = 1;
     public static final int QuestUpdateQuestTimeVarNotify = 1;
     public static final int QuestUpdateQuestVarNotify = 1;
-    public static final int QuestUpdateQuestVarReq = 1;
     public static final int QuestUpdateQuestVarRsp = 1;
     public static final int QuickOpenActivityReq = 1;
     public static final int QuickOpenActivityRsp = 1;
@@ -4802,8 +4796,6 @@ public final class PacketOpcodes {
     public static final int SceneEntityDrownRsp = 1;
     public static final int SceneEntityMoveReq = 1;
     public static final int SceneEntityMoveRsp = 1;
-    public static final int SceneForceLockNotify = 1;
-    public static final int SceneForceUnlockNotify = 1;
     public static final int SceneGalleryInfoNotify = 1;
     public static final int SceneGalleryVintageHuntingSettleNotify = 1;
     public static final int SceneKickPlayerNotify = 1;
@@ -5056,7 +5048,6 @@ public final class PacketOpcodes {
     public static final int TowerFloorRecordChangeNotify = 1;
     public static final int TowerGetFloorStarRewardReq = 1;
     public static final int TowerGetFloorStarRewardRsp = 1;
-    public static final int TowerLevelEndNotify = 1;
     public static final int TowerLevelStarCondNotify = 1;
     public static final int TowerMiddleLevelChangeTeamNotify = 1;
     public static final int TowerRecordHandbookReq = 1;
@@ -5075,7 +5066,6 @@ public final class PacketOpcodes {
     public static final int TreasureMapRegionActiveNotify = 1;
     public static final int TreasureMapRegionInfoNotify = 1;
     public static final int TreasureSeelieCollectOrbsNotify = 1;
-    public static final int TrialAvatarFirstPassDungeonNotify = 1;
     public static final int TrialAvatarInDungeonIndexNotify = 1;
     public static final int TriggerCreateGadgetToEquipPartNotify = 1;
     public static final int TriggerRoguelikeCurseNotify = 1;
