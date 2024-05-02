@@ -1369,7 +1369,6 @@ public final class PacketOpcodes {
     public static final int PDEBEHCALBN = 5432;
     public static final int OBGCFCHCNKM = 27616;
     public static final int NACLMDDKKAK = 205;
-    public static final int CFNEKIBFPGF = 25160;
     public static final int INDAPELHKML = 22447;
     public static final int ILDAKINCKDO = 5075;
     public static final int LPKHJOHJAKJ = 27506;
@@ -4610,7 +4609,7 @@ public final class PacketOpcodes {
     public static final int PlayerStartMatchReq = 1;
     public static final int PlayerStartMatchRsp = 1;
     public static final int PlayerTimeNotify = 1;
-    public static final int PlayerWorldSceneInfoListNotify = 1;
+    public static final int PlayerWorldSceneInfoListNotify = 25160;
     public static final int PotionEnterDungeonNotify = 1;
     public static final int PotionEnterDungeonReq = 1;
     public static final int PotionEnterDungeonRsp = 1;
