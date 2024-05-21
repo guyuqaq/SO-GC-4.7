@@ -60,7 +60,7 @@ public class AvatarStorage extends BasePlayerManager implements Iterable<Avatar>
         this.avatars.put(avatar.getAvatarId(), avatar);
         this.avatarsGuid.put(avatar.getGuid(), avatar);
 
-        avatar.save(true);
+        avatar.save();
 
         return true;
     }
@@ -165,7 +165,7 @@ public class AvatarStorage extends BasePlayerManager implements Iterable<Avatar>
             if ((avatar.getAvatarId() == 10000007) || (avatar.getAvatarId() == 10000005)) {
                 avatar.setSkillDepot(skillDepot);
                 avatar.setSkillDepotData(skillDepot);
-                avatar.save(true);
+                avatar.save();
             }
         }
 

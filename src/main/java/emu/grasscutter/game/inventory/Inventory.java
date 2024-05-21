@@ -178,7 +178,7 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
                 changedItems.add(result);
             }
         }
-        if (changedItems.isEmpty()) {
+        if (changedItems.size() == 0) {
             return;
         }
         if (reason != null) {
@@ -298,7 +298,8 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
 
         // Add
         switch (type) {
-            case ITEM_WEAPON, ITEM_RELIQUARY -> {
+            case ITEM_WEAPON:
+            case ITEM_RELIQUARY:
                 if (tab.getSize() >= tab.getMaxCapacity()) {
                     return null;
                 }
@@ -309,23 +310,23 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
                 // Set ownership and save to db
                 item.save();
                 return item;
-            }
-            case ITEM_VIRTUAL -> {
+            case ITEM_VIRTUAL:
                 // Handle
                 this.addVirtualItem(item.getItemId(), item.getCount());
                 return item;
-            }
-            default -> {
+            default:
                 switch (item.getItemData().getMaterialType()) {
-                    case MATERIAL_AVATAR, MATERIAL_FLYCLOAK, MATERIAL_COSTUME, MATERIAL_NAMECARD -> {
+                    case MATERIAL_AVATAR:
+                    case MATERIAL_FLYCLOAK:
+                    case MATERIAL_COSTUME:
+                    case MATERIAL_NAMECARD:
                         Grasscutter.getLogger()
-                            .warn(
-                                "Attempted to add a "
-                                    + item.getItemData().getMaterialType().name()
-                                    + " to inventory, but item definition lacks isUseOnGain. This indicates a Resources error.");
+                                .warn(
+                                        "Attempted to add a "
+                                                + item.getItemData().getMaterialType().name()
+                                                + " to inventory, but item definition lacks isUseOnGain. This indicates a Resources error.");
                         return null;
-                    }
-                    default -> {
+                    default:
                         if (tab == null) {
                             return null;
                         }
@@ -343,15 +344,13 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
                         } else {
                             // Add count
                             existingItem.setCount(
-                                Math.min(
-                                    existingItem.getCount() + item.getCount(),
-                                    item.getItemData().getStackLimit()));
+                                    Math.min(
+                                            existingItem.getCount() + item.getCount(),
+                                            item.getItemData().getStackLimit()));
                             existingItem.save();
                             return existingItem;
                         }
-                    }
                 }
-            }
         }
     }
 
