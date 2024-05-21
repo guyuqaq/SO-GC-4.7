@@ -1,28 +1,41 @@
 package emu.grasscutter.server.http.dispatch;
 
-import static emu.grasscutter.config.Configuration.*;
-
-import com.google.gson.*;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.protobuf.ByteString;
-import emu.grasscutter.*;
+import emu.grasscutter.GameConstants;
+import emu.grasscutter.Grasscutter;
 import emu.grasscutter.Grasscutter.ServerRunMode;
 import emu.grasscutter.net.proto.QueryCurrRegionHttpRspOuterClass.QueryCurrRegionHttpRsp;
 import emu.grasscutter.net.proto.QueryRegionListHttpRspOuterClass.QueryRegionListHttpRsp;
 import emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo;
 import emu.grasscutter.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo;
+import emu.grasscutter.net.proto.ResVersionConfigOuterClass;
 import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
 import emu.grasscutter.net.proto.StopServerInfoOuterClass.StopServerInfo;
-import emu.grasscutter.server.event.dispatch.*;
+import emu.grasscutter.server.event.dispatch.QueryAllRegionsEvent;
+import emu.grasscutter.server.event.dispatch.QueryCurrentRegionEvent;
 import emu.grasscutter.server.http.Router;
 import emu.grasscutter.server.http.objects.QueryCurRegionRspJson;
-import emu.grasscutter.utils.*;
+import emu.grasscutter.utils.Crypto;
+import emu.grasscutter.utils.JsonUtils;
+import emu.grasscutter.utils.Utils;
 import io.javalin.Javalin;
 import io.javalin.http.Context;
+import org.slf4j.Logger;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.time.Instant;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Pattern;
-import org.slf4j.Logger;
+
+import static emu.grasscutter.config.Configuration.*;
 
 /** Handles requests related to region queries. */
 public final class RegionHandler implements Router {
@@ -242,6 +255,50 @@ public final class RegionHandler implements Router {
         var versionMajor = Integer.parseInt(versionCode[0]);
         var versionMinor = Integer.parseInt(versionCode[1]);
         var versionFix = Integer.parseInt(versionCode[2]);
+        String versionPrefix = versionName.replaceAll("[/.0-9]*", "");
+        String version = GameConstants.VERSION;
+        String filePath = "data/version/" + version + "/" + versionPrefix + version + ".json";
+        String fileContent;
+
+        try {
+            fileContent = Files.readString(Path.of(filePath));
+        } catch (IOException e) {
+            Grasscutter.getLogger().debug("客户端: " + Utils.address(ctx) + " 加载热更信息失败，缺少此版本的热更信息：" + e);
+            return;
+        }
+
+        JsonObject jsonObject = JsonParser.parseString(Objects.requireNonNull(fileContent)).getAsJsonObject();
+        JsonObject regJson = jsonObject.getAsJsonObject("RegionInfo");  // 注意 RegionInfo 大小写
+        JsonObject resJson = regJson.getAsJsonObject("ResVersionConfig");
+
+        RegionInfo RegionInfo_hotfix = RegionInfo.newBuilder()
+            .setGateserverIp(lr(GAME_INFO.accessAddress, GAME_INFO.bindAddress))
+            .setGateserverPort(lr(GAME_INFO.accessPort, GAME_INFO.bindPort))
+            .setPayCallbackUrl(regJson.get("PayCallbackUrl").getAsString())
+            .setAreaType(regJson.get("AreaType").getAsString())
+            .setCdkeyUrl(regJson.get("CdkeyUrl").getAsString())
+            .setPrivacyPolicyUrl(regJson.get("PrivacyPolicyUrl").getAsString())
+            .setFeedbackUrl(regJson.get("FeedbackUrl").getAsString())
+            .setBulletinUrl(regJson.get("BulletinUrl").getAsString())
+            .setResourceUrl(regJson.get("ResourceUrl").getAsString())
+            .setDataUrl(regJson.get("DataUrl").getAsString())
+            .setResourceUrlBak(regJson.get("ResourceUrlBak").getAsString())
+            .setDataUrlBak(regJson.get("DataUrlBak").getAsString())
+            .setClientDataVersion(regJson.get("ClientDataVersion").getAsInt())
+            .setClientSilenceDataVersion(regJson.get("ClientSilenceDataVersion").getAsInt())
+            .setClientDataMd5(regJson.get("ClientDataMd5").getAsString())
+            .setClientSilenceDataMd5(regJson.get("ClientSilenceDataMd5").getAsString())
+            .setClientVersionSuffix(regJson.get("ClientVersionSuffix").getAsString())
+            .setClientSilenceVersionSuffix(regJson.get("ClientSilenceVersionSuffix").getAsString())
+            .setResVersionConfig(ResVersionConfigOuterClass.ResVersionConfig.newBuilder()
+                .setRelogin(resJson.get("Relogin").getAsBoolean())
+                .setMd5(resJson.get("Md5").getAsString())
+                .setVersion(resJson.get("Version").getAsInt())
+                .setReleaseTotalSize(resJson.get("ReleaseTotalSize").getAsString())
+                .setVersionSuffix(resJson.get("VersionSuffix").getAsString())
+                .setBranch(resJson.get("Branch").getAsString())
+                .build())
+            .build();
 
         if (versionMajor >= 3
                 || (versionMajor == 2 && versionMinor == 7 && versionFix >= 50)
@@ -287,22 +344,27 @@ public final class RegionHandler implements Router {
 
                     ctx.json(Crypto.encryptAndSignRegionData(rsp.toByteArray(), key_id));
                     return;
-                }
+                } else {
+                    QueryCurrRegionHttpRsp rsp = QueryCurrRegionHttpRsp.newBuilder()
+                        .setRegionInfo(RegionInfo_hotfix) //热更新
+                        .setClientSecretKey(ByteString.copyFrom(Crypto.DISPATCH_SEED))
+                        .build();
 
-                if (ctx.queryParam("dispatchSeed") == null) {
-                    // More love for UA Patch players
-                    var rsp = new QueryCurRegionRspJson();
+                    if (ctx.queryParam("dispatchSeed") == null) {
+                        // More love for UA Patch players
+                        var rsp_sign = new QueryCurRegionRspJson();
 
-                    rsp.content = event.getRegionInfo();
-                    rsp.sign = "TW9yZSBsb3ZlIGZvciBVQSBQYXRjaCBwbGF5ZXJz";
+                        rsp_sign.content = event.getRegionInfo();
+                        rsp_sign.sign = "TW9yZSBsb3ZlIGZvciBVQSBQYXRjaCBwbGF5ZXJz";
 
-                    ctx.json(rsp);
+                        ctx.json(rsp_sign);
+                        return;
+                    }
+
+                    ctx.json(Crypto.encryptAndSignRegionData(rsp.toByteArray(), key_id));
                     return;
                 }
 
-                var regionInfo = Utils.base64Decode(event.getRegionInfo());
-
-                ctx.json(Crypto.encryptAndSignRegionData(regionInfo, key_id));
             } catch (Exception e) {
                 Grasscutter.getLogger().error("An error occurred while handling query_cur_region.", e);
             }
