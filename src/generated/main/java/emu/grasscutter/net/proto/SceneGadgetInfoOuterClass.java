@@ -406,7 +406,7 @@ public final class SceneGadgetInfoOuterClass {
 
     /**
      * <pre>
-     *Item trifle_item = 67;
+     * Item trifle_item = 67;
      * </pre>
      *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -415,7 +415,7 @@ public final class SceneGadgetInfoOuterClass {
     boolean hasTrifleGadget();
     /**
      * <pre>
-     *Item trifle_item = 67;
+     * Item trifle_item = 67;
      * </pre>
      *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -424,7 +424,7 @@ public final class SceneGadgetInfoOuterClass {
     emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget getTrifleGadget();
     /**
      * <pre>
-     *Item trifle_item = 67;
+     * Item trifle_item = 67;
      * </pre>
      *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -565,10 +565,6 @@ public final class SceneGadgetInfoOuterClass {
     public emu.grasscutter.net.proto.SceneGadgetInfoOuterClass.SceneGadgetInfo.ContentCase getContentCase();
   }
   /**
-   * <pre>
-   * Obf: JOBMECDLBKP
-   * </pre>
-   *
    * Protobuf type {@code SceneGadgetInfo}
    */
   public static final class SceneGadgetInfo extends
@@ -1998,7 +1994,7 @@ public final class SceneGadgetInfoOuterClass {
     public static final int TRIFLE_GADGET_FIELD_NUMBER = 67;
     /**
      * <pre>
-     *Item trifle_item = 67;
+     * Item trifle_item = 67;
      * </pre>
      *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -2010,7 +2006,7 @@ public final class SceneGadgetInfoOuterClass {
     }
     /**
      * <pre>
-     *Item trifle_item = 67;
+     * Item trifle_item = 67;
      * </pre>
      *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -2025,7 +2021,7 @@ public final class SceneGadgetInfoOuterClass {
     }
     /**
      * <pre>
-     *Item trifle_item = 67;
+     * Item trifle_item = 67;
      * </pre>
      *
      * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -3040,10 +3036,6 @@ public final class SceneGadgetInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JOBMECDLBKP
-     * </pre>
-     *
      * Protobuf type {@code SceneGadgetInfo}
      */
     public static final class Builder extends
@@ -6971,7 +6963,7 @@ public final class SceneGadgetInfoOuterClass {
           emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget, emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadget.Builder, emu.grasscutter.net.proto.TrifleGadgetOuterClass.TrifleGadgetOrBuilder> trifleGadgetBuilder_;
       /**
        * <pre>
-       *Item trifle_item = 67;
+       * Item trifle_item = 67;
        * </pre>
        *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -6983,7 +6975,7 @@ public final class SceneGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *Item trifle_item = 67;
+       * Item trifle_item = 67;
        * </pre>
        *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -7005,7 +6997,7 @@ public final class SceneGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *Item trifle_item = 67;
+       * Item trifle_item = 67;
        * </pre>
        *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -7025,7 +7017,7 @@ public final class SceneGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *Item trifle_item = 67;
+       * Item trifle_item = 67;
        * </pre>
        *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -7043,7 +7035,7 @@ public final class SceneGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *Item trifle_item = 67;
+       * Item trifle_item = 67;
        * </pre>
        *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -7069,7 +7061,7 @@ public final class SceneGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *Item trifle_item = 67;
+       * Item trifle_item = 67;
        * </pre>
        *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -7092,7 +7084,7 @@ public final class SceneGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *Item trifle_item = 67;
+       * Item trifle_item = 67;
        * </pre>
        *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -7102,7 +7094,7 @@ public final class SceneGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *Item trifle_item = 67;
+       * Item trifle_item = 67;
        * </pre>
        *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -7120,7 +7112,7 @@ public final class SceneGadgetInfoOuterClass {
       }
       /**
        * <pre>
-       *Item trifle_item = 67;
+       * Item trifle_item = 67;
        * </pre>
        *
        * <code>.TrifleGadget trifle_gadget = 67;</code>
@@ -8128,70 +8120,69 @@ public final class SceneGadgetInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025SceneGadgetInfo.proto\032\024GadgetBornType." +
-      "proto\032\nItem.proto\032\026GatherGadgetInfo.prot" +
-      "o\032\021WorktopInfo.proto\032\026ClientGadgetInfo.p" +
-      "roto\032\021WeatherInfo.proto\032\027AbilityGadgetIn" +
-      "fo.proto\032\026StatueGadgetInfo.proto\032\023BossCh" +
-      "estInfo.proto\032\026BlossomChestInfo.proto\032\026M" +
-      "pPlayRewardInfo.proto\032\035GadgetGeneralRewa" +
-      "rdInfo.proto\032\022OfferingInfo.proto\032\024Founda" +
-      "tionInfo.proto\032\021VehicleInfo.proto\032\023EchoS" +
-      "hellInfo.proto\032\020ScreenInfo.proto\032\022FishPo" +
-      "olInfo.proto\032\032CustomGadgetTreeInfo.proto" +
-      "\032\031RoguelikeGadgetInfo.proto\032\031NightCrowGa" +
-      "dgetInfo.proto\032\036DeshretObeliskGadgetInfo" +
-      ".proto\032\035CoinCollectOperatorInfo.proto\032\022T" +
-      "rifleGadget.proto\032\022PlatformInfo.proto\032\021J" +
-      "MFPBNKNHED.proto\032\024GadgetPlayInfo.proto\032\021" +
-      "GDGKKLFMJKH.proto\032\021OMBIJJLAHFB.proto\032\021BD" +
-      "OCPDNCIEF.proto\"\315\014\n\017SceneGadgetInfo\022\021\n\tg" +
-      "adget_id\030\001 \001(\r\022\020\n\010group_id\030\002 \001(\r\022\021\n\tconf" +
-      "ig_id\030\003 \001(\r\022\027\n\017owner_entity_id\030\004 \001(\r\022\"\n\t" +
-      "born_type\030\005 \001(\0162\017.GadgetBornType\022\024\n\014gadg" +
-      "et_state\030\006 \001(\r\022\023\n\013KPKNNJLPMFP\030\007 \001(\r\022\030\n\020i" +
-      "s_show_cutscene\030\010 \001(\010\022\031\n\021authority_peer_" +
-      "id\030\t \001(\r\022\032\n\022is_enable_interact\030\n \001(\010\022\023\n\013" +
-      "CLICILNBKDD\030\013 \001(\r\022*\n\rgather_gadget\030\r \001(\013" +
-      "2\021.GatherGadgetInfoH\000\022\037\n\007worktop\030\016 \001(\0132\014" +
-      ".WorktopInfoH\000\022*\n\rclient_gadget\030\017 \001(\0132\021." +
-      "ClientGadgetInfoH\000\022\037\n\007weather\030\021 \001(\0132\014.We" +
-      "atherInfoH\000\022,\n\016ability_gadget\030\022 \001(\0132\022.Ab" +
-      "ilityGadgetInfoH\000\022*\n\rstatue_gadget\030\023 \001(\013" +
-      "2\021.StatueGadgetInfoH\000\022$\n\nboss_chest\030\024 \001(" +
-      "\0132\016.BossChestInfoH\000\022*\n\rblossom_chest\030) \001" +
-      "(\0132\021.BlossomChestInfoH\000\022+\n\016mp_play_rewar" +
-      "d\030* \001(\0132\021.MpPlayRewardInfoH\000\0222\n\016general_" +
-      "reward\030+ \001(\0132\030.GadgetGeneralRewardInfoH\000" +
-      "\022&\n\roffering_info\030, \001(\0132\r.OfferingInfoH\000" +
-      "\022*\n\017foundation_info\030- \001(\0132\017.FoundationIn" +
-      "foH\000\022$\n\014vehicle_info\030. \001(\0132\014.VehicleInfo" +
-      "H\000\022$\n\nshell_info\030/ \001(\0132\016.EchoShellInfoH\000" +
-      "\022\"\n\013screen_info\0300 \001(\0132\013.ScreenInfoH\000\022\'\n\016" +
-      "fish_pool_info\030; \001(\0132\r.FishPoolInfoH\000\0228\n" +
-      "\027custom_gadget_tree_info\030< \001(\0132\025.CustomG" +
-      "adgetTreeInfoH\000\0225\n\025roguelike_gadget_info" +
-      "\030= \001(\0132\024.RoguelikeGadgetInfoH\000\0226\n\026night_" +
-      "crow_gadget_info\030> \001(\0132\024.NightCrowGadget" +
-      "InfoH\000\022@\n\033deshret_obelisk_gadget_info\030? " +
-      "\001(\0132\031.DeshretObeliskGadgetInfoH\000\022>\n\032coin" +
-      "_collect_operator_info\030@ \001(\0132\030.CoinColle" +
-      "ctOperatorInfoH\000\022&\n\rtrifle_gadget\030C \001(\0132" +
-      "\r.TrifleGadgetH\000\022\021\n\tmark_flag\030\025 \001(\r\022\034\n\024p" +
-      "rop_owner_entity_id\030\026 \001(\r\022\037\n\010platform\030\027 " +
-      "\001(\0132\r.PlatformInfo\022\031\n\021interact_uid_list\030" +
-      "\030 \003(\r\022\020\n\010draft_id\030\031 \001(\r\022\023\n\013KHICBPFFAII\030\032" +
-      " \001(\r\022!\n\013GPOHBBPBBEC\030\033 \001(\0132\014.JMFPBNKNHED\022" +
-      "\"\n\tplay_info\030d \001(\0132\017.GadgetPlayInfo\022!\n\013D" +
-      "PJFGJDHGGJ\030e \001(\0132\014.GDGKKLFMJKH\022!\n\013PBBAFK" +
-      "FGHIB\030f \001(\0132\014.OMBIJJLAHFB\022!\n\013FDKBHOCNBPH" +
-      "\030g \001(\0132\014.BDOCPDNCIEFB\t\n\007contentB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "proto\032\026GatherGadgetInfo.proto\032\021WorktopIn" +
+      "fo.proto\032\026ClientGadgetInfo.proto\032\021Weathe" +
+      "rInfo.proto\032\027AbilityGadgetInfo.proto\032\026St" +
+      "atueGadgetInfo.proto\032\023BossChestInfo.prot" +
+      "o\032\026BlossomChestInfo.proto\032\026MpPlayRewardI" +
+      "nfo.proto\032\035GadgetGeneralRewardInfo.proto" +
+      "\032\022OfferingInfo.proto\032\024FoundationInfo.pro" +
+      "to\032\021VehicleInfo.proto\032\023EchoShellInfo.pro" +
+      "to\032\020ScreenInfo.proto\032\022FishPoolInfo.proto" +
+      "\032\032CustomGadgetTreeInfo.proto\032\031RoguelikeG" +
+      "adgetInfo.proto\032\031NightCrowGadgetInfo.pro" +
+      "to\032\036DeshretObeliskGadgetInfo.proto\032\035Coin" +
+      "CollectOperatorInfo.proto\032\022TrifleGadget." +
+      "proto\032\022PlatformInfo.proto\032\021JMFPBNKNHED.p" +
+      "roto\032\024GadgetPlayInfo.proto\032\021GDGKKLFMJKH." +
+      "proto\032\021OMBIJJLAHFB.proto\032\021BDOCPDNCIEF.pr" +
+      "oto\"\315\014\n\017SceneGadgetInfo\022\021\n\tgadget_id\030\001 \001" +
+      "(\r\022\020\n\010group_id\030\002 \001(\r\022\021\n\tconfig_id\030\003 \001(\r\022" +
+      "\027\n\017owner_entity_id\030\004 \001(\r\022\"\n\tborn_type\030\005 " +
+      "\001(\0162\017.GadgetBornType\022\024\n\014gadget_state\030\006 \001" +
+      "(\r\022\023\n\013KPKNNJLPMFP\030\007 \001(\r\022\030\n\020is_show_cutsc" +
+      "ene\030\010 \001(\010\022\031\n\021authority_peer_id\030\t \001(\r\022\032\n\022" +
+      "is_enable_interact\030\n \001(\010\022\023\n\013CLICILNBKDD\030" +
+      "\013 \001(\r\022*\n\rgather_gadget\030\r \001(\0132\021.GatherGad" +
+      "getInfoH\000\022\037\n\007worktop\030\016 \001(\0132\014.WorktopInfo" +
+      "H\000\022*\n\rclient_gadget\030\017 \001(\0132\021.ClientGadget" +
+      "InfoH\000\022\037\n\007weather\030\021 \001(\0132\014.WeatherInfoH\000\022" +
+      ",\n\016ability_gadget\030\022 \001(\0132\022.AbilityGadgetI" +
+      "nfoH\000\022*\n\rstatue_gadget\030\023 \001(\0132\021.StatueGad" +
+      "getInfoH\000\022$\n\nboss_chest\030\024 \001(\0132\016.BossChes" +
+      "tInfoH\000\022*\n\rblossom_chest\030) \001(\0132\021.Blossom" +
+      "ChestInfoH\000\022+\n\016mp_play_reward\030* \001(\0132\021.Mp" +
+      "PlayRewardInfoH\000\0222\n\016general_reward\030+ \001(\013" +
+      "2\030.GadgetGeneralRewardInfoH\000\022&\n\roffering" +
+      "_info\030, \001(\0132\r.OfferingInfoH\000\022*\n\017foundati" +
+      "on_info\030- \001(\0132\017.FoundationInfoH\000\022$\n\014vehi" +
+      "cle_info\030. \001(\0132\014.VehicleInfoH\000\022$\n\nshell_" +
+      "info\030/ \001(\0132\016.EchoShellInfoH\000\022\"\n\013screen_i" +
+      "nfo\0300 \001(\0132\013.ScreenInfoH\000\022\'\n\016fish_pool_in" +
+      "fo\030; \001(\0132\r.FishPoolInfoH\000\0228\n\027custom_gadg" +
+      "et_tree_info\030< \001(\0132\025.CustomGadgetTreeInf" +
+      "oH\000\0225\n\025roguelike_gadget_info\030= \001(\0132\024.Rog" +
+      "uelikeGadgetInfoH\000\0226\n\026night_crow_gadget_" +
+      "info\030> \001(\0132\024.NightCrowGadgetInfoH\000\022@\n\033de" +
+      "shret_obelisk_gadget_info\030? \001(\0132\031.Deshre" +
+      "tObeliskGadgetInfoH\000\022>\n\032coin_collect_ope" +
+      "rator_info\030@ \001(\0132\030.CoinCollectOperatorIn" +
+      "foH\000\022&\n\rtrifle_gadget\030C \001(\0132\r.TrifleGadg" +
+      "etH\000\022\021\n\tmark_flag\030\025 \001(\r\022\034\n\024prop_owner_en" +
+      "tity_id\030\026 \001(\r\022\037\n\010platform\030\027 \001(\0132\r.Platfo" +
+      "rmInfo\022\031\n\021interact_uid_list\030\030 \003(\r\022\020\n\010dra" +
+      "ft_id\030\031 \001(\r\022\023\n\013KHICBPFFAII\030\032 \001(\r\022!\n\013GPOH" +
+      "BBPBBEC\030\033 \001(\0132\014.JMFPBNKNHED\022\"\n\tplay_info" +
+      "\030d \001(\0132\017.GadgetPlayInfo\022!\n\013DPJFGJDHGGJ\030e" +
+      " \001(\0132\014.GDGKKLFMJKH\022!\n\013PBBAFKFGHIB\030f \001(\0132" +
+      "\014.OMBIJJLAHFB\022!\n\013FDKBHOCNBPH\030g \001(\0132\014.BDO" +
+      "CPDNCIEFB\t\n\007contentB\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.GadgetBornTypeOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.ItemOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.GatherGadgetInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.WorktopInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.getDescriptor(),
@@ -8228,7 +8219,6 @@ public final class SceneGadgetInfoOuterClass {
         internal_static_SceneGadgetInfo_descriptor,
         new java.lang.String[] { "GadgetId", "GroupId", "ConfigId", "OwnerEntityId", "BornType", "GadgetState", "KPKNNJLPMFP", "IsShowCutscene", "AuthorityPeerId", "IsEnableInteract", "CLICILNBKDD", "GatherGadget", "Worktop", "ClientGadget", "Weather", "AbilityGadget", "StatueGadget", "BossChest", "BlossomChest", "MpPlayReward", "GeneralReward", "OfferingInfo", "FoundationInfo", "VehicleInfo", "ShellInfo", "ScreenInfo", "FishPoolInfo", "CustomGadgetTreeInfo", "RoguelikeGadgetInfo", "NightCrowGadgetInfo", "DeshretObeliskGadgetInfo", "CoinCollectOperatorInfo", "TrifleGadget", "MarkFlag", "PropOwnerEntityId", "Platform", "InteractUidList", "DraftId", "KHICBPFFAII", "GPOHBBPBBEC", "PlayInfo", "DPJFGJDHGGJ", "PBBAFKFGHIB", "FDKBHOCNBPH", "Content", });
     emu.grasscutter.net.proto.GadgetBornTypeOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.ItemOuterClass.getDescriptor();
     emu.grasscutter.net.proto.GatherGadgetInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.WorktopInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.getDescriptor();

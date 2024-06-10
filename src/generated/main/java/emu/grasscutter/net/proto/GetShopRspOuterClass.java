@@ -19,17 +19,17 @@ public final class GetShopRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.Shop shop = 8;</code>
+     * <code>.Shop shop = 11;</code>
      * @return Whether the shop field is set.
      */
     boolean hasShop();
     /**
-     * <code>.Shop shop = 8;</code>
+     * <code>.Shop shop = 11;</code>
      * @return The shop.
      */
     emu.grasscutter.net.proto.ShopOuterClass.Shop getShop();
     /**
-     * <code>.Shop shop = 8;</code>
+     * <code>.Shop shop = 11;</code>
      */
     emu.grasscutter.net.proto.ShopOuterClass.ShopOrBuilder getShopOrBuilder();
 
@@ -40,6 +40,10 @@ public final class GetShopRspOuterClass {
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 27397
+   * </pre>
+   *
    * Protobuf type {@code GetShopRsp}
    */
   public static final class GetShopRsp extends
@@ -84,7 +88,7 @@ public final class GetShopRspOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 90: {
               emu.grasscutter.net.proto.ShopOuterClass.Shop.Builder subBuilder = null;
               if (shop_ != null) {
                 subBuilder = shop_.toBuilder();
@@ -134,10 +138,10 @@ public final class GetShopRspOuterClass {
               emu.grasscutter.net.proto.GetShopRspOuterClass.GetShopRsp.class, emu.grasscutter.net.proto.GetShopRspOuterClass.GetShopRsp.Builder.class);
     }
 
-    public static final int SHOP_FIELD_NUMBER = 8;
+    public static final int SHOP_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.ShopOuterClass.Shop shop_;
     /**
-     * <code>.Shop shop = 8;</code>
+     * <code>.Shop shop = 11;</code>
      * @return Whether the shop field is set.
      */
     @java.lang.Override
@@ -145,7 +149,7 @@ public final class GetShopRspOuterClass {
       return shop_ != null;
     }
     /**
-     * <code>.Shop shop = 8;</code>
+     * <code>.Shop shop = 11;</code>
      * @return The shop.
      */
     @java.lang.Override
@@ -153,7 +157,7 @@ public final class GetShopRspOuterClass {
       return shop_ == null ? emu.grasscutter.net.proto.ShopOuterClass.Shop.getDefaultInstance() : shop_;
     }
     /**
-     * <code>.Shop shop = 8;</code>
+     * <code>.Shop shop = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ShopOuterClass.ShopOrBuilder getShopOrBuilder() {
@@ -186,7 +190,7 @@ public final class GetShopRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (shop_ != null) {
-        output.writeMessage(8, getShop());
+        output.writeMessage(11, getShop());
       }
       if (retcode_ != 0) {
         output.writeInt32(15, retcode_);
@@ -202,7 +206,7 @@ public final class GetShopRspOuterClass {
       size = 0;
       if (shop_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getShop());
+          .computeMessageSize(11, getShop());
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -343,6 +347,10 @@ public final class GetShopRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 27397
+     * </pre>
+     *
      * Protobuf type {@code GetShopRsp}
      */
     public static final class Builder extends
@@ -507,14 +515,14 @@ public final class GetShopRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopOuterClass.Shop, emu.grasscutter.net.proto.ShopOuterClass.Shop.Builder, emu.grasscutter.net.proto.ShopOuterClass.ShopOrBuilder> shopBuilder_;
       /**
-       * <code>.Shop shop = 8;</code>
+       * <code>.Shop shop = 11;</code>
        * @return Whether the shop field is set.
        */
       public boolean hasShop() {
         return shopBuilder_ != null || shop_ != null;
       }
       /**
-       * <code>.Shop shop = 8;</code>
+       * <code>.Shop shop = 11;</code>
        * @return The shop.
        */
       public emu.grasscutter.net.proto.ShopOuterClass.Shop getShop() {
@@ -525,7 +533,7 @@ public final class GetShopRspOuterClass {
         }
       }
       /**
-       * <code>.Shop shop = 8;</code>
+       * <code>.Shop shop = 11;</code>
        */
       public Builder setShop(emu.grasscutter.net.proto.ShopOuterClass.Shop value) {
         if (shopBuilder_ == null) {
@@ -541,7 +549,7 @@ public final class GetShopRspOuterClass {
         return this;
       }
       /**
-       * <code>.Shop shop = 8;</code>
+       * <code>.Shop shop = 11;</code>
        */
       public Builder setShop(
           emu.grasscutter.net.proto.ShopOuterClass.Shop.Builder builderForValue) {
@@ -555,7 +563,7 @@ public final class GetShopRspOuterClass {
         return this;
       }
       /**
-       * <code>.Shop shop = 8;</code>
+       * <code>.Shop shop = 11;</code>
        */
       public Builder mergeShop(emu.grasscutter.net.proto.ShopOuterClass.Shop value) {
         if (shopBuilder_ == null) {
@@ -573,7 +581,7 @@ public final class GetShopRspOuterClass {
         return this;
       }
       /**
-       * <code>.Shop shop = 8;</code>
+       * <code>.Shop shop = 11;</code>
        */
       public Builder clearShop() {
         if (shopBuilder_ == null) {
@@ -587,7 +595,7 @@ public final class GetShopRspOuterClass {
         return this;
       }
       /**
-       * <code>.Shop shop = 8;</code>
+       * <code>.Shop shop = 11;</code>
        */
       public emu.grasscutter.net.proto.ShopOuterClass.Shop.Builder getShopBuilder() {
         
@@ -595,7 +603,7 @@ public final class GetShopRspOuterClass {
         return getShopFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Shop shop = 8;</code>
+       * <code>.Shop shop = 11;</code>
        */
       public emu.grasscutter.net.proto.ShopOuterClass.ShopOrBuilder getShopOrBuilder() {
         if (shopBuilder_ != null) {
@@ -606,7 +614,7 @@ public final class GetShopRspOuterClass {
         }
       }
       /**
-       * <code>.Shop shop = 8;</code>
+       * <code>.Shop shop = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ShopOuterClass.Shop, emu.grasscutter.net.proto.ShopOuterClass.Shop.Builder, emu.grasscutter.net.proto.ShopOuterClass.ShopOrBuilder> 
@@ -720,7 +728,7 @@ public final class GetShopRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020GetShopRsp.proto\032\nShop.proto\"2\n\nGetSho" +
-      "pRsp\022\023\n\004shop\030\010 \001(\0132\005.Shop\022\017\n\007retcode\030\017 \001" +
+      "pRsp\022\023\n\004shop\030\013 \001(\0132\005.Shop\022\017\n\007retcode\030\017 \001" +
       "(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -175,6 +175,8 @@ public class ConfigContainer {
         /* Enabling this will generate a unique packet encryption key for each player. */
         public boolean useUniquePacketKey = true;
 
+        public boolean useXorEncryption = false;
+
         /* Entities within a certain range will be loaded for the player */
         public int loadEntitiesForPlayerRange = 300;
         /* Start in 'unstable-quests', Lua scripts will be enabled by default. */

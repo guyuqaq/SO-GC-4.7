@@ -36,8 +36,8 @@ public class PacketPlayerWorldSceneInfoListNotify extends BasePacket {
                                 .get(0));
             }
 
-            // Map layer information (Big world)
-            if (scene == 3) {
+            // Map layer information (Big world & Sea of Bygone Eras)
+            if (scene == 3 || scene == 11) {
                 worldInfoBuilder.setMapLayerInfo(
                         MapLayerInfoOuterClass.MapLayerInfo.newBuilder()
                                 .addAllUnlockedMapLayerIdList(

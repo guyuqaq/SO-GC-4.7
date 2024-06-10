@@ -19,66 +19,70 @@ public final class PlayerLoginReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string device_info = 5;</code>
+     * <code>string device_info = 3;</code>
      * @return The deviceInfo.
      */
     java.lang.String getDeviceInfo();
     /**
-     * <code>string device_info = 5;</code>
+     * <code>string device_info = 3;</code>
      * @return The bytes for deviceInfo.
      */
     com.google.protobuf.ByteString
         getDeviceInfoBytes();
 
     /**
-     * <code>string device_name = 3;</code>
+     * <code>string device_name = 1;</code>
      * @return The deviceName.
      */
     java.lang.String getDeviceName();
     /**
-     * <code>string device_name = 3;</code>
+     * <code>string device_name = 1;</code>
      * @return The bytes for deviceName.
      */
     com.google.protobuf.ByteString
         getDeviceNameBytes();
 
     /**
-     * <code>string system_version = 13;</code>
+     * <code>string system_version = 14;</code>
      * @return The systemVersion.
      */
     java.lang.String getSystemVersion();
     /**
-     * <code>string system_version = 13;</code>
+     * <code>string system_version = 14;</code>
      * @return The bytes for systemVersion.
      */
     com.google.protobuf.ByteString
         getSystemVersionBytes();
 
     /**
-     * <code>string client_version = 4;</code>
+     * <code>string client_version = 15;</code>
      * @return The clientVersion.
      */
     java.lang.String getClientVersion();
     /**
-     * <code>string client_version = 4;</code>
+     * <code>string client_version = 15;</code>
      * @return The bytes for clientVersion.
      */
     com.google.protobuf.ByteString
         getClientVersionBytes();
 
     /**
-     * <code>string token = 14;</code>
+     * <code>string token = 12;</code>
      * @return The token.
      */
     java.lang.String getToken();
     /**
-     * <code>string token = 14;</code>
+     * <code>string token = 12;</code>
      * @return The bytes for token.
      */
     com.google.protobuf.ByteString
         getTokenBytes();
   }
   /**
+   * <pre>
+   * CmdId: 7412
+   * </pre>
+   *
    * Protobuf type {@code PlayerLoginReq}
    */
   public static final class PlayerLoginReq extends
@@ -128,34 +132,34 @@ public final class PlayerLoginReqOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
               deviceName_ = s;
               break;
             }
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              clientVersion_ = s;
-              break;
-            }
-            case 42: {
+            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               deviceInfo_ = s;
               break;
             }
-            case 106: {
+            case 98: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              systemVersion_ = s;
+              token_ = s;
               break;
             }
             case 114: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              token_ = s;
+              systemVersion_ = s;
+              break;
+            }
+            case 122: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              clientVersion_ = s;
               break;
             }
             default: {
@@ -190,10 +194,10 @@ public final class PlayerLoginReqOuterClass {
               emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq.class, emu.grasscutter.net.proto.PlayerLoginReqOuterClass.PlayerLoginReq.Builder.class);
     }
 
-    public static final int DEVICE_INFO_FIELD_NUMBER = 5;
+    public static final int DEVICE_INFO_FIELD_NUMBER = 3;
     private volatile java.lang.Object deviceInfo_;
     /**
-     * <code>string device_info = 5;</code>
+     * <code>string device_info = 3;</code>
      * @return The deviceInfo.
      */
     @java.lang.Override
@@ -210,7 +214,7 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <code>string device_info = 5;</code>
+     * <code>string device_info = 3;</code>
      * @return The bytes for deviceInfo.
      */
     @java.lang.Override
@@ -228,10 +232,10 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int DEVICE_NAME_FIELD_NUMBER = 3;
+    public static final int DEVICE_NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object deviceName_;
     /**
-     * <code>string device_name = 3;</code>
+     * <code>string device_name = 1;</code>
      * @return The deviceName.
      */
     @java.lang.Override
@@ -248,7 +252,7 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <code>string device_name = 3;</code>
+     * <code>string device_name = 1;</code>
      * @return The bytes for deviceName.
      */
     @java.lang.Override
@@ -266,10 +270,10 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int SYSTEM_VERSION_FIELD_NUMBER = 13;
+    public static final int SYSTEM_VERSION_FIELD_NUMBER = 14;
     private volatile java.lang.Object systemVersion_;
     /**
-     * <code>string system_version = 13;</code>
+     * <code>string system_version = 14;</code>
      * @return The systemVersion.
      */
     @java.lang.Override
@@ -286,7 +290,7 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <code>string system_version = 13;</code>
+     * <code>string system_version = 14;</code>
      * @return The bytes for systemVersion.
      */
     @java.lang.Override
@@ -304,10 +308,10 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int CLIENT_VERSION_FIELD_NUMBER = 4;
+    public static final int CLIENT_VERSION_FIELD_NUMBER = 15;
     private volatile java.lang.Object clientVersion_;
     /**
-     * <code>string client_version = 4;</code>
+     * <code>string client_version = 15;</code>
      * @return The clientVersion.
      */
     @java.lang.Override
@@ -324,7 +328,7 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <code>string client_version = 4;</code>
+     * <code>string client_version = 15;</code>
      * @return The bytes for clientVersion.
      */
     @java.lang.Override
@@ -342,10 +346,10 @@ public final class PlayerLoginReqOuterClass {
       }
     }
 
-    public static final int TOKEN_FIELD_NUMBER = 14;
+    public static final int TOKEN_FIELD_NUMBER = 12;
     private volatile java.lang.Object token_;
     /**
-     * <code>string token = 14;</code>
+     * <code>string token = 12;</code>
      * @return The token.
      */
     @java.lang.Override
@@ -362,7 +366,7 @@ public final class PlayerLoginReqOuterClass {
       }
     }
     /**
-     * <code>string token = 14;</code>
+     * <code>string token = 12;</code>
      * @return The bytes for token.
      */
     @java.lang.Override
@@ -395,19 +399,19 @@ public final class PlayerLoginReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceName_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, deviceName_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersion_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, clientVersion_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, deviceName_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceInfo_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, deviceInfo_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(systemVersion_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, systemVersion_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, deviceInfo_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(token_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, token_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, token_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(systemVersion_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, systemVersion_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersion_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, clientVersion_);
       }
       unknownFields.writeTo(output);
     }
@@ -419,19 +423,19 @@ public final class PlayerLoginReqOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceName_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, deviceName_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersion_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, clientVersion_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, deviceName_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(deviceInfo_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, deviceInfo_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(systemVersion_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, systemVersion_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, deviceInfo_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(token_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, token_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, token_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(systemVersion_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, systemVersion_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientVersion_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, clientVersion_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -575,6 +579,10 @@ public final class PlayerLoginReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 7412
+     * </pre>
+     *
      * Protobuf type {@code PlayerLoginReq}
      */
     public static final class Builder extends
@@ -752,7 +760,7 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object deviceInfo_ = "";
       /**
-       * <code>string device_info = 5;</code>
+       * <code>string device_info = 3;</code>
        * @return The deviceInfo.
        */
       public java.lang.String getDeviceInfo() {
@@ -768,7 +776,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string device_info = 5;</code>
+       * <code>string device_info = 3;</code>
        * @return The bytes for deviceInfo.
        */
       public com.google.protobuf.ByteString
@@ -785,7 +793,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string device_info = 5;</code>
+       * <code>string device_info = 3;</code>
        * @param value The deviceInfo to set.
        * @return This builder for chaining.
        */
@@ -800,7 +808,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string device_info = 5;</code>
+       * <code>string device_info = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeviceInfo() {
@@ -810,7 +818,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string device_info = 5;</code>
+       * <code>string device_info = 3;</code>
        * @param value The bytes for deviceInfo to set.
        * @return This builder for chaining.
        */
@@ -828,7 +836,7 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object deviceName_ = "";
       /**
-       * <code>string device_name = 3;</code>
+       * <code>string device_name = 1;</code>
        * @return The deviceName.
        */
       public java.lang.String getDeviceName() {
@@ -844,7 +852,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string device_name = 3;</code>
+       * <code>string device_name = 1;</code>
        * @return The bytes for deviceName.
        */
       public com.google.protobuf.ByteString
@@ -861,7 +869,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string device_name = 3;</code>
+       * <code>string device_name = 1;</code>
        * @param value The deviceName to set.
        * @return This builder for chaining.
        */
@@ -876,7 +884,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string device_name = 3;</code>
+       * <code>string device_name = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearDeviceName() {
@@ -886,7 +894,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string device_name = 3;</code>
+       * <code>string device_name = 1;</code>
        * @param value The bytes for deviceName to set.
        * @return This builder for chaining.
        */
@@ -904,7 +912,7 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object systemVersion_ = "";
       /**
-       * <code>string system_version = 13;</code>
+       * <code>string system_version = 14;</code>
        * @return The systemVersion.
        */
       public java.lang.String getSystemVersion() {
@@ -920,7 +928,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string system_version = 13;</code>
+       * <code>string system_version = 14;</code>
        * @return The bytes for systemVersion.
        */
       public com.google.protobuf.ByteString
@@ -937,7 +945,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string system_version = 13;</code>
+       * <code>string system_version = 14;</code>
        * @param value The systemVersion to set.
        * @return This builder for chaining.
        */
@@ -952,7 +960,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string system_version = 13;</code>
+       * <code>string system_version = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSystemVersion() {
@@ -962,7 +970,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string system_version = 13;</code>
+       * <code>string system_version = 14;</code>
        * @param value The bytes for systemVersion to set.
        * @return This builder for chaining.
        */
@@ -980,7 +988,7 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object clientVersion_ = "";
       /**
-       * <code>string client_version = 4;</code>
+       * <code>string client_version = 15;</code>
        * @return The clientVersion.
        */
       public java.lang.String getClientVersion() {
@@ -996,7 +1004,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string client_version = 4;</code>
+       * <code>string client_version = 15;</code>
        * @return The bytes for clientVersion.
        */
       public com.google.protobuf.ByteString
@@ -1013,7 +1021,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string client_version = 4;</code>
+       * <code>string client_version = 15;</code>
        * @param value The clientVersion to set.
        * @return This builder for chaining.
        */
@@ -1028,7 +1036,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string client_version = 4;</code>
+       * <code>string client_version = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientVersion() {
@@ -1038,7 +1046,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string client_version = 4;</code>
+       * <code>string client_version = 15;</code>
        * @param value The bytes for clientVersion to set.
        * @return This builder for chaining.
        */
@@ -1056,7 +1064,7 @@ public final class PlayerLoginReqOuterClass {
 
       private java.lang.Object token_ = "";
       /**
-       * <code>string token = 14;</code>
+       * <code>string token = 12;</code>
        * @return The token.
        */
       public java.lang.String getToken() {
@@ -1072,7 +1080,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string token = 14;</code>
+       * <code>string token = 12;</code>
        * @return The bytes for token.
        */
       public com.google.protobuf.ByteString
@@ -1089,7 +1097,7 @@ public final class PlayerLoginReqOuterClass {
         }
       }
       /**
-       * <code>string token = 14;</code>
+       * <code>string token = 12;</code>
        * @param value The token to set.
        * @return This builder for chaining.
        */
@@ -1104,7 +1112,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string token = 14;</code>
+       * <code>string token = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearToken() {
@@ -1114,7 +1122,7 @@ public final class PlayerLoginReqOuterClass {
         return this;
       }
       /**
-       * <code>string token = 14;</code>
+       * <code>string token = 12;</code>
        * @param value The bytes for token to set.
        * @return This builder for chaining.
        */
@@ -1196,18 +1204,15 @@ public final class PlayerLoginReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024PlayerLoginReq.proto\032\024TrackingIOInfo.p" +
-      "roto\032\030AdjustTrackingInfo.proto\"y\n\016Player" +
-      "LoginReq\022\023\n\013device_info\030\005 \001(\t\022\023\n\013device_" +
-      "name\030\003 \001(\t\022\026\n\016system_version\030\r \001(\t\022\026\n\016cl" +
-      "ient_version\030\004 \001(\t\022\r\n\005token\030\016 \001(\tB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\024PlayerLoginReq.proto\"y\n\016PlayerLoginReq" +
+      "\022\023\n\013device_info\030\003 \001(\t\022\023\n\013device_name\030\001 \001" +
+      "(\t\022\026\n\016system_version\030\016 \001(\t\022\026\n\016client_ver" +
+      "sion\030\017 \001(\t\022\r\n\005token\030\014 \001(\tB\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.TrackingIOInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.getDescriptor(),
         });
     internal_static_PlayerLoginReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1215,8 +1220,6 @@ public final class PlayerLoginReqOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerLoginReq_descriptor,
         new java.lang.String[] { "DeviceInfo", "DeviceName", "SystemVersion", "ClientVersion", "Token", });
-    emu.grasscutter.net.proto.TrackingIOInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AdjustTrackingInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

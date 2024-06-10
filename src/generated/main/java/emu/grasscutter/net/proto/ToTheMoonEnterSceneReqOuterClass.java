@@ -19,13 +19,13 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 7;</code>
+     * <code>uint32 scene_id = 13;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 version = 4;</code>
+     * <code>uint32 version = 2;</code>
      * @return The version.
      */
     int getVersion();
@@ -38,8 +38,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 6144
-   * Obf: DGDIOJLNEPG
+   * CmdId: 6163
    * </pre>
    *
    * Protobuf type {@code ToTheMoonEnterSceneReq}
@@ -86,19 +85,19 @@ public final class ToTheMoonEnterSceneReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 16: {
 
               version_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              sceneId_ = input.readUInt32();
               break;
             }
             case 80: {
 
               kJJLLFIJKNA_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              sceneId_ = input.readUInt32();
               break;
             }
             default: {
@@ -133,10 +132,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
               emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq.class, emu.grasscutter.net.proto.ToTheMoonEnterSceneReqOuterClass.ToTheMoonEnterSceneReq.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 7;
+    public static final int SCENE_ID_FIELD_NUMBER = 13;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 7;</code>
+     * <code>uint32 scene_id = 13;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -144,10 +143,10 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       return sceneId_;
     }
 
-    public static final int VERSION_FIELD_NUMBER = 4;
+    public static final int VERSION_FIELD_NUMBER = 2;
     private int version_;
     /**
-     * <code>uint32 version = 4;</code>
+     * <code>uint32 version = 2;</code>
      * @return The version.
      */
     @java.lang.Override
@@ -181,13 +180,13 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (version_ != 0) {
-        output.writeUInt32(4, version_);
-      }
-      if (sceneId_ != 0) {
-        output.writeUInt32(7, sceneId_);
+        output.writeUInt32(2, version_);
       }
       if (kJJLLFIJKNA_ != 0) {
         output.writeUInt32(10, kJJLLFIJKNA_);
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(13, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -200,15 +199,15 @@ public final class ToTheMoonEnterSceneReqOuterClass {
       size = 0;
       if (version_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, version_);
-      }
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, sceneId_);
+          .computeUInt32Size(2, version_);
       }
       if (kJJLLFIJKNA_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, kJJLLFIJKNA_);
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -345,8 +344,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6144
-     * Obf: DGDIOJLNEPG
+     * CmdId: 6163
      * </pre>
      *
      * Protobuf type {@code ToTheMoonEnterSceneReq}
@@ -509,7 +507,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 7;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -517,7 +515,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 7;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -528,7 +526,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 7;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -540,7 +538,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
 
       private int version_ ;
       /**
-       * <code>uint32 version = 4;</code>
+       * <code>uint32 version = 2;</code>
        * @return The version.
        */
       @java.lang.Override
@@ -548,7 +546,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return version_;
       }
       /**
-       * <code>uint32 version = 4;</code>
+       * <code>uint32 version = 2;</code>
        * @param value The version to set.
        * @return This builder for chaining.
        */
@@ -559,7 +557,7 @@ public final class ToTheMoonEnterSceneReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 version = 4;</code>
+       * <code>uint32 version = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearVersion() {
@@ -667,8 +665,8 @@ public final class ToTheMoonEnterSceneReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ToTheMoonEnterSceneReq.proto\"P\n\026ToTheM" +
-      "oonEnterSceneReq\022\020\n\010scene_id\030\007 \001(\r\022\017\n\007ve" +
-      "rsion\030\004 \001(\r\022\023\n\013KJJLLFIJKNA\030\n \001(\rB\033\n\031emu." +
+      "oonEnterSceneReq\022\020\n\010scene_id\030\r \001(\r\022\017\n\007ve" +
+      "rsion\030\002 \001(\r\022\023\n\013KJJLLFIJKNA\030\n \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -43,23 +43,27 @@ public final class PlayerStoreNotifyOuterClass {
         int index);
 
     /**
-     * <code>.StoreType store_type = 3;</code>
+     * <code>.StoreType store_type = 6;</code>
      * @return The enum numeric value on the wire for storeType.
      */
     int getStoreTypeValue();
     /**
-     * <code>.StoreType store_type = 3;</code>
+     * <code>.StoreType store_type = 6;</code>
      * @return The storeType.
      */
     emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType getStoreType();
 
     /**
-     * <code>uint32 weight_limit = 7;</code>
+     * <code>uint32 weight_limit = 15;</code>
      * @return The weightLimit.
      */
     int getWeightLimit();
   }
   /**
+   * <pre>
+   * CmdId: 2454
+   * </pre>
+   *
    * Protobuf type {@code PlayerStoreNotify}
    */
   public static final class PlayerStoreNotify extends
@@ -116,13 +120,13 @@ public final class PlayerStoreNotifyOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ItemOuterClass.Item.parser(), extensionRegistry));
               break;
             }
-            case 24: {
+            case 48: {
               int rawValue = input.readEnum();
 
               storeType_ = rawValue;
               break;
             }
-            case 56: {
+            case 120: {
 
               weightLimit_ = input.readUInt32();
               break;
@@ -202,17 +206,17 @@ public final class PlayerStoreNotifyOuterClass {
       return itemList_.get(index);
     }
 
-    public static final int STORE_TYPE_FIELD_NUMBER = 3;
+    public static final int STORE_TYPE_FIELD_NUMBER = 6;
     private int storeType_;
     /**
-     * <code>.StoreType store_type = 3;</code>
+     * <code>.StoreType store_type = 6;</code>
      * @return The enum numeric value on the wire for storeType.
      */
     @java.lang.Override public int getStoreTypeValue() {
       return storeType_;
     }
     /**
-     * <code>.StoreType store_type = 3;</code>
+     * <code>.StoreType store_type = 6;</code>
      * @return The storeType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType getStoreType() {
@@ -221,10 +225,10 @@ public final class PlayerStoreNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.UNRECOGNIZED : result;
     }
 
-    public static final int WEIGHT_LIMIT_FIELD_NUMBER = 7;
+    public static final int WEIGHT_LIMIT_FIELD_NUMBER = 15;
     private int weightLimit_;
     /**
-     * <code>uint32 weight_limit = 7;</code>
+     * <code>uint32 weight_limit = 15;</code>
      * @return The weightLimit.
      */
     @java.lang.Override
@@ -250,10 +254,10 @@ public final class PlayerStoreNotifyOuterClass {
         output.writeMessage(2, itemList_.get(i));
       }
       if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_TYPE_NONE.getNumber()) {
-        output.writeEnum(3, storeType_);
+        output.writeEnum(6, storeType_);
       }
       if (weightLimit_ != 0) {
-        output.writeUInt32(7, weightLimit_);
+        output.writeUInt32(15, weightLimit_);
       }
       unknownFields.writeTo(output);
     }
@@ -270,11 +274,11 @@ public final class PlayerStoreNotifyOuterClass {
       }
       if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, storeType_);
+          .computeEnumSize(6, storeType_);
       }
       if (weightLimit_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, weightLimit_);
+          .computeUInt32Size(15, weightLimit_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -411,6 +415,10 @@ public final class PlayerStoreNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 2454
+     * </pre>
+     *
      * Protobuf type {@code PlayerStoreNotify}
      */
     public static final class Builder extends
@@ -849,14 +857,14 @@ public final class PlayerStoreNotifyOuterClass {
 
       private int storeType_ = 0;
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <code>.StoreType store_type = 6;</code>
        * @return The enum numeric value on the wire for storeType.
        */
       @java.lang.Override public int getStoreTypeValue() {
         return storeType_;
       }
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <code>.StoreType store_type = 6;</code>
        * @param value The enum numeric value on the wire for storeType to set.
        * @return This builder for chaining.
        */
@@ -867,7 +875,7 @@ public final class PlayerStoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <code>.StoreType store_type = 6;</code>
        * @return The storeType.
        */
       @java.lang.Override
@@ -877,7 +885,7 @@ public final class PlayerStoreNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <code>.StoreType store_type = 6;</code>
        * @param value The storeType to set.
        * @return This builder for chaining.
        */
@@ -891,7 +899,7 @@ public final class PlayerStoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.StoreType store_type = 3;</code>
+       * <code>.StoreType store_type = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearStoreType() {
@@ -903,7 +911,7 @@ public final class PlayerStoreNotifyOuterClass {
 
       private int weightLimit_ ;
       /**
-       * <code>uint32 weight_limit = 7;</code>
+       * <code>uint32 weight_limit = 15;</code>
        * @return The weightLimit.
        */
       @java.lang.Override
@@ -911,7 +919,7 @@ public final class PlayerStoreNotifyOuterClass {
         return weightLimit_;
       }
       /**
-       * <code>uint32 weight_limit = 7;</code>
+       * <code>uint32 weight_limit = 15;</code>
        * @param value The weightLimit to set.
        * @return This builder for chaining.
        */
@@ -922,7 +930,7 @@ public final class PlayerStoreNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 weight_limit = 7;</code>
+       * <code>uint32 weight_limit = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearWeightLimit() {
@@ -1000,8 +1008,8 @@ public final class PlayerStoreNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027PlayerStoreNotify.proto\032\017StoreType.pro" +
       "to\032\nItem.proto\"c\n\021PlayerStoreNotify\022\030\n\ti" +
-      "tem_list\030\002 \003(\0132\005.Item\022\036\n\nstore_type\030\003 \001(" +
-      "\0162\n.StoreType\022\024\n\014weight_limit\030\007 \001(\rB\033\n\031e" +
+      "tem_list\030\002 \003(\0132\005.Item\022\036\n\nstore_type\030\006 \001(" +
+      "\0162\n.StoreType\022\024\n\014weight_limit\030\017 \001(\rB\033\n\031e" +
       "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -273,10 +273,6 @@ public final class SocialDetailOuterClass {
         getIpCodeBytes();
   }
   /**
-   * <pre>
-   * Obf: NBNCHDGBFEC
-   * </pre>
-   *
    * Protobuf type {@code SocialDetail}
    */
   public static final class SocialDetail extends
@@ -1566,10 +1562,6 @@ public final class SocialDetailOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NBNCHDGBFEC
-     * </pre>
-     *
      * Protobuf type {@code SocialDetail}
      */
     public static final class Builder extends
