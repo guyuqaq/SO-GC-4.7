@@ -41,6 +41,9 @@
 - Put the `version.dll` in to the folder of your game client.
 - Download the old version of [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll) (4.2.0).
 - Put the old version of `mihoyonet.dll` in `GenshinImpact_Data/Plugins` folder.
+
+### Notice
+
 In the 4.7 version of UnknownAnimeGamePS Grasscutter fork, I've added an option called "useXorEncryption" in config.json, which is disabled by default. If the option is enabled, you won't be able to enter the game using the patch provided above, you will have to use a patch which patches the client's RSA key. Due to my skill issue, I am not able to provide a better patch for PC environment. If you have a better patch, please in contact with me on Discord (@watchandytw), thanks.
 
 ## Let's build the server
